@@ -1,7 +1,7 @@
 # Site settings
 title: f_ms
 SEOTitle: f_ms | 插画师
-header-img: img/home-bg.jpg
+# header-img: img/home-bg.jpg
 email: imf_ms@yeah.net
 description: "插画师"
 keyword: "Android"
@@ -47,12 +47,12 @@ kramdown:
 
 
 # Disqus settings
-#disqus_username: _your_disqus_short_name_
+disqus_username: fms-1
 
 # Duoshuo settings
-duoshuo_username: imfms
+# duoshuo_username: imfms
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+# duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
 
