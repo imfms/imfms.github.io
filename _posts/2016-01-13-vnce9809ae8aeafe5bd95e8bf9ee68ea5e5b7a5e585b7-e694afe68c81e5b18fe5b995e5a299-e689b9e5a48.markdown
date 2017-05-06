@@ -78,11 +78,6 @@ tags:
     * _[UltraVNC官网此版本链接可点此进入](http://www.uvnc.com/downloads/ultravnc/114-download-ultravnc-1209.html)_
 
 
-
-
-
-
-
 ## 支持
 
 
@@ -124,17 +119,4 @@ tags:
 
 ### 下载链接
 
-
-
-
-
-	
-  * [打包第三方版(直接使用，推荐)](http://pan.baidu.com/s/1qXbt1Nm)
-
-	
-  * _[源代码(不包含第三方，无法实现连接功能)](http://pan.baidu.com/s/1pK41NhL)_
-
-	
-  * _[历史版本查看](http://pan.baidu.com/s/1hqWPI3U)_
-
-
+  * [https://github.com/imfms/BatchProjectsContent/tree/master/VNC_BookLink](https://github.com/imfms/BatchProjectsContent/tree/master/VNC_BookLink)
