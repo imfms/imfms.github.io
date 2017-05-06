@@ -28,6 +28,4 @@ tags:
     计数
 
 
-![00_压缩](/img/post/wp/2015/11/00_压缩.jpg)
-
-下载链接：[http://pan.baidu.com/s/1hqEZ9Da](http://pan.baidu.com/s/1hqEZ9Da)
+[https://github.com/imfms/BatchProjectsContent/tree/master/EDNSP%E7%BD%91%E5%BA%97%E5%9B%BE%E7%89%87%E7%A6%BB%E7%BA%BF%E5%B7%A5%E5%85%B7](https://github.com/imfms/BatchProjectsContent/tree/master/EDNSP%E7%BD%91%E5%BA%97%E5%9B%BE%E7%89%87%E7%A6%BB%E7%BA%BF%E5%B7%A5%E5%85%B7)

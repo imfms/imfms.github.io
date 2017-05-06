@@ -50,18 +50,11 @@ tags:
 
 截图：
 
+	![](/img/post/wp/2015/11/0011.jpg)
+	![](/img/post/wp/2015/11/0021.jpg)
+	![](/img/post/wp/2015/11/003.jpg)
+	![](/img/post/wp/2015/11/005.jpg)
+
+
+	(https://github.com/imfms/BatchProjectsContent/tree/master/EDNSP%E7%BD%91%E5%BA%97%E5%9B%BE%E7%89%87%E7%A6%BB%E7%BA%BF%E5%B7%A5%E5%85%B7)[https://github.com/imfms/BatchProjectsContent/tree/master/EDNSP%E7%BD%91%E5%BA%97%E5%9B%BE%E7%89%87%E7%A6%BB%E7%BA%BF%E5%B7%A5%E5%85%B7]
     
-    <img src="/img/post/wp/2015/11/0011.jpg" alt="001" height="265" class="aligncenter wp-image-155 size-full" width="799"></img>
-    <a href="/img/post/wp/2015/11/0021.jpg"><img src="/img/post/wp/2015/11/0021.jpg" alt="002" height="555" class="alignnone wp-image-153 size-full" width="475"></img>
-    </a>
-    <img src="/img/post/wp/2015/11/003.jpg" alt="003" height="522" class="alignnone wp-image-158 size-full" width="653"></img>
-    <img src="/img/post/wp/2015/11/005.jpg" alt="005" height="543" class="alignnone wp-image-156 size-full" width="726"></img><img src="/img/post/wp/2015/11/006.jpg" alt="006" height="603" class="alignnone wp-image-160 size-full" width="952"></img>
-
-
-
-    
-    <b>编译后exe下载链接：<a href="http://pan.baidu.com/s/1sjnD2SP" target="_blank">http://pan.baidu.com/s/1sjnD2SP</a>
-    bat源代码下载链接：<a href="http://pan.baidu.com/s/1i3m7NQd" target="_blank">http://pan.baidu.com/s/1i3m7NQd</a></b>
-
-
-_[历史版本](http://pan.baidu.com/s/1eRm2L9o)_

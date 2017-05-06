@@ -27,4 +27,4 @@ ICT工具箱(ICT_Tools)
 
 ![ict2](/img/post/wp/2015/11/ict2.jpg)
 
-下载链接：[http://pan.baidu.com/s/1mg91K1a](http://pan.baidu.com/s/1mg91K1a)
+[https://github.com/imfms/BatchProjectsContent/tree/master/ICT_Tools](https://github.com/imfms/BatchProjectsContent/tree/master/ICT_Tools)
