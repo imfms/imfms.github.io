@@ -56,9 +56,9 @@
 
 ```
 # Site settings
-title: Hux Blog             # 你的博客网站标题
-SEOTitle: Hux Blog			# 在后面会详细谈到
-description: "Cool Blog"    # 随便说点，描述一下
+# title: Hux Blog             # 你的博客网站标题
+# SEOTitle: Hux Blog			# 在后面会详细谈到
+# description: "Cool Blog"    # 随便说点，描述一下
 
 # SNS settings      
 github_username: huxpro     # 你的github账号
@@ -77,16 +77,16 @@ Jekyll官方网站还有很多的参数可以调，比如设置文章的链接�
 yaml 头文件长这样:
 
 ```
----
-layout:     post
-title:      "Hello 2015"
-subtitle:   "Hello World, Hello Blog"
-date:       2015-01-29 12:00:00
-author:     "Hux"
-header-img: "img/post-bg-2015.jpg"
-tags:
-    - Life
----
+# ---
+# layout:     post
+# title:      "Hello 2015"
+# subtitle:   "Hello World, Hello Blog"
+# date:       2015-01-29 12:00:00
+# author:     "Hux"
+# header-img: "img/post-bg-2015.jpg"
+# tags:
+#    - Life
+# ---
 
 ```
 
@@ -98,10 +98,10 @@ tags:
 设置是在 `_config.yml`文件里面的`Sidebar settings`那块。
 ```
 # Sidebar settings
-sidebar: true  #添加侧边栏
-sidebar-about-description: "简单的描述一下你自己"
-sidebar-avatar: /img/avatar-hux.jpg     #你的大头贴，请使用绝对地址.
-```
+# sidebar: true  #添加侧边栏
+# sidebar-about-description: "简单的描述一下你自己"
+# sidebar-avatar: /img/avatar-hux.jpg     #你的大头贴，请使用绝对地址.
+# ```
 
 侧边栏是响应式布局的，当屏幕尺寸小于992px的时候，侧边栏就会移动到底部。具体请见bootstrap栅格系统 <http://v3.bootcss.com/css/>
 
@@ -156,12 +156,12 @@ HTML5幻灯片的排版：
 
 其主要原理是添加一个 `iframe`，在里面加入外部链接。你可以直接写到头文件里面去，详情请见下面的yaml头文件的写法。
 
-```
----
-layout:     keynote
-iframe:     "http://huangxuan.me/js-module-7day/"
----
-```
+# ```
+# ---
+# layout:     keynote
+# iframe:     "http://huangxuan.me/js-module-7day/"
+# ---
+# ```
 
 iframe在不同的设备中，将会自动的调整大小。保留内边距是为了让手机用户可以向下滑动，以及添加更多的内容。
 
@@ -179,9 +179,9 @@ disqus国际比较流行，界面也很大气、简介，如果有人评论，�
 **其次**，你只需要在下面的yaml头文件中设置一下就可以了。
 
 ```
-duoshuo_username: _你的用户名_
+# duoshuo_username: _你的用户名_
 # 或者
-disqus_username: _你的用户名_
+# disqus_username: _你的用户名_
 ```
 
 **最后**多说是支持分享的，如果你不想分享，请这样设置：`duoshuo_share: false`。你可以同时使用两个评论系统，不过个人感觉怪怪的。
