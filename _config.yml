@@ -5,7 +5,7 @@ SEOTitle: f_ms | 插画师
 email: imf_ms@yeah.net
 description: "插画师"
 keyword: "Android"
-url: "http://blog.f-ms.cn"              # your host, for absolute URL
+url: "http://f-ms.cn"              # your host, for absolute URL
 # baseurl: "/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -81,8 +81,8 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 # Friends
 friends: [
-   {
-       title: "F_Ms",
-       href: "http://f-ms.cn"
-   }
+#   {
+#       title: "F_Ms",
+#       href: "http://f-ms.cn"
+#   }
 ]
