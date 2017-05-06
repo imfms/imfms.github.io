@@ -1,0 +1,18 @@
+---
+author: F_Ms
+comments: true
+date: 2016-01-16 08:04:17+00:00
+layout: post
+link: http://f-ms.cn/?p=409
+slug: '%e8%80%b3%e8%be%b9%e5%98%88%e6%9d%82'
+title: 耳边嘈杂
+wordpress_id: 409
+categories:
+- life-mood
+post_format:
+- 状态
+tags:
+- 心情
+---
+
+长篇的看着新闻、网友各国评论，好像脱离现实，又听到耳边嘈杂

@@ -1,0 +1,47 @@
+---
+author: F_Ms
+comments: true
+date: 2016-01-01 01:44:12+00:00
+layout: post
+link: http://f-ms.cn/?p=338
+slug: bfs%e6%96%87%e4%bb%b6%e6%90%9c%e7%b4%a2-20160101
+title: BFS文件搜索 20160102
+wordpress_id: 338
+categories:
+- windows-batch
+tags:
+- windows-batch
+---
+
+## 更新说明：
+
+
+
+
+
+	
+  1. 优化代码，精简findstr的使用，为方便在pe等环境
+
+	
+  2. 修复二次搜索后命令会操作到之前的结果问题
+
+	
+  3. 添加对结果文件的文件名进行替换的功能
+
+	
+  4. 去除对结果命令时的指示索引功能
+
+
+![0](/img/post/wp/2016/01/0.png)
+
+![1](/img/post/wp/2016/01/1.png) ![2](/img/post/wp/2016/01/2.png)
+
+
+### 下载链接：
+
+
+百度网盘：[http://pan.baidu.com/s/1eRgsK9s](http://pan.baidu.com/s/1eRgsK9s)
+
+旧版本可使用@命令进行手动检查更新
+
+_[历史版本查看](http://pan.baidu.com/s/1eQX9Hke)_

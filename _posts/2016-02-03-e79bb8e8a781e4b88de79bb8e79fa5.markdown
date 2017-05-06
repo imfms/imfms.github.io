@@ -1,0 +1,18 @@
+---
+author: F_Ms
+comments: true
+date: 2016-02-03 08:00:30+00:00
+layout: post
+link: http://f-ms.cn/?p=438
+slug: '%e7%9b%b8%e8%a7%81%e4%b8%8d%e7%9b%b8%e7%9f%a5'
+title: 相见不相知
+wordpress_id: 438
+categories:
+- life-mood
+post_format:
+- 状态
+tags:
+- 心情
+---
+
+一年一度的邂逅，偶天见偶不现，年年巡回，挂念习惯，伊人未曾回望以四目，不相见，无缘见，见不相识，识，也不相知

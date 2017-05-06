@@ -1,0 +1,18 @@
+---
+author: F_Ms
+comments: true
+date: 2015-11-19 11:23:47+00:00
+layout: post
+link: http://f-ms.cn/?p=118
+slug: '%e4%b8%94%e8%a1%8c%e4%b8%94%e7%8f%8d%e6%83%9c'
+title: 且行且珍惜
+wordpress_id: 118
+categories:
+- life-mood
+post_format:
+- 相册
+---
+
+给同学刷机，顺便随便做了加了个第一屏图
+
+![6630593876189535873](/img/post/wp/2015/11/6630593876189535873.jpeg)

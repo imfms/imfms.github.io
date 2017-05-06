@@ -1,0 +1,148 @@
+---
+author: F_Ms
+comments: true
+date: 2015-12-31 07:36:34+00:00
+layout: post
+link: http://f-ms.cn/?p=328
+slug: hfs%e7%bd%91%e7%bb%9c%e6%96%87%e4%bb%b6%e6%9c%8d%e5%8a%a1%e5%99%a8-%e4%b8%89%e6%ac%be%e7%b2%be%e9%80%89%e5%90%8e%e6%b1%89%e5%8c%96%e6%a8%a1%e6%9d%bf%e4%b8%bb%e9%a2%98
+title: HFS网络文件服务器-三款精选后汉化模板/主题
+wordpress_id: 328
+categories:
+- other
+---
+
+## HFS简介：
+
+
+一款巨简单网络文件服务器 HFS 全称 Http File Server ,无需安装，随存随用
+
+
+
+	
+  * 文件隐藏
+
+	
+  * 用户权限限制
+
+	
+  * 带宽&连接数&同时下载数调控
+
+	
+  * 理想的网络文件共享工具
+
+	
+  * IP限制
+
+	
+  * ...
+
+
+
+
+### 软件截图：
+
+
+
+
+### ![02](/img/post/wp/2015/12/02-2.png)![01](/img/post/wp/2015/12/01-2.png)
+
+
+
+
+## 汉化模板/主题：
+
+
+
+
+### HFS官方
+
+
+
+
+版本：2.3g Build295
+
+
+
+
+截图：
+
+
+
+
+![HFS](/img/post/wp/2015/12/HFS.png)
+
+
+
+
+汉化版下载链接：[http://pan.baidu.com/s/1skhrthj](http://pan.baidu.com/s/1skhrthj)
+
+
+
+
+
+### Live第三方 3.0.1
+
+
+
+
+版本：3.01
+
+
+
+
+截图：![Live](/img/post/wp/2015/12/Live.png)
+
+
+
+
+官网：[http://www.rawr-designs.com/](http://www.rawr-designs.com/)
+
+
+
+
+汉化版下载链接：[http://pan.baidu.com/s/1kUefK7X](http://pan.baidu.com/s/1kUefK7X)
+
+
+
+
+
+### Salaf第三方
+
+
+
+
+版本：5.0
+
+
+
+
+截图：![Salaf](/img/post/wp/2015/12/Salaf.png)
+
+
+
+
+官网：[http://salaf-files.su/web-development/110-shablon-salaf-dlya-hfs.htm](http://salaf-files.su/web-development/110-shablon-salaf-dlya-hfs.htm)l
+
+
+
+
+汉化版下载链接：[http://pan.baidu.com/s/1eQYksBw](http://pan.baidu.com/s/1eQYksBw)
+
+
+
+
+
+### 官方相关链接：
+
+
+
+
+
+	
+  * HFS官方网站：[http://rejetto.com/hfs/
+](http://rejetto.com/hfs/)
+
+	
+  * HFS官方论坛：[http://www.rejetto.com/forum/hfs-~-http-file-server/](http://www.rejetto.com/forum/hfs-~-http-file-server/)
+
+

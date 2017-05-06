@@ -1,0 +1,23 @@
+---
+author: F_Ms
+comments: true
+date: 2016-07-25 14:48:34+00:00
+layout: post
+link: http://f-ms.cn/?p=1282
+slug: '%e4%bd%a0%e7%9a%84%e7%ba%a2%e8%a1%a3%e5%92%8c%e7%ba%a2%e7%bb%a3%e9%9e%8b%e5%91%80'
+title: 你的红衣和红绣鞋呀
+wordpress_id: 1282
+categories:
+- life-music
+- picture-mouse
+post_format:
+- 图像
+tags:
+- music
+- 鼠标画
+---
+
+![20160725_你的红衣和红绣鞋呀](/img/post/wp/2016/07/20160725_你的红衣和红绣鞋呀.png)
+
+
+何大河 - 《小翠》

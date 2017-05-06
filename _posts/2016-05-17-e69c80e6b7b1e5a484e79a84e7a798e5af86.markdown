@@ -1,0 +1,23 @@
+---
+author: F_Ms
+comments: true
+date: 2016-05-17 15:05:40+00:00
+layout: post
+link: http://f-ms.cn/?p=988
+slug: '%e6%9c%80%e6%b7%b1%e5%a4%84%e7%9a%84%e7%a7%98%e5%af%86'
+title: 最深处的秘密
+wordpress_id: 988
+categories:
+- life-music
+- picture
+post_format:
+- 图像
+tags:
+- music
+- 鼠标画
+---
+
+![那里湖面总是澄清，那里空气充满宁静，雪白明月照着大地，唱着你_20160515](/img/post/wp/2016/05/那里湖面总是澄清，那里空气充满宁静，雪白明月照着大地，唱着你_20160515.png)
+
+
+伍佰 - 《挪威的森林》

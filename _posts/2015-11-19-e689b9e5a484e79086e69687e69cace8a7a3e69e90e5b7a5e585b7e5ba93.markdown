@@ -1,0 +1,33 @@
+---
+author: F_Ms
+comments: true
+date: 2015-11-19 09:09:49+00:00
+layout: post
+link: http://f-ms.cn/?p=44
+slug: '%e6%89%b9%e5%a4%84%e7%90%86%e6%96%87%e6%9c%ac%e8%a7%a3%e6%9e%90%e5%b7%a5%e5%85%b7%e5%ba%93'
+title: 批处理文本解析工具库
+wordpress_id: 44
+categories:
+- windows-batch
+tags:
+- windows-batch
+---
+
+近期有个大批量下载淘宝、天猫、阿里巴巴店铺的需求，就写了一个文本解析工具库，功能 - - ，好吧，挺简陋的
+
+    
+    从变量中寻找以空格分割的某几个值
+    从文件中查找含有指定关键字的行的数量
+    从一个文件中指定某一行
+    内容贬值到度量
+    去除文件中缩进与空白空行
+    字母大、小写转换
+    替换变量内容
+    根据关键字从文件查找所在行返回行号
+    比较大小
+    计数
+
+
+![00_压缩](/img/post/wp/2015/11/00_压缩.jpg)
+
+下载链接：[http://pan.baidu.com/s/1hqEZ9Da](http://pan.baidu.com/s/1hqEZ9Da)

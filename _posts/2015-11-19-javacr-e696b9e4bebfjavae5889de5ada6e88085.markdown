@@ -1,0 +1,24 @@
+---
+author: F_Ms
+comments: true
+date: 2015-11-19 11:10:23+00:00
+layout: post
+link: http://f-ms.cn/?p=110
+slug: javacr-%e6%96%b9%e4%be%bfjava%e5%88%9d%e5%ad%a6%e8%80%85
+title: JavaCR - 方便Java初学者
+wordpress_id: 110
+categories:
+- windows-batch
+tags:
+- java
+- windows-batch
+- 工具
+---
+
+**[旧版本，已不再推荐使用，[新版本传送门](http://f-ms.cn/?p=282)]**
+
+最近学java，写出来自用的，安装好配置环境后才能使用，推荐添加到右键菜单或者编辑器运行中(IDE路过)
+
+![javacr](/img/post/wp/2015/11/javacr.png)
+
+下载链接：[http://pan.baidu.com/s/1o6vk6KE](http://pan.baidu.com/s/1o6vk6KE)

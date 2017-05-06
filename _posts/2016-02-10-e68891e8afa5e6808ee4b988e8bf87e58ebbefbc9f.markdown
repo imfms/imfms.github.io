@@ -1,0 +1,18 @@
+---
+author: F_Ms
+comments: true
+date: 2016-02-10 06:11:53+00:00
+layout: post
+link: http://f-ms.cn/?p=449
+slug: '%e6%88%91%e8%af%a5%e6%80%8e%e4%b9%88%e8%bf%87%e5%8e%bb%ef%bc%9f'
+title: 我该怎么过去？
+wordpress_id: 449
+categories:
+- life-mood
+post_format:
+- 相册
+tags:
+- 心情
+---
+
+![Screenshot_2016-02-10-13-54-26](/img/post/wp/2016/02/Screenshot_2016-02-10-13-54-26-576x1024.png)

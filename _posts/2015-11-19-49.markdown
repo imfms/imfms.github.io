@@ -1,0 +1,18 @@
+---
+author: F_Ms
+comments: true
+date: 2015-11-19 09:44:01+00:00
+layout: post
+link: http://f-ms.cn/?p=49
+slug: '49'
+title: 五分余生遗言
+wordpress_id: 49
+categories:
+- life-mood
+post_format:
+- 聊天
+---
+
+愿如浮萍，未曾荡
+
+[2014,课程：五分余生遗书]
