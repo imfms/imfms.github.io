@@ -58,7 +58,7 @@ disqus_username: fms-1
 
 
 # Analytics settings
-Baidu Analytics
+# Baidu Analytics
 ba_track_id: 1e30b4dfb20d1a7fa679ed22ae9f3d53
 # Google Analytics
 # ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
