@@ -15,24 +15,12 @@ tags:
 
 ### 功能：
 
-
 查看命令开始至结束的执行时间
-
 
 ### 截图及帮助：
 
-
 ![2016-01-07_084022](/img/post/wp/2016/01/2016-01-07_084022.png)
-
 
 ### 下载链接：
 
-
-
-
-[http://pan.baidu.com/s/1kUd29Wb](http://pan.baidu.com/s/1kUd29Wb)
-
-
-
-
-_[历史版本查看](http://pan.baidu.com/s/1eRrS3KY)_
+[https://github.com/imfms/BatchProjectsContent/tree/master/BatRunTime](https://github.com/imfms/BatchProjectsContent/tree/master/BatRunTime)

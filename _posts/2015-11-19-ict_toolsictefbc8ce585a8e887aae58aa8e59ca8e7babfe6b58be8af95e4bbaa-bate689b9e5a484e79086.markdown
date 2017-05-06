@@ -5,7 +5,7 @@ date: 2015-11-19 10:56:47+00:00
 layout: post
 link: http://f-ms.cn/?p=100
 slug: ict_toolsict%ef%bc%8c%e5%85%a8%e8%87%aa%e5%8a%a8%e5%9c%a8%e7%ba%bf%e6%b5%8b%e8%af%95%e4%bb%aa-bat%e6%89%b9%e5%a4%84%e7%90%86%e8%be%85%e5%8a%a9%e5%b7%a5%e5%85%b7
-title: ICT_Tools(ICT，全自动在线测试仪)-Bat(批处理)辅助工具
+title: ICT_Tools(ICT，全自动在线测试仪)辅助工具-Bat
 wordpress_id: 100
 categories:
 - windows-batch
