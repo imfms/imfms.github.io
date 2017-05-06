@@ -1,0 +1,23 @@
+---
+author: F_Ms
+comments: true
+date: 2016-07-30 10:30:59+00:00
+layout: post
+link: http://f-ms.cn/?p=1297
+slug: '%e5%b8%9d%e8%bf%87%e5%8d%83%e4%ba%ba%e8%bf%8e'
+title: 帝过千人迎
+wordpress_id: 1297
+categories:
+- life-music
+- picture-mouse
+post_format:
+- 图像
+tags:
+- music
+- 鼠标画
+---
+
+![20160729_帝过千人迎](/img/post/wp/2016/07/20160729_帝过千人迎.png)
+
+
+霍尊 - 《唐诗》

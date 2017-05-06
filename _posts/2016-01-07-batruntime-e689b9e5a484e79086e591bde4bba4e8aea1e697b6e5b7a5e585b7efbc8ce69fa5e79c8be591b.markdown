@@ -1,0 +1,38 @@
+---
+author: F_Ms
+comments: true
+date: 2016-01-07 00:43:11+00:00
+layout: post
+link: http://f-ms.cn/?p=366
+slug: batruntime-%e6%89%b9%e5%a4%84%e7%90%86%e5%91%bd%e4%bb%a4%e8%ae%a1%e6%97%b6%e5%b7%a5%e5%85%b7%ef%bc%8c%e6%9f%a5%e7%9c%8b%e5%91%bd%e4%bb%a4%e7%9a%84%e6%89%a7%e8%a1%8c%e6%97%b6%e9%95%bf%e5%af%b9%e6%af%94
+title: BatRunTime 批处理命令计时工具，查看命令的执行时长对比效率
+wordpress_id: 366
+categories:
+- windows-batch
+tags:
+- windows-batch
+---
+
+### 功能：
+
+
+查看命令开始至结束的执行时间
+
+
+### 截图及帮助：
+
+
+![2016-01-07_084022](/img/post/wp/2016/01/2016-01-07_084022.png)
+
+
+### 下载链接：
+
+
+
+
+[http://pan.baidu.com/s/1kUd29Wb](http://pan.baidu.com/s/1kUd29Wb)
+
+
+
+
+_[历史版本查看](http://pan.baidu.com/s/1eRrS3KY)_

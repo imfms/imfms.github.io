@@ -1,0 +1,167 @@
+---
+author: F_Ms
+comments: true
+date: 2015-12-18 01:08:51+00:00
+layout: post
+link: http://f-ms.cn/?p=256
+slug: '%e6%89%b9%e5%a4%84%e7%90%86-%e6%96%87%e4%bb%b6%e5%88%a0%e9%99%a4%e8%83%81%e8%bf%ab%e5%b7%a5%e5%85%b7-%e5%86%8d%e4%b9%9f%e4%b8%8d%e7%94%a8%e6%8b%85%e5%bf%83%e8%b5%96%e5%ba%8a%e4%ba%86'
+title: 批处理 文件定时删除胁迫工具 - 再也不用担心赖床了
+wordpress_id: 256
+categories:
+- windows-batch
+tags:
+- windows-batch
+- 工具
+---
+
+### Bat创建初衷：
+
+
+
+
+为什么要写反赖床工具呢，恩，因为笔者也深受其害且无法自拔... ...(叫我意志不坚君)
+笔者也跟赖床做过非常非常多的斗争：
+
+
+
+
+
+
+	
+  1. 把手机防到手无法直接拿到的地方
+
+	
+  2. 闹铃铃声更换为自己吼的声音(这酸爽)
+
+	
+  3. 安装有各种叫你起床功能的闹铃(拍张照，识别个二维码，摇动手机100下的不然就不关声音)
+
+
+
+
+但是这些都没能打败我:D,毕竟铃声自己可能把它给瞬关然后继续睡觉，至于闹铃软件——直接杀进程- -，总结出要想起床，一定要有个压力！！
+
+
+
+
+
+
+* * *
+
+
+
+
+
+### Bat功能：
+
+
+
+
+
+	
+  1. 在指定时间点删除指定文件(夹)
+
+
+
+
+恩，就这些，足够了，当然，为了能够真正有效，自然提供的文件(夹)要非常重要！！
+这样才有足够的压力和动力起床解除删除命令
+
+
+
+
+
+
+* * *
+
+
+
+
+
+### Bat使用方法：
+
+
+
+
+
+	
+  1. 指定时间
+
+	
+  2. 指定文件
+
+
+
+
+按照提示操作即可，简单易用
+
+
+
+
+
+
+* * *
+
+
+
+
+
+
+### 使用环境：
+
+
+
+
+
+	
+  1. 因为是批处理，系统兼容性应该不会出什么问题，笔者已经测试了 Win10_1511 和 WinXP ,相信这两个之间的版本都是可以使用的
+
+	
+  2. 电脑不在身边
+
+	
+  3. 电脑到设定时间之间为开机激活状态
+
+	
+  4. 系统时间不会随意更改
+
+	
+  5. 指定Bat删除的文件挺重要(足以让自己为了文件不被删除而起床)
+
+	
+  6. **在删除时间点起床，在删除时间点起床，在删除时间点起床(重要的事情说三遍)**
+
+
+
+
+
+* * *
+
+
+
+
+
+### Bat运行截图：
+
+
+
+    
+    <img src="/img/post/wp/2015/12/01.png" alt="01" height="349" class="aligncenter size-full wp-image-258" width="569"></img><img src="/img/post/wp/2015/12/02.png" alt="02" height="349" class="aligncenter size-full wp-image-259" width="569"></img><img src="/img/post/wp/2015/12/03.png" alt="03" height="349" class="aligncenter size-full wp-image-260" width="569"></img><img src="/img/post/wp/2015/12/04.png" alt="04" height="349" class="aligncenter size-full wp-image-262" width="569"></img><img src="/img/post/wp/2015/12/05.png" alt="05" height="349" class="aligncenter size-full wp-image-261" width="569"></img>
+
+
+
+
+### 下载链接：
+
+
+
+
+[http://pan.baidu.com/s/1o7fs36U](http://pan.baidu.com/s/1o7fs36U)
+
+
+
+
+_[历史版本](http://pan.baidu.com/s/1i3NurOT)_
+
+
+

@@ -1,0 +1,22 @@
+---
+author: F_Ms
+comments: true
+date: 2015-11-19 11:05:39+00:00
+layout: post
+link: http://f-ms.cn/?p=104
+slug: '%e5%a4%a7%e9%bb%84%e9%b8%ad%e4%b9%8b%e6%ad%bb'
+title: 大黄鸭之死
+wordpress_id: 104
+categories:
+- life-mood
+post_format:
+- 图像
+---
+
+
+
+
+
+![001](/img/post/wp/2015/11/001.jpg) ![002](/img/post/wp/2015/11/002.jpg)
+
+路上偶遇大黄鸭

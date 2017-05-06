@@ -1,0 +1,22 @@
+---
+author: F_Ms
+comments: true
+date: 2016-01-04 11:34:38+00:00
+layout: post
+link: http://f-ms.cn/?p=358
+slug: '%e5%bd%93%e5%86%99%e4%b8%8e%e7%b1%bb%e7%9b%b8%e5%85%b3%e7%9a%84%e7%b1%bb%e6%97%b6'
+title: 当写与类相关的类时
+wordpress_id: 358
+categories:
+- life-mood
+post_format:
+- 状态
+tags:
+- Friends
+---
+
+当写与类相关的类时，不自主起了个中文拼音"类"的类名
+
+public class Lei {}
+
+当返回读与类相关的此类时，不自主想起了个转义的姓名

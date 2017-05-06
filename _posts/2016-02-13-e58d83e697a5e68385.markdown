@@ -1,0 +1,20 @@
+---
+author: F_Ms
+comments: true
+date: 2016-02-13 02:26:46+00:00
+layout: post
+link: http://f-ms.cn/?p=452
+slug: '%e5%8d%83%e6%97%a5%e6%83%85'
+title: 千日情
+wordpress_id: 452
+categories:
+- life-mood
+post_format:
+- 状态
+tags:
+- 心情
+---
+
+千日情，一朝熄，日日消磨渣事起
+
+一日情，千铭记

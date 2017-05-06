@@ -1,0 +1,19 @@
+---
+author: F_Ms
+comments: true
+date: 2016-04-30 11:45:24+00:00
+layout: post
+link: http://f-ms.cn/?p=894
+slug: '%e5%a5%bd%e5%b7%a7'
+title: 好巧
+wordpress_id: 894
+categories:
+- article
+- life-mood
+post_format:
+- 图像
+tags:
+- 心情
+---
+
+![好巧](/img/post/wp/2016/04/好巧.png)

@@ -1,0 +1,18 @@
+---
+author: F_Ms
+comments: true
+date: 2015-11-19 09:12:38+00:00
+layout: post
+link: http://f-ms.cn/?p=47
+slug: '47'
+title: 无题
+wordpress_id: 47
+categories:
+- life-mood
+post_format:
+- 聊天
+---
+
+重装系统无数，待到自有一台电脑，始不敢多重装；刷机无数，待到自有一部手机，始不敢多刷。是别人的勇气还是对自己显出的那一笔气概，愿是后者，多少能让觉我并非懦弱
+
+[转自F_Ms' Qzone]

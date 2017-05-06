@@ -1,0 +1,27 @@
+---
+author: F_Ms
+comments: true
+date: 2015-11-17 08:15:15+00:00
+layout: post
+link: http://f-ms.cn/?p=11
+slug: bfs%e6%90%9c%e7%b4%a2-%e6%89%b9%e5%a4%84%e7%90%86-20151107
+title: BFS搜索-批处理 20151107
+wordpress_id: 11
+categories:
+- windows-batch
+tags:
+- windows-batch
+---
+
+![00](/img/post/wp/2015/11/00.jpg)
+
+
+
+	
+  * 添加手动检测更新功能
+
+	
+  * 优化帮助信息
+
+
+链接:[http://pan.baidu.com/s/1o6kuwoq](http://pan.baidu.com/s/1o6kuwoq)

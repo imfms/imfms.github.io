@@ -1,0 +1,18 @@
+---
+author: F_Ms
+comments: true
+date: 2016-01-22 14:43:35+00:00
+layout: post
+link: http://f-ms.cn/?p=426
+slug: '%e6%9c%89%e5%bf%83%ef%bc%8c%e6%80%bb%e4%b8%8d%e4%bc%9a%e9%94%99%e8%bf%87'
+title: 有心，总不会错过
+wordpress_id: 426
+categories:
+- life-mood
+post_format:
+- 状态
+tags:
+- 心情
+---
+
+忘记倒是不可能，总会有下一个一时想起，有心，总不会错过

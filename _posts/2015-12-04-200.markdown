@@ -1,0 +1,52 @@
+---
+author: F_Ms
+comments: true
+date: 2015-12-04 05:23:38+00:00
+layout: post
+link: http://f-ms.cn/?p=200
+slug: '200'
+title: VNC通讯录连接工具_调用UltraVNC-Viewer - 批处理
+wordpress_id: 200
+categories:
+- windows-batch
+tags:
+- vnc
+- windows-batch
+---
+
+_[提示：新版本支持屏幕墙功能，点击进入新版本详情](http://f-ms.cn/?p=375)_
+
+
+## 背景：
+
+
+
+    
+    VNC客户端一般不支持命令行指定密码直接连接和通讯录工具，找了挺久发现UltraVNC的Viewer支持指定密码参数，于是就衍生出来一个想法，使用调用这个viewer写一个批处理的通讯录工具
+
+
+
+
+## 用途：
+
+
+
+    
+    一个VNC的通讯录工具，可以指定客户端已指定名称保存，可以后期查看连接，可以使客户端更方便管理的使用实用工具
+
+
+
+
+
+## 截图：
+
+
+![01](/img/post/wp/2015/12/01.jpg) [![02](/img/post/wp/2015/12/02.jpg)](/img/post/wp/2015/12/02.jpg)
+
+源代码(Bat)下载链接：[http://pan.baidu.com/s/1jHgiwSY](http://pan.baidu.com/s/1jHgiwSY)
+
+包含调用工具下载：[http://pan.baidu.com/s/1c1lKqCo](http://pan.baidu.com/s/1c1lKqCo)
+
+UltraVNC官网：[http://www.uvnc.com/home.html](http://www.uvnc.com/home.html)
+
+_[历史版本](http://yun.baidu.com/s/1hqWPI3U)_
