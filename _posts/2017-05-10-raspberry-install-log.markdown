@@ -35,4 +35,8 @@ Raspberry3 Model B
 5. 将SD卡插入树莓派SD卡位置, U盘插入USB位置，点亮树莓派
 
 # 时区更改
-    sudo dpkg-reconfigure tzdata
+    sudo dpkg-reconfigure tzdata
+
+# 默认启动开启ssh
+    在启动盘第一个分区(FAT_Boot)下新建空文件 `ssh`
+    
