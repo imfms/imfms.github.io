@@ -65,3 +65,6 @@ tags: raspberrypi
     [当前密码]
     [新密码]
     [确认新密码]
+
+# 安装MySQL
+    apt-get install mysql-server
