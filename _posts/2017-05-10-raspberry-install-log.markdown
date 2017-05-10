@@ -33,3 +33,6 @@ Raspberry3 Model B
       - sda2 == 第二个外置磁盘的第二个分区
 4. 将U盘第一个分区(FAT格式)所有内容复制到SD卡下
 5. 将SD卡插入树莓派SD卡位置, U盘插入USB位置，点亮树莓派
+
+# 时区更改
+    sudo dpkg-reconfigure tzdata
