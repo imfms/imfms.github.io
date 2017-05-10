@@ -59,6 +59,6 @@ tags: raspberrypi
 > 默认用户: pi </p> 默认密码: raspberry
     
     passwd
-    [当前密码]
-    [新密码]
-    [确认新密码]
+    [当前密码]
+    [新密码]
+    [确认新密码]
