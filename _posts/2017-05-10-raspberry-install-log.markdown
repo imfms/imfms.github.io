@@ -6,7 +6,9 @@ categories: raspberrypi
 tags: raspberrypi
 ---
 
-Raspberry3 Model B
+### 环境
+- Raspberrypi: Raspberry3 Model B
+- OS: RASPBIAN JESSIE LITE 2017-03-03-17:50
 
 # 使用USB存储盘启动树莓派
 
@@ -39,4 +41,18 @@ Raspberry3 Model B
 
 # 默认启动开启ssh
     在启动盘第一个分区(FAT_Boot)下新建空文件 `ssh`
+    
+# 替换 apt-get 源
+    vim /etc/apt/sources.list
     
+    # 首行默认官方源，国内访问速度太慢，故注释
+    # deb http://mirrordirector.raspbian.org/raspbian/ jessie main contrib non-free rpi
+    
+    # Uncomment line below then 'apt-get update' to enable 'apt-get source'
+    # deb-src http://archive.raspbian.org/raspbian/ jessie main contrib non-free rpi
+    
+    # 添加阿里镜像源
+    deb http://mirrors.aliyun.com/raspbian/raspbian/ wheezy main non-free contrib
+    deb-src http://mirrors.aliyun.com/raspbian/raspbian/ wheezy main non-free contrib
+
+        
