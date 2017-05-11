@@ -8,7 +8,7 @@ tags: raspberrypi
 
 ### 环境
 - Raspberrypi: Raspberry3 Model B
-- OS: RASPBIAN JESSIE LITE 2017-03-03-17:50
+- OS: [RASPBIAN JESSIE LITE 2017-02-27-17](https://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2017-02-27/)
 
 # 使用USB存储盘启动树莓派
 
