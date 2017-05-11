@@ -72,7 +72,7 @@ tags:
     apt-get install mysql-server
 
 # 指定脚本开机自启
-> 本段参考[http://blog.chinaunix.net/uid-26000296-id-3986914.html](http://blog.chinaunix.net/uid-26000296-id-3986914.html)
+> 本段参考[http://blog.chinaunix.net/uid-26000296-id-3986914.html](http://blog.chinaunix.net/uid-26000296-id-3986914.html), [https://q.cnblogs.com/q/26733/](https://q.cnblogs.com/q/26733/)中[麦田里的守望者](https://q.cnblogs.com/u/x2048/)的回答
 
 ## 1. 修改 /etc/rc.local 方式
 直接在文件中底部添加需要执行的命令即可，不可含有阻塞式命令(不得不含有可在语句后添加`&`)，在成功执行整个rc.local文件后应返回状态码0，以下是rc.local文件头部注释
@@ -186,10 +186,28 @@ tags:
 			original name beginning with 'S' and run update-rc.d again.
 			?
 			
+			- 在当前运行级别关闭一个服务脚本，将符号链接更名为以前缀以'K'开头带两个数字，并执行 `update-rc.d $script_name defaults` 使脚本适应变化
+			
+			- 如果开启当前运行级别而不匹配脚本LSB头，会打印警告
+			
+			- 当要重新开启这个服务，将符号链接的更名为以前缀'S'带两个数字并执行 `updadate-rc.d $script_name defaults` 使脚本适应变化
+			
 		- rc2.d
+		
+			不开启NFS的多用户状态
+		
 		- rc3.d
+		
+			完全的多用户状态，包含NFS，登录后进入多用户模式
+		
 		- rc4.d
+		
+			未使用，系统保留
+		
 		- rc5.d
+		
+			X11控制台，登录后进入图形GUI
+		
 		- rc6.d
 		
 			Generally it is not necessary to alter the scripts in this directory.
