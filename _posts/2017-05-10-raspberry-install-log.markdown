@@ -68,3 +68,21 @@ tags: raspberrypi
 
 # 安装MySQL
     apt-get install mysql-server
+
+# 指定脚本开机自启
+> 本段参考[http://blog.chinaunix.net/uid-26000296-id-3986914.html](http://blog.chinaunix.net/uid-26000296-id-3986914.html)
+
+## 1. 修改 /etc/rc.local 方式
+直接在文件中底部添加需要执行的命令即可，不可含有阻塞式命令(不得不含有可在语句后添加`&`)，在成功执行整个rc.local文件后应返回状态码0，以下是rc.local文件头部注释
+
+    rc.local
+
+    This script is executed at the end of each multiuser runlevel.
+    Make sure that the script will "exit 0" on success or any other
+    value on error.
+
+    In order to enable or disable this script just change the execution
+    bits.
+
+    By default this script does nothing.
+
