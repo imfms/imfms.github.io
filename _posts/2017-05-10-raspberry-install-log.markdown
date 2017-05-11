@@ -5,7 +5,7 @@ date:   2017-05-10 12:50:30 +0800
 categories: raspberrypi
 tags: 
 - raspberryp
-- ilinux
+- linux
 ---
 
 ### 环境
