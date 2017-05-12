@@ -255,3 +255,20 @@ tags:
 - e.g.
 
 		/dev/sda3       /mnt/data       ext4    defaults          0       2	
+
+# 安装 ResilioSync
+> [官网安装文档](https://help.getsync.com/hc/en-us/articles/206178924)
+
+- 安装
+
+		echo "deb http://linux-packages.resilio.com/resilio-sync/deb resilio-sync non-free" | sudo tee /etc/apt/sources.list.d/resilio-sync.list
+		wget -qO - https://linux-packages.resilio.com/resilio-sync/key.asc | sudo apt-key add -
+		sudo dpkg --add-architecture armel
+		sudo apt-get update
+		sudo apt-get install resilio-sync:armel
+		sudo apt-get update
+		sudo apt-get install resilio-sync
+		
+- 配置开机启动
+
+		sudo systemctl enable resilio-sync
