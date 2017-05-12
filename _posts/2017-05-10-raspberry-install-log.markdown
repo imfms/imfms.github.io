@@ -88,7 +88,7 @@ tags:
 
     By default this script does nothing.
 
-## linux服务方式启动 /etc/init.d/
+## 2.linux服务方式启动 /etc/init.d/
 > 本段参考自 [http://blog.chinaunix.net/uid-26000296-id-3986914.html](http://blog.chinaunix.net/uid-26000296-id-3986914.html)
 0. 阅读 /etc/init.d/README
 
