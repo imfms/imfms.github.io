@@ -225,3 +225,29 @@ tags:
 	3. 测试脚本在任何目录下都能运行
 	4. 移动脚本到 `/etc/init.d/`
 	5. 执行 `update-rc.d $script_name default`
+
+# 挂载磁盘分区
+- 查看磁盘设备、分区
+	
+	fdisk -l
+	
+- 查看当前挂载状态
+
+	mount -l
+	
+- 挂载磁盘分区
+	
+	mount <source> <directory>
+	
+	e.g. mount /dev/sda3 /mnt/data
+	
+- 开机自动挂载
+> 本段参考自 [http://www.cnblogs.com/qiyebao/p/4484047.html](http://www.cnblogs.com/qiyebao/p/4484047.html)
+	- 编辑 `/etc/fstab`
+	- 根据以下规范添加一行, 可根据文件已有中上面进行参考
+		1. 磁盘分区路径、lable、UUID
+		2. 挂载点
+		3. 文件系统
+		4. defaults [更多可参考本段声明链接]
+		5. 能否被dump备份命令作用, 0-不, 1-每天, 2-不定日期
+		6. 是否检查扇区, 0-不要检验, 1-最早检验(一般为根目录选择), 2-最早级别检验完成后检验
