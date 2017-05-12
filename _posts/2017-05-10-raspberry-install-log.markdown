@@ -153,7 +153,7 @@ tags:
 		boot scripts and to run the scripts in parallel during the boot.
 		See also /usr/share/doc/insserv/README.Debian.
 
-1. 提取重点
+1. 提取关键
 	
 	- 大多unix系统下 `/etc/rc?.d` 目录对应着系统开机/关机时会调用的脚本
 	
@@ -216,21 +216,12 @@ tags:
 			
 			在系统执行停止所有服务准备重新启动时
 			
-1. 实例?
+2. LSB文件描述头
+> 引用[http://blogread.cn/it/article/4791](http://blogread.cn/it/article/4791)
 
-		#!/bin/sh
-		### BEGIN INIT INFO
-		# Provides:          skeleton
-		# Required-Start:    $remote_fs $syslog
-		# Required-Stop:     $remote_fs $syslog
-		# Should-Start:      $portmap
-		# Should-Stop:       $portmap
-		# X-Start-Before:    nis
-		# X-Stop-After:      nis
-		# Default-Start:     2 3 4 5
-		# Default-Stop:      0 1 6
-		# X-Interactive:     true
-		# Short-Description: Example initscript
-		# Description:       This file should be used to construct scripts to be
-		#                    placed in /etc/init.d.
-		### END INIT INFO
+3. Do it
+	1. 根据规范编写脚本, 根据需要添加LSB头
+	2. 脚本添加执行属性 `chmod +x $script_path`
+	3. 测试脚本在任何目录下都能运行
+	4. 移动脚本到 `/etc/init.d/`
+	5. 执行 `update-rc.d $script_name default`
