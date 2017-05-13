@@ -273,5 +273,79 @@ tags:
 
 		sudo systemctl enable resilio-sync
 
-# 安装Seafile
-> 参考[官方文档](https://manual-cn.seafile.com/)
+# 安装及还原Seafile数据
+## 安装
+1. [基本安装](https://manual-cn.seafile.com/)		
+2. 通过WEB服务队seafile两个组件代理到一个域
+	- [通过Apache](https://manual-cn.seafile.com/deploy/deploy_with_apache.html)
+	- [通过Nginx](https://manual-cn.seafile.com/deploy/deploy_with_nginx.html)
+3. [开机启动](https://manual-cn.seafile.com/deploy/start_seafile_at_system_bootup.html)
+	
+## 还原数据
+
+1. 准备
+
+	1. 还原的数据
+	
+		数据备份使用了[再生龙](http://clonezilla.org/)(这才知道[Ghost](https://en.wikipedia.org/wiki/Ghost_(software))不支持linux分区)，可使用虚拟机操作
+		
+	2. 提取数据
+		- 数据目录
+		
+		- 数据库文件
+		
+			在此处没有采用SQL方式备份，因为命令行备份下不太熟悉，本着数据本地持久化一定会是在文件里的思想，将 `/var/lib/mysql/` 下的相关文件拷贝
+				- ccnet*
+				- seafile*
+				- ib*
+		
+	3. 停止服务
+	
+		- Mysql
+		- Seafile
+		- Seahub
+		
+2. 数据目录
+	
+	- 采用了将还原的数据覆盖安装时选择的目录方案
+	- 更改目录权限为启动权限一致
+	
+3. 数据库
+
+	1. root用户下进入数据库目录`/var/lib/mysql/`删除旧数据
+		- ccnet*
+		- seafile*
+		- ib*
+	2. 转移新数据进入数据库目录
+	3. 更改新转移数据目录权限为mysql
+
+## 遇见问题
+- 采用最新版本无法正常使用
+	发现官网有比备份版本更高版本[6.1.0]，提供了视频缩略图功能，需要依赖ffmpeg，虽然是beta版本，想来也挺有用，就试了试
+	
+	安装步骤跟之前一样，照着文档去一步一步，结果服务就是500，想来自己没有安装ffmpeg, 就跑去安装
+	
+	由于各种繁杂操作难度的原因(找不到或不能用apt安装~)，放弃安装ffmpeg, 同时又看到了seafile目录下的upgrade目录，想来是有升级脚本对数据进行兼容的，在考量了一下自己是要还原数据的，还是要版本一致，不然会导致不必要的麻烦，就没有深究这个问题，直接怂去旧版本
+	
+- Apache 环境下无法下载中文及带空格文件
+	搜了搜相关问题
+		- https://bbs.seafile.com/t/topic/1811
+		- https://github.com/haiwen/seafile/issues/1258
+		
+	在参考了相关问题之后，决定怂去更换nginx
+	
+- nginx 下木有头像页面木有骨架不完整
+	在重启服务重启树莓派确定是有问题的情况下，开始分析问题
+	
+	1. 将问题转化为关键字进行搜索引擎搜索，试图找到同一问题的伙伴，未果，问题未解决
+	2. 看着页面觉得自己真不容易，搞个这耗这么久，自叹，问题未解决
+	3. 想起在[HUX](https://huangxuan.me/)博客的某一篇文章看到的一句随口说的话"哥哥可是个前端好吗", 想来安卓也算半个前端，就使用了Chrome开发者工具分析页面网络请求，问题解决有方向
+	4. 在network模块发现页面的css等内容请求响应为404，且首层path为media，遂去检查nginx media配置
+	5. 最终发现根据官网直接复制来的配置代码中media的配置seafile安装路径与本地安装路径相勃，且官网文档未在此处声明需要替换，所以犯了这个错误，更改后问题解决
+	
+- 一些各种奇葩问题
+	将安装目录、数据目录、等权限一致，有些不可描述的问题可能都与文件访问权限有关，初涉linux需要注意, 常用以下三个命令，具体操作可查看命令help
+	
+	- `chmod` 修改所有者权限
+	- `chown` 修改所有者
+	- `chgrp` 修改所有者组
