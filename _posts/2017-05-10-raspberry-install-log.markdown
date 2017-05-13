@@ -272,3 +272,6 @@ tags:
 - 配置开机启动
 
 		sudo systemctl enable resilio-sync
+
+# 安装Seafile
+> 参考[官方文档](https://manual-cn.seafile.com/)
