@@ -329,8 +329,9 @@ tags:
 	
 - Apache 环境下无法下载中文及带空格文件
 	搜了搜相关问题
-		- https://bbs.seafile.com/t/topic/1811
-		- https://github.com/haiwen/seafile/issues/1258
+	
+	- https://bbs.seafile.com/t/topic/1811
+	- https://github.com/haiwen/seafile/issues/1258
 		
 	在参考了相关问题之后，决定怂去更换nginx
 	
