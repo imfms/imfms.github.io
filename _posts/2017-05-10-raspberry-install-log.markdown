@@ -349,3 +349,10 @@ tags:
 	- `chmod` 修改所有者权限
 	- `chown` 修改所有者
 	- `chgrp` 修改所有者组
+
+# ngrok 配置并开机启动
+1. [ngrok config 配置文档](https://github.com/inconshreveable/ngrok/blob/master/docs/DEVELOPMENT.md)
+	
+	Create an ngrok configuration file, "debug.yml" with the following contents片段
+	
+2. [配置开机启动](#指定脚本开机自启)
