@@ -357,3 +357,15 @@ tags:
 	Create an ngrok configuration file, "debug.yml" with the following contents片段
 	
 2. [配置开机启动](#指定脚本开机自启)
+
+
+# apt-get 设置代理
+
+修改 `/etc/apt/apt.conf.d/50raspi` , 在文件尾追加内容
+
+	Acquire::http::proxy "http://proxy.example.com:port/";
+
+# 安装 [transmissionbt](https://transmissionbt.com)
+
+	apt-get install transmission
+	
