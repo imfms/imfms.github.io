@@ -3,6 +3,7 @@ layout: post
 title:  "树莓派服务器架设记录"
 date:   2017-05-10 12:50:30 +0800
 categories: raspberrypi
+catalog: true
 tags: 
 - raspberryp
 - linux
@@ -351,7 +352,95 @@ tags:
 	- `chown` 修改所有者
 	- `chgrp` 修改所有者组
 
-# ngrok 配置并开机启动
+# 安装nginx 1.10.*
+因为seafile官方文档中使用nginx有这样一句提示
+
+	如果要上传大于 4GB 的文件，默认情况下 Nginx 会把整个文件存在一个临时文件中，然后发给上游服务器 (seaf-server)，这样容易出错。使用 1.8.0 以上版本同时在 Nginx 配置文件中设置以下内容能解决这个问题：
+		location /seafhttp {
+			... ...
+			proxy_request_buffering off;
+		}
+		
+但是树莓派默认源中只包含nginx的1.6.*版本，故寻找安装nginx的方法，此处因使用成本问题，不到实在找不着，不去考虑手动编译，最终在debian官方源中找到编译的版本
+
+> [https://packages.debian.org/sid/all/nginx/download](https://packages.debian.org/sid/all/nginx/download)
+
+- 添加镜像源到 `/etc/apt/sources.list`
+		
+		# 可根据引用debian中文档选择最适合的镜像源
+		deb http://ftp.cn.debian.org/debian sid main
+		
+- 更新、安装
+
+		apt-get update
+		apt-get install nginx
+		
+- 遇到问题
+	
+	应该是误操作原因，导致apt任何命令都提示nginx依赖未安装，apt无法正常使用
+	参考了文章[ubuntu中apt-get install 无法使用的解决办法](http://blog.csdn.net/looong2b/article/details/21403325)
+	执行以下命令解决(看了看帮助文档，不太理解用途)
+	
+		apt-get -f dist-upgrade
+
+# ngrok server deploy
+
+本段内容参考自
+- [Run Ngrok on Your Own Server Using Self-Signed SSL Certificate](http://www.svenbit.com/2014/09/run-ngrok-on-your-own-server)
+- [Ngrok搭建服务器 搭建自己的ngrok服务器](http://blog.lzp.name/archives/24)
+
+1. ready envirment
+
+	1. install build-essential
+
+			sudo apt-get install build-essential
+		
+	2. install golang
+
+			sudo apt-get install golang
+		
+	3. install mercurial
+
+			sudo apt-get install mercurial
+		
+	4. install git
+	
+			sudo apt-get install git
+		
+2. get ngrok source
+
+		git clone https://github.com/inconshreveable/ngrok.git ngrok
+		cd ngrok
+	
+3. generate self-signed SSL certificate
+
+		openssl genrsa -out rootCA.key 2048
+		openssl req -x509 -new -nodes -key rootCA.key -subj "/CN=$yourdomain" -days 5000 -out rootCA.pem
+		openssl genrsa -out device.key 2048
+		openssl req -new -key device.key -subj "/CN=$yourdomain" -out device.csr
+		openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out device.crt -days 5000
+	
+4. replace default certificate file
+
+		cp rootCA.pem assets/client/tls/ngrokroot.crt
+		cp device.crt assets/server/tls/snakeoil.crt 
+		cp device.key assets/server/tls/snakeoil.key
+	
+5. compile binary
+
+		make GOOS="$OS" GOARCH="$CPU_ARCHITECTURE" release-server release-client
+	
+	it will generate binary to bin/*, ngrok is client, ngrokd is server
+	
+	accept OS & CPU_ARCHITECTURE can read here [https://golang.org/doc/install/source#environment](https://golang.org/doc/install/source#environment)
+
+6. client config
+	
+		server_addr: $domain:4443
+		trust_host_root_certs: false
+
+
+## ngrok 配置并开机启动
 1. [ngrok config 配置文档](https://github.com/inconshreveable/ngrok/blob/master/docs/DEVELOPMENT.md)
 	
 	Create an ngrok configuration file, "debug.yml" with the following contents片段
@@ -363,3 +452,8 @@ tags:
 修改 `/etc/apt/apt.conf.d/50raspi` , 在文件尾追加内容
 
 	Acquire::http::proxy "http://proxy.example.com:port/";
+
+# 安装 [transmissionbt](https://transmissionbt.com)
+
+	apt-get install transmission
+	
