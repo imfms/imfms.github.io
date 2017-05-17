@@ -351,6 +351,37 @@ tags:
 	- `chown` 修改所有者
 	- `chgrp` 修改所有者组
 
+# 安装nginx 1.10.*
+因为seafile官方文档中使用nginx有这样一句提示
+
+	如果要上传大于 4GB 的文件，默认情况下 Nginx 会把整个文件存在一个临时文件中，然后发给上游服务器 (seaf-server)，这样容易出错。使用 1.8.0 以上版本同时在 Nginx 配置文件中设置以下内容能解决这个问题：
+		location /seafhttp {
+			... ...
+			proxy_request_buffering off;
+		}
+		
+但是树莓派默认源中只包含nginx的1.6.*版本，故寻找安装nginx的方法，此处因使用成本问题，不到实在找不着，不去考虑手动编译，最终在debian官方源中找到编译的版本
+
+> [https://packages.debian.org/sid/all/nginx/download](https://packages.debian.org/sid/all/nginx/download)
+
+- 添加镜像源到 `/etc/apt/sources.list`
+		
+		# 可根据引用debian中文档选择最适合的镜像源
+		deb http://ftp.cn.debian.org/debian sid main
+		
+- 更新、安装
+
+		apt-get update
+		apt-get install nginx
+		
+- 遇到问题
+	
+	应该是误操作原因，导致apt任何命令都提示nginx依赖未安装，apt无法正常使用
+	参考了文章[ubuntu中apt-get install 无法使用的解决办法](http://blog.csdn.net/looong2b/article/details/21403325)
+	执行以下命令解决(看了看帮助文档，不太理解用途)
+	
+		apt-get -f dist-upgrade
+
 # ngrok server deploy
 
 本段内容参考自
