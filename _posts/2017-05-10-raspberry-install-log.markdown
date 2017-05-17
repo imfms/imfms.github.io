@@ -351,16 +351,62 @@ tags:
 	- `chown` 修改所有者
 	- `chgrp` 修改所有者组
 
-# ngrok
-> 参考文章, 编译及使用: [Run Ngrok on Your Own Server Using Self-Signed SSL Certificate](http://www.svenbit.com/2014/09/run-ngrok-on-your-own-server/)
+# ngrok server deploy
 
-## 多平台编译
-> 参考[Run Ngrok on Your Own Server Using Self-Signed SSL Certificate](http://www.svenbit.com/2014/09/run-ngrok-on-your-own-server/)文章作者的[评论](http://disq.us/p/yivsxy)
-- command usage
+本段内容参考自
+- [Run Ngrok on Your Own Server Using Self-Signed SSL Certificate](http://www.svenbit.com/2014/09/run-ngrok-on-your-own-server)
+- [Ngrok搭建服务器 搭建自己的ngrok服务器](http://blog.lzp.name/archives/24)
 
-		sudo GOOS=$OS GOARCH=$CPU_FRAMEWORK make release-client release-server
+1. ready envirment
+
+	1. install build-essential
+
+			sudo apt-get install build-essential
+		
+	2. install golang
+
+			sudo apt-get install golang
+		
+	3. install mercurial
+
+			sudo apt-get install mercurial
+		
+	4. install git
 	
-	理论支持环境参考[GoLang官方文档](https://golang.org/doc/install/source#environment)
+			sudo apt-get install git
+		
+2. get ngrok source
+
+		git clone https://github.com/inconshreveable/ngrok.git ngrok
+		cd ngrok
+	
+3. generate self-signed SSL certificate
+
+		openssl genrsa -out rootCA.key 2048
+		openssl req -x509 -new -nodes -key rootCA.key -subj "/CN=$yourdomain" -days 5000 -out rootCA.pem
+		openssl genrsa -out device.key 2048
+		openssl req -new -key device.key -subj "/CN=$yourdomain" -out device.csr
+		openssl x509 -req -in device.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out device.crt -days 5000
+	
+4. replace default certificate file
+
+		cp rootCA.pem assets/client/tls/ngrokroot.crt
+		cp device.crt assets/server/tls/snakeoil.crt 
+		cp device.key assets/server/tls/snakeoil.key
+	
+5. compile binary
+
+		make GOOS="$OS" GOARCH="$CPU_ARCHITECTURE" release-server release-client
+	
+	it will generate binary to bin/*, ngrok is client, ngrokd is server
+	
+	accept OS & CPU_ARCHITECTURE can read here [https://golang.org/doc/install/source#environment](https://golang.org/doc/install/source#environment)
+
+6. client config
+	
+		server_addr: $domain:4443
+		trust_host_root_certs: false
+
 
 ## ngrok 配置并开机启动
 1. [ngrok config 配置文档](https://github.com/inconshreveable/ngrok/blob/master/docs/DEVELOPMENT.md)
