@@ -447,7 +447,6 @@ tags:
 	
 2. [配置开机启动](#指定脚本开机自启)
 
-
 # apt-get 设置代理
 
 修改 `/etc/apt/apt.conf.d/50raspi` , 在文件尾追加内容
