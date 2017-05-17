@@ -351,7 +351,18 @@ tags:
 	- `chown` 修改所有者
 	- `chgrp` 修改所有者组
 
-# ngrok 配置并开机启动
+# ngrok
+> 参考文章, 编译及使用: [Run Ngrok on Your Own Server Using Self-Signed SSL Certificate](http://www.svenbit.com/2014/09/run-ngrok-on-your-own-server/)
+
+## 多平台编译
+> 参考[Run Ngrok on Your Own Server Using Self-Signed SSL Certificate](http://www.svenbit.com/2014/09/run-ngrok-on-your-own-server/)文章作者的[评论](http://disq.us/p/yivsxy)
+- command usage
+
+		sudo GOOS=$OS GOARCH=$CPU_FRAMEWORK make release-client release-server
+	
+	理论支持环境参考[GoLang官方文档](https://golang.org/doc/install/source#environment)
+
+## ngrok 配置并开机启动
 1. [ngrok config 配置文档](https://github.com/inconshreveable/ngrok/blob/master/docs/DEVELOPMENT.md)
 	
 	Create an ngrok configuration file, "debug.yml" with the following contents片段
