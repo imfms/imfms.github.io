@@ -453,7 +453,11 @@ tags:
 
 	Acquire::http::proxy "http://proxy.example.com:port/";
 
-# 安装 [transmissionbt](https://transmissionbt.com)
+# 安装Transmission
 
-	apt-get install transmission
-	
+1. 安装
+
+		apt-get install transmission-daemon
+		
+2. 配置 `/var/lib/transmission-daemon/info/settings.json`
+> [https://github.com/transmission/transmission/wiki/Editing-Configuration-Files](https://github.com/transmission/transmission/wiki/Editing-Configuration-Files)
