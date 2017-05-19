@@ -59,7 +59,8 @@ tags:
     deb-src http://mirrors.aliyun.com/raspbian/raspbian/ wheezy main non-free contrib
     
     apt-get update
-    apt-get upgrade
+   
+    apt-get upgrade
 
 # 修改pi默认密码
 > 默认用户: pi </p> 默认密码: raspberry
