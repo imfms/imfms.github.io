@@ -604,6 +604,6 @@ tags:
 
 5. aria2 web ui
 
-	- https://github.com/ziahamza/webui-aria2
-	- https://github.com/binux/yaaw
+	- [https://github.com/ziahamza/webui-aria2](https://github.com/ziahamza/webui-aria2)
+	- [https://github.com/binux/yaaw](https://github.com/binux/yaaw)
 
