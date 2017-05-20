@@ -59,7 +59,8 @@ tags:
     deb-src http://mirrors.aliyun.com/raspbian/raspbian/ wheezy main non-free contrib
     
     apt-get update
-    apt-get upgrade
+   
+    apt-get upgrade
 
 # 修改pi默认密码
 > 默认用户: pi </p> 默认密码: raspberry
@@ -453,7 +454,13 @@ tags:
 
 	Acquire::http::proxy "http://proxy.example.com:port/";
 
-# 安装 [transmissionbt](https://transmissionbt.com)
+# 安装Transmission
+1. 安装
+
+		apt-get install transmission-daemon
+		
+2. 配置 `/var/lib/transmission-daemon/info/settings.json`
+> [https://github.com/transmission/transmission/wiki/Editing-Configuration-Files](https://github.com/transmission/transmission/wiki/Editing-Configuration-Files)
 
 	apt-get install transmission
 	
@@ -599,5 +606,4 @@ tags:
 
 	- https://github.com/ziahamza/webui-aria2
 	- https://github.com/binux/yaaw
-
 
