@@ -6,22 +6,23 @@
 - /* xxx */ 多行注释
 - `${xxx}` 变量
 
-## 元素表达格式&结果格式
+## 控件表达规范&结果规范
 
-- 字段表达格式
+- 控件表达规范
 
 		{
-			"element_id": "${element_id}", // 字段标记
+			"element_id": "${element_id}", // 字段标记id
 			"type": "${type_name}", // 控件类型
 			"version": "${version}", // 控件版本
-			"meta_data": {} // 控件描述数据
+			"show_desc_data": "${show_desc_data}", // 控件展示描述数据
+			"result_desc_data": "${result_desc_data}" // 控件展示结果数据，可选，用于填充结果到当前控件(例如：修改表单时)
 		}
 
-- 字段结果格式
+- 控件结果规范
 
 		{
 			"element_id": "${element_id}", // 字段标记
-			"result": {} // 结果数据
+			"result": "${result}" // 结果数据
 		}
 
 
@@ -30,30 +31,102 @@
 - `input_text` 文本输入控件
 
 	- `version 0`
-		- 表达格式
+		- 展示格式
 
 				{
-					"title": "${title}",
-					"hint": "${hint}", // 暗示
-					"text": "${text}", // 默认填充内容
-					"input_type": "${input_type}", // 输入值类型
+					"title": "${title}", // 控件展示标题，可选，默认无
+					"hint": "${hint}", // 编辑框暗示，可选，默认无
+					"text": "${text}", // 默认填充内容，可选，默认无
+					"input_type": "${input_type}", // 输入值类型，可选，默认text
 					    /* input_type
-							text (default)
-							number
-							password
+							text // 普通输入文本，默认
+							number // 整数(不可为负)
+							number_decimal // 小数(不可为负)
+							number_signed // 整数(可包含正负)
+							text_password // 文本密码输入类型
+							number_password // 数字密码输入类型
 						*/
-					"max_length": "${max_length}", // 最大填写字符数
-					"max_lines": "${max_lines}", // 最大行数
-					"verify": [ // 结果校验, 数组的原因是便于多层校验错误给予友好提示
+					"max_length": "${max_length}", // 最大填写字符数，可选，默认无限制
+					"max_lines": "${max_lines}", // 最大行数，可选，默认无限制
+					"verify": [ // 结果校验, 数组的原因是便于多重校验错误时给予用户友好提示，可选，默认无
 						{
-							"regular_expression": "${regular_expression}", // 结果校验正则
-							"error_tip": "${error_tip}" // 错误提示
+							"regular_expression": "${regular_expression}", // 正则表达式校验规则
+							"error_tip": "${error_tip}" // 校验失败提示
 						}
 					]
 				}
 
 		- 结果格式
 
+				"${result}"
+
+- `date_select` 日期选择控件
+
+	- `version 0`
+		- 展示格式
+				
 				{
-					"text": "$text"
+					"title": "${title}", // 控件展示标题，可选，默认无
+					"is_fill_local_time": "${is_fill_local_time}", // 是否填充当前时间，可选，默认否
+						/* is_fill_local_time
+							true // 填充
+							false // 不填充，默认
+						*/
+					"more_than": "${more_than}", // 选择时间必须超过的时间戳，可选，默认无限制
+					"more_than_error_tips": "${more_than_error_tips}", // more_than校验失败弹出提示内容，可选，默认提示 时间选择不能超过'more_than代表的日期'
+					"less_than": "${less_than}", // 选择时间必须小于的时间戳，可选，默认无限制
+					"less_than_error_tips": "${less_than_error_tips}", // less_than校验失败弹出提示内容，可选，默认提示 时间选择不能小于'less_than代表的日期'
 				}
+
+		- 结果格式
+
+				"${result}" // 时间选择结果时间戳
+
+- `single_choice` 单选框
+
+	- `version 0`
+
+		- 展示格式
+
+				{
+					"title": "${title}", // 控件展示标题，可选，默认无
+					"options": [ // 单选框包含的所有元素
+						{
+							"choice_id": "${choice_id}", // 选项id
+							"choice_title": "${choice_title}" // 选项标题
+						}
+					],
+					"default_select": "${default_select_choice_id}" // 默认选择id(该id必须在options节点下存在)，可选，默认不选
+				}
+
+		- 结果格式
+
+				"${select_choice_id}" // 最终选择的选项id
+
+- `multi_choice` 多选框
+
+	- `version 0`
+
+		- 展示格式
+
+				{
+
+					"title": "${title}", // 控件展示标题，可选，默认无
+					"options": [ // 多选框包含的所有元素
+						{
+							"choice_id": "${choice_id}", // 选项id
+							"choice_title": "${choice_title}" // 选项标题
+						}
+					],
+					"default_select": [ // 默认选择id集(该id必须在options节点下存在)，可选，默认不选
+						"${default_select_id1}" // choice_id
+					],
+					"min_select_num": "${min_select_num}", // 最少选择数量，可选，默认不限制
+					"max_select_num": "${max_select_num}", // 最大选择数量，可选，默认为所有选项数量
+				}
+
+		- 结果格式
+
+				[ // 最终选择的选项id集
+					"${select_choice_id}" // 某个选项id
+				]
