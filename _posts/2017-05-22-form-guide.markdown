@@ -15,14 +15,14 @@
 			"type": "${type_name}", // 控件类型
 			"version": "${version}", // 控件版本
 			"show_desc_data": "${show_desc_data}", // 控件展示描述数据
-			"result_desc_data": "${result_desc_data}" // 控件展示结果数据，可选，用于填充结果到当前控件(例如：修改表单时)
+			"result_desc_data": "${result_desc_data}" // 控件展示结果描述数据，可选，用于填充结果到当前控件(例如：修改表单时)
 		}
 
 - 控件结果规范
 
 		{
 			"element_id": "${element_id}", // 字段标记
-			"result": "${result}" // 结果数据
+			"result": "${result}" // 结果描述数据
 		}
 
 
@@ -31,7 +31,7 @@
 - `input_text` 文本输入控件
 
 	- `version 0`
-		- 展示格式
+		- 展示描述数据格式
 
 				{
 					"title": "${title}", // 控件展示标题，可选，默认无
@@ -56,14 +56,14 @@
 					]
 				}
 
-		- 结果格式
+		- 结果描述数据格式
 
 				"${result}"
 
 - `date_select` 日期选择控件
 
 	- `version 0`
-		- 展示格式
+		- 展示描述数据格式
 				
 				{
 					"title": "${title}", // 控件展示标题，可选，默认无
@@ -86,7 +86,7 @@
 					]
 				}
 
-		- 结果格式
+		- 结果描述数据格式
 
 				"${result}" // 时间选择结果时间戳
 
@@ -94,7 +94,7 @@
 
 	- `version 0`
 
-		- 展示格式
+		- 展示描述数据格式
 
 				{
 					"title": "${title}", // 控件展示标题，可选，默认无
@@ -107,7 +107,7 @@
 					"default_select": "${default_select_choice_id}" // 默认选择id(该id必须在options节点下存在)，可选，默认不选
 				}
 
-		- 结果格式
+		- 结果描述数据格式
 
 				"${select_choice_id}" // 最终选择的选项id
 
@@ -115,7 +115,7 @@
 
 	- `version 0`
 
-		- 展示格式
+		- 展示描述数据格式
 
 				{
 
@@ -133,7 +133,7 @@
 					"max_select_num": "${max_select_num}", // 最大选择数量，可选，默认为所有选项数量
 				}
 
-		- 结果格式
+		- 结果描述数据格式
 
 				[ // 最终选择的选项id集
 					"${select_choice_id}" // 某个选项id
