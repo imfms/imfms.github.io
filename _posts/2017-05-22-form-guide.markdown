@@ -72,10 +72,18 @@
 							true // 填充
 							false // 不填充，默认
 						*/
-					"more_than": "${more_than}", // 选择时间必须超过的时间戳，可选，默认无限制
-					"more_than_error_tips": "${more_than_error_tips}", // more_than校验失败弹出提示内容，可选，默认提示 时间选择不能超过'more_than代表的日期'
-					"less_than": "${less_than}", // 选择时间必须小于的时间戳，可选，默认无限制
-					"less_than_error_tips": "${less_than_error_tips}", // less_than校验失败弹出提示内容，可选，默认提示 时间选择不能小于'less_than代表的日期'
+					"more_than_check": [ // 选择时间必须超过的时间戳规则集，可选，默认无限制
+						{
+							"timestamp": "${timestamp}", // 选择时间必须超过的时间戳
+							"error_tips": "${error_tips}", // more_than_timestamp校验失败弹出提示内容，可选，默认提示 时间选择不能超过'more_than_timestamp代表的日期'
+						}
+					],
+					"less_than_check": [ // 选择时间必须小于的时间戳规则集，可选，默认无限制
+						{
+							"timestamp": "${timestamp}", // 选择时间必须小于的时间戳
+							"error_tips": "${error_tips}", // less_than校验失败弹出提示内容，可选，默认提示 时间选择不能小于'less_than_timestamp代表的日期'
+						}
+					]
 				}
 
 		- 结果格式
