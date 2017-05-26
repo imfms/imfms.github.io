@@ -53,7 +53,11 @@
 				*/
 			"max_length": "${max_length}", // 最大填写字符数，可选，默认无限制
 			"max_lines": "${max_lines}", // 最大行数，可选，默认无限制
-				// 校验正则: (.{0,}\n.{0,}){max_lines,}, max_lines = 最大行数
+				/*
+					校验正则
+						(.{0,}\n.{0,}){max_lines,}
+					max_lines = 最大行数
+				*/
 			"verify": [ // 结果校验, 数组的原因是便于多重校验错误时给予用户友好提示，可选，默认无
 				{
 					"regular_expression": "${regular_expression}", // 正则表达式校验规则
