@@ -42,13 +42,18 @@
 			    /* input_type
 					text // 普通输入文本，默认
 					number // 整数(不可为负)
+						校验正则: ^\d+$
 					number_decimal // 小数(不可为负)
+						校验正则: ^\d+\.{0,1}\d{0,}$
 					number_signed // 整数(可包含正负)
+						校验正则: ^-{0,1}\d+$
 					text_password // 文本密码输入类型
 					number_password // 数字密码输入类型
+						校验正则: ^\d+$
 				*/
 			"max_length": "${max_length}", // 最大填写字符数，可选，默认无限制
 			"max_lines": "${max_lines}", // 最大行数，可选，默认无限制
+				// 校验正则: (.{0,}\n.{0,}){max_lines,}, max_lines = 最大行数
 			"verify": [ // 结果校验, 数组的原因是便于多重校验错误时给予用户友好提示，可选，默认无
 				{
 					"regular_expression": "${regular_expression}", // 正则表达式校验规则
