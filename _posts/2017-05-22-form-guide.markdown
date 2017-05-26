@@ -84,11 +84,11 @@
 				*/
 			"more_than_check": [ // 选择时间必须超过的时间戳规则集，可选，默认无限制
 				{
-					"timestamp": "${timestamp}", // 选择时间必须超过的时间戳
+					"timestamp": "${timestamp}", // 选择时间必须大于等于的时间戳
 					"error_tips": "${error_tips}", // more_than_timestamp校验失败弹出提示内容，可选，默认提示 时间选择不能超过'more_than_timestamp代表的日期'
 				}
 			],
-			"less_than_check": [ // 选择时间必须小于的时间戳规则集，可选，默认无限制
+			"less_than_check": [ // 选择时间必须小于等于的时间戳规则集，可选，默认无限制
 				{
 					"timestamp": "${timestamp}", // 选择时间必须小于的时间戳
 					"error_tips": "${error_tips}", // less_than校验失败弹出提示内容，可选，默认提示 时间选择不能小于'less_than_timestamp代表的日期'
