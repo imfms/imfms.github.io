@@ -15,8 +15,7 @@
 			"type": "${type_name}", // 控件类型
 			"version": "${version}", // 控件版本
 			"title": "${title}", // 控件标题
-			"show_desc_data": "${show_desc_data}", // 控件展示描述数据
-			"result_desc_data": "${result_desc_data}" // 控件展示结果描述数据，可选，用于填充结果到当前控件(例如：修改表单时)
+			"show_desc_data": "${show_desc_data}" // 控件展示描述数据
 		}
 
 - 控件结果规范
