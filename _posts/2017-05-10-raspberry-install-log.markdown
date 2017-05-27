@@ -275,7 +275,7 @@ tags:
 
 		sudo systemctl enable resilio-sync
 
-# 安装及还原Seafile数据
+# Seafile
 ## 安装
 1. [基本安装](https://manual-cn.seafile.com/)		
 2. 通过WEB服务队seafile两个组件代理到一个域
@@ -283,6 +283,19 @@ tags:
 	- [通过Nginx](https://manual-cn.seafile.com/deploy/deploy_with_nginx.html)
 3. [开机启动](https://manual-cn.seafile.com/deploy/start_seafile_at_system_bootup.html)
 	
+## [添加webdav支持](https://manual-cn.seafile.com/extension/webdav.html)
+
+非https windows下连接需做以下配置
+
+将注册表该键值修改为 `2`
+
+	HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters\BasicAuthLevel
+
+重启WebClient服务
+
+	net stop WebClient
+	net start WebClient
+
 ## 还原数据
 
 1. 准备
