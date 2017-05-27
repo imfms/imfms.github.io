@@ -35,7 +35,6 @@
 - 展示描述数据格式
 
 		{
-			"title": "${title}", // 控件展示标题，可选，默认无
 			"hint": "${hint}", // 编辑框暗示，可选，默认无
 			"text": "${text}", // 默认填充内容，可选，默认无
 			"input_type": "${input_type}", // 输入值类型，可选，默认text
@@ -76,7 +75,6 @@
 - 展示描述数据格式
 		
 		{
-			"title": "${title}", // 控件展示标题，可选，默认无
 			"is_fill_local_time": "${is_fill_local_time}", // 是否填充当前时间，可选，默认否
 				/* is_fill_local_time
 					true // 填充
@@ -107,7 +105,6 @@
 - 展示描述数据格式
 
 		{
-			"title": "${title}", // 控件展示标题，可选，默认无
 			"options": [ // 单选框包含的所有元素
 				{
 					"choice_id": "${choice_id}", // 选项id
@@ -129,7 +126,6 @@
 
 		{
 
-			"title": "${title}", // 控件展示标题，可选，默认无
 			"options": [ // 多选框包含的所有元素
 				{
 					"choice_id": "${choice_id}", // 选项id
