@@ -67,7 +67,7 @@
 
 - 结果描述数据格式
 
-		"${result}"
+		${result}
 
 ### `date_select` 日期选择控件
 
@@ -96,7 +96,7 @@
 
 - 结果描述数据格式
 
-		"${result}" // 时间选择结果时间戳, 未选择为 -1
+		${result} // 时间选择结果时间戳, 未选择为 -1
 
 ### `single_choice` 单选框
 
@@ -116,7 +116,7 @@
 
 - 结果描述数据格式
 
-		"${select_choice_id}" // 最终选择的选项id
+		${select_choice_id} // 最终选择的选项id
 
 ### `multi_choice` 多选框
 
