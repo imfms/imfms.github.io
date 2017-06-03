@@ -1,107 +1,129 @@
-# FreeBSD °²×° shadowsocks-server
+# FreeBSD å®‰è£… shadowsocks-server
 
-> ²Î¿¼[ÈçºÎÔÚFreeBSDÖĞ°²×°Shadowsocks²¢Ê¹ÓÃPAC¿ÆÑ§ÉÏÍø](https://www.tomczhen.com/2015/12/08/howto-install-shadowsocks-in-freebsd-and-use-pac/)
+> å‚è€ƒ[å¦‚ä½•åœ¨FreeBSDä¸­å®‰è£…Shadowsockså¹¶ä½¿ç”¨PACç§‘å­¦ä¸Šç½‘](https://www.tomczhen.com/2015/12/08/howto-install-shadowsocks-in-freebsd-and-use-pac/)
 
-1. °²×°
+1. å®‰è£…
 		
-	FreeBSDÊ¹ÓÃ°ü¹ÜÀíÆ÷pkg
+	FreeBSDä½¿ç”¨åŒ…ç®¡ç†å™¨pkg
 		
 		pkg install shadowsocks-libev
 		
-	´Ë²½ÖèÔÚ²Ù×÷Ê±dpkgÌáÊ¾ÎÒÉı¼¶£¬½á¹ûÉı¼¶ºódpkÔÙÊ¹ÓÃÔò±¨´í
+	æ­¤æ­¥éª¤åœ¨æ“ä½œæ—¶dpkgæç¤ºæˆ‘å‡çº§ï¼Œç»“æœå‡çº§ådpkå†ä½¿ç”¨åˆ™æŠ¥é”™
 	
 		/usr/local/lib/libpkg.so.4: Undefined symbol "openat"
 	
-	[¾­¹ı²éÑ¯·¢ÏÖÓĞÈËÓëÎÒÓĞÏàÍ¬µÄÎÊÌâ](https://yq.aliyun.com/ask/46495)£¬ÇÒÒ»Â¥Ìù³öÁËÔ­Òò¼°ÁÙÊ±½â¾ö·½°¸£¬ÁÙÊ±ÏÈÊ¹ÓÃpkg-staticÃüÁîÌæ»»pkg
+	[ç»è¿‡æŸ¥è¯¢å‘ç°æœ‰äººä¸æˆ‘æœ‰ç›¸åŒçš„é—®é¢˜](https://yq.aliyun.com/ask/46495)ï¼Œä¸”ä¸€æ¥¼è´´å‡ºäº†åŸå› åŠä¸´æ—¶è§£å†³æ–¹æ¡ˆï¼Œä¸´æ—¶å…ˆä½¿ç”¨pkg-staticå‘½ä»¤æ›¿æ¢pkg
 	
 		pkg-static install shadowsocks-libev
 		
-2. ÅäÖÃ
+2. é…ç½®
 
-> ²Î¿¼¹Ù·½Ê¾Àı[https://github.com/madeye/shadowsocks-libev/blob/master/debian/config.json](https://github.com/madeye/shadowsocks-libev/blob/master/debian/config.json)
+	- å‚è€ƒç¤ºä¾‹æ–‡ä»¶ `/usr/local/etc/shadowsocks-libev/config.json.sample`
 
-Í¨¹ı ss-server -c ²ÎÊı¿ÉÖ¸¶¨ÅäÖÃÎÄ¼ş
-	
-ss-server help
-	
-		shadowsocks-libev 1.6.4
+			{
+				"server":"127.0.0.1",
+				"server_port":8388,
+				"local_port":1080,
+				"password":"barfoo!",
+				"timeout":60,
+				"method":null
+			}
 
-		maintained by Max Lv <max.c.lv@gmail.com> and Linus Yang <laokongzi@gmail.com>
+	- é€šè¿‡ `ss-server help` å‘½ä»¤å¾—çŸ¥ -c å‘½ä»¤å¯ä»¥æŒ‡å®šé…ç½®æ–‡ä»¶
 
-		usage:
+	- ä¸ªäººé…ç½®ç¤ºä¾‹
 
-		ss-[local|redir|server|tunnel]
+			{
+				"server":"0.0.0.0",
+				"server_port":11111,
+				"local_address":"127.0.0.1",
+				"local_port":1080,
+				"password":"password",
+				"timeout":300,
+				"method":"aes-256-cfb",
+				"fast_open":false
+			}
 
-			  -s <server_host>           host name or ip address of your remote server
-			  -p <server_port>           port number of your remote server
-			  -l <local_port>            port number of your local server
-			  -k <password>              password of your remote server
+3. é…ç½®æœåŠ¡
 
+	1. å‚è€ƒ
 
-			  [-m <encrypt_method>]      encrypt method: table, rc4, rc4-md5,
-										 aes-128-cfb, aes-192-cfb, aes-256-cfb,
-										 bf-cfb, camellia-128-cfb, camellia-192-cfb,
-										 camellia-256-cfb, cast5-cfb, des-cfb, idea-cfb,
-										 rc2-cfb, seed-cfb, salsa20 and chacha20
-			  [-f <pid_file>]            file to store the pid
-			  [-t <timeout>]             socket timeout in seconds
-			  [-c <config_file>]         config file in json
+		1. [shadowsocks-libev#freebsd](https://github.com/shadowsocks/shadowsocks-libev#freebsd)
+		2. [FreeBSDç®€æ˜ç”¨æˆ·æŒ‡å—:5.1. rc.confç« èŠ‚](http://bsdelf.github.io/posts/freebsd-brief-user-guide)
 
+				rc.conf æŒç®¡ç€æ‰€æœ‰ç³»ç»ŸæœåŠ¡ã€‚ä¸ä¹‹ç›¸å…³çš„æ–‡ä»¶å’Œè·¯å¾„å¦‚ä¸‹ï¼š
 
-			  [-i <interface>]           network interface to bind,
-										 not available in redir mode
-			  [-b <local_address>]       local address to bind,
-										 not available in server mode
-			  [-u]                       enable udprelay mode
-										 not available in redir mode
-			  [-L <addr>:<port>]         setup a local port forwarding tunnel,
-										 only available in tunnel mode
-			  [-v]                       verbose mode
+				é»˜è®¤çš„é…ç½®ä½äº /etc/defaults/rc.confã€‚æœ€å¥½ä¸è¦ä¿®æ”¹å®ƒï¼Œä½†æ˜¯å»ºè®®é˜…è¯»ä¸€ä¸‹å®ƒï¼Œçœ‹çœ‹ FreeBSD é»˜è®¤åšäº†å“ªäº›è®¾ç½®ï¼Œå¼€æœºå¯åŠ¨å“ªäº›æœåŠ¡ã€‚
+				ç”¨æˆ·è‡ªå®šä¹‰çš„é…ç½®ä½äº /etc/rc.confã€‚ä¾‹å¦‚ï¼Œå¦‚æœæƒ³è®©ç³»ç»Ÿè‡ªåŠ¨å¯åŠ¨ sshã€ipfwã€nginx ç­‰æœåŠ¡ï¼Œå°±è¦ä¿®æ”¹æœ¬æ–‡ä»¶ã€‚æ³¨æ„ï¼Œå¦‚æœæŸé¡¹é…ç½®ä¸é»˜è®¤çš„é…ç½®æœ‰å†²çªï¼Œåˆ™ä»¥æœ¬æ–‡ä»¶ä¸ºå‡†ã€‚
+				åŸºç³»ç»Ÿçš„æœåŠ¡è„šæœ¬ä½äº /etc/rc.d/ã€‚ç¬¬ä¸‰æ–¹åº”ç”¨çš„æœåŠ¡è„šæœ¬ä½äº /usr/local/etc/rc.d/ã€‚å½“é‡åˆ°é—®é¢˜æ—¶ï¼Œå»ºè®®é˜…è¯»è¿™äº›è„šæœ¬ï¼Œæ‰¾å‡ºé—®é¢˜æ‰€åœ¨ã€‚
+				å…¶æ¬¡ï¼Œservice å‘½ä»¤å¯ç”¨äºæ§åˆ¶å„ç§æœåŠ¡é¡¹ã€‚å¯¹äº rc.conf ä¸­å·²å¯ç”¨çš„æœåŠ¡ï¼Œæˆ‘ä»¬å¯ä»¥è¿™æ ·æ“ä½œï¼š
 
+				è®©æ­£åœ¨è¿è¡Œä¸­çš„ nginx é‡è½½é…ç½®æ–‡ä»¶ï¼šservice nginx reloadã€‚
+				åœæ­¢ nginx æœåŠ¡ï¼šservice nginx stopã€‚
+				å¯¹ em0 æ¥å£é‡å¯ DHCP æœåŠ¡ï¼š service dhclient restart em0ã€‚
+				å½“ç„¶ä¹Ÿå¯ä»¥ç›´æ¥è°ƒç”¨ /etc/rc.d/ å’Œ /usr/local/etc/rc.d/ ä¸‹çš„é‚£äº›è„šæœ¬ï¼Œåªä¸è¿‡è¦å¤šæ‰“ä¸€äº›å­—ï¼š
 
-			  [--fast-open]              enable TCP fast open,
-										 only available on Linux kernel > 3.7.0
-			  [--acl <acl_file>]         config file of ACL (Access Control List)
+				/usr/local/etc/rc.d/nginx reload
+				/usr/local/etc/rc.d/nginx stop
+				/etc/rc.d/dhclient restart em0
+				å¦‚æœ rc.conf ä¸­å¹¶æ²¡æœ‰å¯ç”¨æŸé¡¹æœåŠ¡ï¼Œä½†æˆ‘ä»¬æƒ³ä¸´æ—¶å¯åŠ¨å®ƒï¼Œé‚£ä¹ˆå¯ä»¥è¿™æ ·ï¼ˆä»¥ tomcat7 ä¸ºä¾‹ï¼‰ï¼š
 
+				service tomcat7 onestart
+				service tomcat7 onestop
 
-¸öÈËÅäÖÃÊ¾Àı
-
-	{
-		"server":"0.0.0.0",
-		"server_port":11111,
-		"local_address":"127.0.0.1",
-		"local_port":1080,
-		"password":"password",
-		"timeout":300,
-		"method":"aes-256-cfb",
-		"fast_open":false
-	}
-
-3. ÅäÖÃ·şÎñ
-> ²Î¿¼[https://github.com/shadowsocks/shadowsocks-libev/issues/19](https://github.com/shadowsocks/shadowsocks-libev/issues/19)
-
-	1. Ìí¼ÓÒÔÏÂÄÚÈİµ½ `/etc/rc.conf`
-	
-			shadowsocks_libev_enable="YES"
-			shadowsocks_libev_flags="-c ÅäÖÃÎÄ¼şÎ»ÖÃ"
-			
-	2. Ö´ĞĞÃüÁîÆô¶¯·şÎñ
-	
-			service shadowsocks_libev start
-			
-Êµ¼ÊÔÚ²Ù×÷¹ı³ÌÖĞ·¢ÏÖ·şÎñÆô¶¯Ö®ºó³ıÁË»á½«shadowsocks_libev_flagsÄÚÈİÌí¼Óµ½²ÎÊı£¬»¹»á×Ô¶¯×·¼Ó²ÎÊıÒÔÏÂ²ÎÊı
-
-		-f /var/run/shadowsocks-libev.pid -c /usr/local/etc/shadowsocks-libev/config.json
+	2. é—®é¢˜å¯»è§…è¿‡ç¨‹
 		
-ÆäÖĞ-fÎªÖ¸¶¨Æô¶¯ºópid´æ´¢Î»ÖÃ£¬-c ÎªÖ¸¶¨ÅäÖÃÎÄ¼ş
+		1. æŒ‰ç…§å¯¹debiançš„ç»éªŒï¼ŒæœåŠ¡è„šæœ¬åº”è¯¥å­˜åœ¨äº `/etc/init.d` ä¸­
+		2. å‘ç°freebsdæ— æ­¤æ–‡ä»¶å¤¹ï¼Œå‘ç° `/etc`ç›®å½•ä¸‹å­˜åœ¨ `rc.d` éšéšè§‰å¾—è¯¥ç›®å½•åº”è¯¥åŠŸèƒ½ä¸æœåŠ¡ç›¸å…³ç›¸å…³
+		3. è¿›å…¥`/etc/rc.d`å‘ç°ç›¸å…³æœåŠ¡è„šæœ¬ï¼Œä½†æœªèƒ½æ‰¾åˆ°`shadowsocks`ç›¸å…³æœåŠ¡è„šæœ¬ï¼Œä½†æ˜¯æ˜æ˜¾å‚è€ƒ1ä¸­æè¿°æ˜¯å­˜åœ¨è„šæœ¬çš„
+		4. æ ¹æ®å‚è€ƒ2äº†è§£åˆ° `/etc/rc.d` æ˜¯ç”¨æ¥å­˜æ”¾ç³»ç»ŸæœåŠ¡è„šæœ¬ï¼Œ`/usr/local/etc/rc.d`ç”¨æ¥å­˜æ”¾ç¬¬ä¸‰æ–¹åº”ç”¨æœåŠ¡è„šæœ¬ï¼Œ`/etc/rc.conf` ç”¨æ¥é…ç½®è¦å¯åŠ¨çš„æŸäº›æœåŠ¡
+		5. å‘ç°æœåŠ¡è„šæœ¬ `/usr/local/etc/rc.d/shadowsocks_libev`
+		
+				#!/bin/sh
+				# $FreeBSD: head/net/shadowsocks-libev/files/shadowsocks_libev.in 335066 2013-11-27 22:04:32Z delphij $
 
-µ«ÊÇ¸Õ¸ÕÒÑ¾­ÔÚshadowssocks_libev_flagsÖĞÖ¸¶¨ÁË-c²ÎÊı£¬¶øss-serverÔÚÕâÖÖÇé¿öÏÂ»áÊ¶±ğ×îÖÕÖ¸¶¨µÄ²ÎÊı£¬¹Êµ¼ÖÂÁË²»ÄÜ´ïµ½Ô¤ÆÚµÄĞ§¹û
+				# PROVIDE: shadowsocks-libev
+				# REQUIRE: LOGIN cleanvar
+				# KEYWORD: shutdown
 
-²»ºÄ·ÑÌ«¶à¾«Á¦ºÍÊ±¼ä£¬¹ÊËËÈ¥Ö±½ÓĞŞ¸Ä`/usr/local/etc/shadowsocks-libev/config.json`Îª×Ô¼ºĞèÒªµÄ²ÎÊı£¬²¢×¢ÊÍ`/etc/rc.conf`ÖĞµÄĞĞ shadowsocks_libev_flags="-c ÅäÖÃÎÄ¼şÎ»ÖÃ"
+				# Add the following lines to /etc/rc.conf to enable shadowsocks-libev:
+				# shadowsocks_libev_enable (bool):  Set to "NO" by default.
+				#      Set to "YES" to enable shadowsocks-libev.
+				# shadowsocks_libev_config (path): Shadowsocks config file.
+				#      Defaults to "/usr/local/etc/shadowsocks-libev/config.json"
+
+
+				. /etc/rc.subr
+
+				name="shadowsocks_libev"
+				rcvar=shadowsocks_libev_enable
+
+
+				load_rc_config $name
+
+				: ${shadowsocks_libev_enable:="NO"}
+				: ${shadowsocks_libev_config="/usr/local/etc/shadowsocks-libev/config.json"}
+
+				command="/usr/local/bin/ss-server"
+				pidfile="/var/run/shadowsocks-libev.pid"
+				required_files="${shadowsocks_libev_config}"
+
+				command_args="-f $pidfile -c $shadowsocks_libev_config"
+
+				run_rc_command "$1"
+
+	3. é…ç½®
+			1. æ·»åŠ ä»¥ä¸‹å†…å®¹åˆ° `/etc/rc.conf`
 			
+					shadowsocks_libev_enable="YES"
+					# shadowsocks_libev_config="é…ç½®æ–‡ä»¶è·¯å¾„" # é€šè¿‡`/usr/local/etc/rc.d/shadowsocks_libev`è·å–åˆ°ä¿¡æ¯ï¼Œè¯¥é”®å¯ä»¥æŒ‡å®šé…ç½®æ–‡ä»¶è·¯å¾„
+					
+			2. æ‰§è¡Œå‘½ä»¤å¯åŠ¨æœåŠ¡
 			
+					service shadowsocks_libev start
+					
 			
-			
+					
 			
 			
 			
