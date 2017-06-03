@@ -113,18 +113,19 @@
 				run_rc_command "$1"
 
 	3. 配置
-			1. 添加以下内容到 `/etc/rc.conf`
-			
-					shadowsocks_libev_enable="YES"
-					# shadowsocks_libev_config="配置文件路径" # 通过`/usr/local/etc/rc.d/shadowsocks_libev`获取到信息，该键可以指定配置文件路径
-					
-			2. 执行命令启动服务
-			
-					service shadowsocks_libev start
-					
-			
-					
-			
-			
+
+		1. 添加以下内容到 `/etc/rc.conf`
+
+				shadowsocks_libev_enable="YES"
+				# shadowsocks_libev_config="配置文件路径" # 通过`/usr/local/etc/rc.d/shadowsocks_libev`获取到信息，该键可以指定配置文件路径
+
+		2. 执行命令启动服务
+
+				service shadowsocks_libev start
+
+
+
+
+
 			
 			
