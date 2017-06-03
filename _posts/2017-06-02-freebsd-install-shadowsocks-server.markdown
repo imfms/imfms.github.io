@@ -9,10 +9,12 @@ tags:
 - shadowsocks
 ---
 
-环境
-- FreeBSD_10.1-RELEASE
-
 # FreeBSD 安装 shadowsocks-server
+
+
+- 环境
+
+	- FreeBSD_10.1-RELEASE
 
 > 参考[如何在FreeBSD中安装Shadowsocks并使用PAC科学上网](https://www.tomczhen.com/2015/12/08/howto-install-shadowsocks-in-freebsd-and-use-pac/)
 
