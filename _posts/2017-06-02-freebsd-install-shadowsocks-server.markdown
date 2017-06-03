@@ -86,6 +86,9 @@ tags:
 
 				service tomcat7 onestart
 				service tomcat7 onestop
+		3. [BSD rc.d脚本编程实战](https://www.freebsd.org/doc/zh_CN/articles/rc-scripting/article.html)
+		
+			通过阅读本篇文档可自行编写服务启动脚本，应对一些三方应用未提供启动脚本的情况
 
 	2. 问题寻觅过程
 		
