@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "FreeBSD 安装 shadowsocks-server"
+date:   2017-06-02 23:00:30 +0800
+categories: shadowsocks
+catalog:    true
+tags: 
+- freebsd
+- shadowsocks
+---
+
 # FreeBSD 安装 shadowsocks-server
 
 > 参考[如何在FreeBSD中安装Shadowsocks并使用PAC科学上网](https://www.tomczhen.com/2015/12/08/howto-install-shadowsocks-in-freebsd-and-use-pac/)
