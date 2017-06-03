@@ -16,7 +16,7 @@
 	
 		pkg-static install shadowsocks-libev
 		
-2. 配置
+2. 配置文件
 
 	- 参考示例文件 `/usr/local/etc/shadowsocks-libev/config.json.sample`
 
@@ -44,7 +44,7 @@
 				"fast_open":false
 			}
 
-3. 配置服务
+3. 配置服务启动
 
 	1. 参考
 
@@ -122,10 +122,3 @@
 		2. 执行命令启动服务
 
 				service shadowsocks_libev start
-
-
-
-
-
-			
-			
