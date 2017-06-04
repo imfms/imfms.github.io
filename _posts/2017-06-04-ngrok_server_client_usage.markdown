@@ -77,14 +77,26 @@ tags:
 
 
 ## 配置域名解析
+  
+1. 步骤1
+	1. 记录类型 `A`
+	2. 主机记录 `子域名名称`
 
-1. 记录类型 `A`
-2. 主机记录 `*.子域名名称`
+		想要映射地址为 `xxx.example.com` 则填写根域名标识符号(一般为@)
+		
+		想要映射地址为 `xxx.subdomain.example.com` 则填写 `subdomain`
 
-	想要映射地址为 `xxx.example.com` 则直接填写 `*`
-	想要映射地址为 `xxx.subdomain.example.com` 则填写 `*.subdomain`
+	3. 记录值 `服务器ip地址`
+	
+2. 步骤2
+	1. 记录类型 `A`
+	2. 主机记录 `*.子域名名称`
+	
+		想要映射地址为 `xxx.example.com` 则直接填写 `*`
+		
+		想要映射地址为 `xxx.subdomain.example.com` 则填写 `*.subdomain`
 
-3. 记录值 `服务器ip地址`
+	3. 记录值 `服务器ip地址`
 
 ## 配置服务器
 
