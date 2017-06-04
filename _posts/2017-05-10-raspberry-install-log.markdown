@@ -568,3 +568,7 @@ tags:
 	- [https://github.com/ziahamza/webui-aria2](https://github.com/ziahamza/webui-aria2)
 	- [https://github.com/binux/yaaw](https://github.com/binux/yaaw)
 
+# 性能监测
+> 参考[你值得拥有 —— 25 个 Linux 性能监控工具](https://linux.cn/article-4481-1.html)
+
+- 最终选择使用了简单的 `Saidar`
