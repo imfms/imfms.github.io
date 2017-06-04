@@ -227,6 +227,16 @@ tags:
 	3. 测试脚本在任何目录下都能运行
 	4. 移动脚本到 `/etc/init.d/`
 	5. 执行 `update-rc.d $script_name default`
+		
+		一些发行版linux中可能不存在`update-rc.d`命令，便于参考方便粘下相关硬操作命令
+		
+			sudo ln -s /etc/init.d/$script_name /etc/rc0.d/K09$script_name
+			sudo ln -s /etc/init.d/$script_name /etc/rc1.d/K09$script_name
+			sudo ln -s /etc/init.d/$script_name /etc/rc6.d/K09$script_name
+			sudo ln -s /etc/init.d/$script_name /etc/rc2.d/S91$script_name
+			sudo ln -s /etc/init.d/$script_name /etc/rc3.d/S91$script_name
+			sudo ln -s /etc/init.d/$script_name /etc/rc4.d/S91$script_name
+			sudo ln -s /etc/init.d/$script_name /etc/rc5.d/S91$script_name
 
 # 挂载磁盘分区
 - 查看磁盘设备、分区
