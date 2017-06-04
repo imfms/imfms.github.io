@@ -1,4 +1,4 @@
-# ngrok server-client 使用记录
+# ngrok server-client 使用总结
 
 - 测试环境
 	- 编译平台: ubuntu
@@ -156,14 +156,8 @@
 			proto:
 			  ${proto}: ${port_number} # 协议, 端口号
 
-
-## ngrok 配置并开机启动
-1. [ngrok config 配置文档](https://github.com/inconshreveable/ngrok/blob/master/docs/DEVELOPMENT.md)
-	
-	Create an ngrok configuration file, "debug.yml" with the following contents片段
-	
-2. [配置开机启动](#指定脚本开机自启)
-
+- (可选)配置为服务开机启动
+参考服务器配置方法
 
 ## 参考文档
 - [官方文档](https://github.com/inconshreveable/ngrok/blob/master/docs/DEVELOPMENT.md)
