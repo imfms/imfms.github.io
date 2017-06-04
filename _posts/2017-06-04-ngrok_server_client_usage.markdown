@@ -40,6 +40,8 @@ tags:
 		
 2. 获取 `ngrok` 源码
 
+	个人至此篇文章撰写, ngrok开源最新版本为`1.7.1`
+	
 		git clone https://github.com/inconshreveable/ngrok.git ngrok
 		cd ngrok
 	
