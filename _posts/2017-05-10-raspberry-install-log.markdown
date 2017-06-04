@@ -569,7 +569,7 @@ tags:
 	- [https://github.com/binux/yaaw](https://github.com/binux/yaaw)
 
 # 性能监测
-> 参考[你值得拥有 —— 25 个 Linux 性能监控工具](https://linux.cn/article-4481-1.html)
+> 参考[原文:Amazing ! 25 Linux Performance Monitoring Tools](https://linoxide.com/monitoring-2/linux-performance-monitoring-tools/) [译文:你值得拥有 —— 25 个 Linux 性能监控工具](https://linux.cn/article-4481-1.html)
 
 - 最终选择使用了简单的 `Saidar`
 - 查看cpu温度
