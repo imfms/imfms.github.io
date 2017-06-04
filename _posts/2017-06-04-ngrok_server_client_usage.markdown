@@ -63,40 +63,98 @@
 
 ## 配置域名解析
 
-1. 步骤1
+1. 记录类型 `A`
+2. 主机记录 `*.子域名名称`
 
-	- 记录类型 `A`
-	- 主机记录 `子域名名称`
+	想要映射地址为 `xxx.example.com` 则直接填写 `*`
+	想要映射地址为 `xxx.subdomain.example.com` 则填写 `*.subdomain`
 
-		想要映射地址为 `xxx.example.com` 则填写根域名标识符号(一般为@)
-		想要映射地址为 `xxx.subdomain.example.com` 则填写 `subdomain`
-
-	- 记录值 `服务器ip地址`
-
-2. 步骤2
-
-	- 记录类型 `A`
-	- 主机记录 `*.子域名名称`
-
-		想要映射地址为 `xxx.example.com` 则直接填写 `*`
-		想要映射地址为 `xxx.subdomain.example.com` 则填写 `*.subdomain`
-
-	- 记录值 `服务器ip地址`
+3. 记录值 `服务器ip地址`
 
 ## 配置服务器
 
 1. 将对应平台ngrok服务端上传到服务器
-2. 添加ngrok服务器文件执行权限
-3. 指定域名参数启动ngrok服务器
-4. 配置为服务开机启动
 	
+	windows平台用户可使用[winscp](https://winscp.net)
+	
+2. 添加ngrok服务器文件执行权限
+	
+		chmod +x "${ngrok_server_path}"
+	
+3. 指定域名参数启动ngrok服务器
+
+		${ngrok_server_path} -domain="${domain}"
+	
+	启动后使用浏览器访问域名响应 `Tunnel ${domain} not found` 则为成功
+
+4. (可选) 配置为服务开机启动
+
+	参考[指定脚本开机自启](https://github.com/imfms/imfms.github.io/blob/master/_posts/2017-05-10-raspberry-install-log.markdown#%E6%8C%87%E5%AE%9A%E8%84%9A%E6%9C%AC%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF)
+	
+	自己的服务配置脚本, 随手复制的其他服务脚本更改后，只支持`start`
+		
+		#!/bin/bash
+
+		### BEGIN INIT INFO
+		# Provides: ngrokd
+		# Required-Start: $local_fs $network $remote_fs
+		# Required-Stop: $local_fs $network $remote_fs
+		# Default-Start: 2 3 4 5
+		# Default-Stop: 0 1 6
+		# Short-Description: ngrokd
+		# Description: ngrokd
+		### END INIT INFO
+
+
+		status() {
+				if [ -f "$LOCKFILE" ]; then
+					echo "$base is running"
+				else
+					echo "$base is stopped"
+				fi
+				exit 0
+		}
+
+		case "$1" in
+			restart)
+				;;
+
+			start)
+				${ngrok_server_bin_path} -domain="${domain}" &
+				;;
+
+			stop)
+				;;
+
+			status)
+				;;
+
+			*)
+				echo $"Usage: $0 {start|stop|status|restart}"
+				exit 3
+				;;
+		esac
+
 
 ## 配置客户端
 
-6. client config
+- 使用命令行参数
 	
-		server_addr: $domain:4443
-		trust_host_root_certs: false
+	自行查看帮助
+	
+		ngrok help
+		
+- 配置文件配置项
+
+		server_addr: $domain:4443 # 服务器地址
+		trust_host_root_certs: false # 如使用自签名证书，则须添加此键且指定值为 `false`
+		inspect_addr: disabled # 关闭web观察器
+	*个人使用的1.7.1版本，存在内存泄露，在正常使用期间会将客户端内存耗尽，关闭web观察器可使其保持稳定，具体内容参考此链接[ngrok/issues/Unknown, big memory-leak](https://github.com/inconshreveable/ngrok/issues/109), 且有作者的回答*
+		
+		tunnels: # 指定通道列表
+		  ${tunnel_name}: # 通道名
+			proto:
+			  ${proto}: ${port_number} # 协议, 端口号
 
 
 ## ngrok 配置并开机启动
@@ -108,5 +166,6 @@
 
 
 ## 参考文档
+- [官方文档](https://github.com/inconshreveable/ngrok/blob/master/docs/DEVELOPMENT.md)
 - [Run Ngrok on Your Own Server Using Self-Signed SSL Certificate](http://www.svenbit.com/2014/09/run-ngrok-on-your-own-server)
 - [Ngrok搭建服务器 搭建自己的ngrok服务器](http://blog.lzp.name/archives/24)
