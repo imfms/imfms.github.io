@@ -572,3 +572,7 @@ tags:
 > 参考[你值得拥有 —— 25 个 Linux 性能监控工具](https://linux.cn/article-4481-1.html)
 
 - 最终选择使用了简单的 `Saidar`
+- 查看cpu温度
+
+		cat /sys/class/thermal/thermal_zone0/temp
+	结果值为摄氏度*1000
