@@ -1,9 +1,9 @@
 # Site settings
 title: f_ms
-SEOTitle: f_ms | 插画师
+SEOTitle: f_ms | 插画人
 # header-img: img/home-bg.jpg
 email: imf_ms@yeah.net
-description: "插画师"
+description: "插画人"
 keyword: "Android"
 url: "http://f-ms.cn"              # your host, for absolute URL
 # baseurl: "/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
@@ -68,7 +68,7 @@ ba_track_id: 1e30b4dfb20d1a7fa679ed22ae9f3d53
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "没事写写Android代码的不务正业插画师"
+sidebar-about-description: "一个插画人"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
