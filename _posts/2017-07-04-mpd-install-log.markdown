@@ -17,7 +17,7 @@ tags:
 
 > Music Player Daemon (MPD) is a flexible, powerful, server-side application for playing music. Through plugins and libraries it can play a variety of sound files while being controlled by its network protocol.
 
-> 音乐播放器守护进程（MPD）是一个灵活，功能强大的服务器端应用程序，用于播放音乐。通过插件和库，它可以播放各种声音文件，同时可以通过网络协议控制
+> Music Player Daemon（MPD）是一个灵活，功能强大的服务器端应用程序，用于播放音乐。通过插件和库，它可以播放各种声音文件，同时可以通过网络协议控制
 
 个人平时挺喜欢听音乐，并且相对喜欢外放，也买了个小小劣质音响，用于娱乐自己的闲暇coding时光
 
