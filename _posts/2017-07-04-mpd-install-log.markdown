@@ -1,3 +1,18 @@
+---
+layout: post
+title:  "MPD | Music Player Daemon 远程音乐播放器 安装/配置记录"
+date:   2017-07-05 07:31:30 +0800
+categories: server
+catalog:    true
+tags: 
+- linux
+- music
+- mpd
+- remote
+- network
+- server
+---
+
 # MPD | Music Player Daemon 远程音乐播放器 安装/配置记录
 
 > Music Player Daemon (MPD) is a flexible, powerful, server-side application for playing music. Through plugins and libraries it can play a variety of sound files while being controlled by its network protocol.
