@@ -14,8 +14,53 @@
 - 发觉不得入门，直接进行相关经验搜索方式， 最终在知乎他人提问中的[McZoden](https://www.zhihu.com/people/yiwen-sun-14/answers)回答的[https://zhihu.com/question/27329130/answer/36179775](https://zhihu.com/question/27329130/answer/36179775)中得知最终方案播放器: MPD
 
 ## MPD 安装&配置
+    
+### 安装
+    apt-get install mpd
+    
+### 防火墙配置
+    systemctl enable mpd.socket
+    systemctl start mpd.socket
+    
+### 属性配置
+    
+默认配置文件路径为 `/etc/mpd.conf`, 也可通过 `mpd config_path` 方式指定配置文件路径
 
-`端口、地址、密码、权限、音乐库、播放列表、自动更新库、自动更新库目录深度、防火墙配置`
+默认配置文件中已经解释很详细，在此抽取一些重要属性解释
+
+- music_directory
+  指定音乐库目录
+- playlist_directory
+  指定播放列表目录
+- user
+  指定以某个用户开启mpd服务
+- bind_to_address
+  指定网络服务绑定的地址(0.0.0.0为绑定所有地址)
+- port
+  指定网络服务监听的端口
+- auto_update
+  是否当音乐库目录内容改变时自动更新音乐库
+- auto_update_depth
+  自动更新音乐库递归音乐库目录深度(层级)
+- password
+  指定访问密码与相应访问权限，格式: `password@permission1,permission2,permissionN`
+  
+  - 权限类型
+  
+    - read
+    - add
+    - control
+    - admin
+    
+- default_permissions 
+  指定默认用户(无密码用户)访问权限, 格式: `permission1, permissionN`
+  
+  - 权限类型
+    
+      - read
+      - add
+      - control
+      - admin
 
 ## MPD client 连接
 
