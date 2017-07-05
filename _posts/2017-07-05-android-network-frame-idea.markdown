@@ -4,3 +4,9 @@
 ResponseBean
 
 全局参数
+
+传输层
+
+安全加密
+
+https
