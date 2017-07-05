@@ -42,6 +42,7 @@ tags:
 > samba提供配置文件校验工具 `testparm`
 
 	testparm # 校验配置文件
+	
 	testparm --help # 查看帮助
 
 ## 访问用户配置
