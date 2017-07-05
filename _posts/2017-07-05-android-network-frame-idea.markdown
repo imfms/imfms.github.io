@@ -2,3 +2,5 @@
 
 请求Bean
 ResponseBean
+
+全局参数
