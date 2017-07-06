@@ -148,15 +148,57 @@ tags:
 
 ### 安装
 
-
-
-### 配置
+	apt-get install seafile-cli
 
 ### 使用
 
+程序帮助已经描述非常清楚，不赘述~
+
+seaf-cli --help
+
+	usage: seaf-cli [-h]
+		{init,start,stop,list,list-remote,status,download,download-by-name,sync,desync,create,config}
+		...
+
+	optional arguments:
+	  -h, --help            show this help message and exit
+
+	subcommands:
+
+	  {init,start,stop,list,list-remote,status,download,download-by-name,sync,desync,create,config}
+	    init                Initialize config directory
+	    start               Start ccnet and seafile daemon
+	    stop                Stop ccnet and seafile daemon
+	    list                List local libraries
+	    list-remote         List remote libraries
+	    status              Show syncing status
+	    download            Download a library from seafile server
+	    download-by-name    Download a library defined by name from seafile server
+	    sync                Sync a library with an existing foler
+	    desync              Desync a library with seafile server
+	    create              Create a library
+	    config              Configure seafile client
+
+
 #### 资料库id获取方法
 
-- 资料库
+- 根资料库
+	
+	- 通过客户端子命令 `list-remote` 方式获取
+	
+			seaf-cli list-remote -s http://sample.seafile.com -u user_name -p user_password
+
+				Name    ID
+				disk 0e72563e-ce78-4f0d-b278-46687e062989
+				私人资料库 5de2d7ef-69ec-4bcd-8456-b20673d2d865
+				个人维基 d44c9cb7-cf12-4e28-9f6f-593fb3c8ca99
+	
+	- 通过web端链接方式
+	
+		在登录web端seafile之后，资料库跳转链接中直接会包含资料库id, 复制提取即可
+		
+			http://sample.seafile.com/#my-libs/lib/0e72563e-ce78-4f0d-b278-46687e062989
+	
 - 子资料库/资料库子目录
 
 ## 参考资料
