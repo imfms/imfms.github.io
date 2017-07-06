@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Seafile 安装/配置/升级/使用 记录"
-date:   2017-07-05 22:00:30 +0800
+date:   2017-07-06 22:00:30 +0800
 categories: server
 catalog:    true
 tags: 
@@ -200,6 +200,21 @@ seaf-cli --help
 			http://sample.seafile.com/#my-libs/lib/0e72563e-ce78-4f0d-b278-46687e062989
 	
 - 子资料库/资料库子目录
+	
+	有很多使用场景下是不需要同步/下载整个根资料库的，在seafile_gui客户端中也是存在同步某个根资料库中的子目录的功能，但是在terminal客户端中则没有直接提供相应命令。在个人需求驱动下无意间发现一个获取子目录id方法，可以用此子目录id像根资料库id一样执行相应同步/下载命令。获取子目录id需以下步骤
+
+	1. 使用seafile_gui同步某个想要获取子目录id的目录
+	2. 读取本机`seafile-data`目录下的SQLite格式`accounts.db`数据库文件
+		可使用gui sqlite管理工具[SqliteExpert](http://www.sqliteexpert.com/), 官网有提供个人版本
+	3. 查阅数据库中的表`SyncedSubfolder`
+	4. 得到以下字段
+		- rowid 列标
+		- repo_id 库id
+		- parent_repo_id 根库id
+		- url 服务器url
+		- username 用户名
+		- parent_path 相对根路径
+	5. 以上字段中的`repo_id`为需要的子目录id, 直接在客户端中当做根库id使用即可
 
 ## 参考资料
 - [seafile-server-manual](http://manual-cn.seafile.com/)
