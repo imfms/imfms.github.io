@@ -192,7 +192,7 @@ tags:
 			
 			- 如果开启当前运行级别而不匹配脚本LSB头，会打印警告
 			
-			- 当要重新开启这个服务，将符号链接的更名为以前缀'S'带两个数字并执行 `updadate-rc.d $script_name defaults` 使脚本适应变化
+			- 当要重新开启这个服务，将符号链接的更名为以前缀'S'带两个数字并执行 `update-rc.d $script_name defaults` 使脚本适应变化
 			
 		- rc2.d
 		
