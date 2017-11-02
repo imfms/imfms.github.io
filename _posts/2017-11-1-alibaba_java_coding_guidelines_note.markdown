@@ -18,31 +18,6 @@ POJO (Plain Old Java Object) , 这种叫法是Martin Fowler、Rebecca Parsons和
 
 POJO格式用于数据的临时传递，它只能装载数据，作为数据存储的载体，不具有逻辑处理的能力
 
-~~~java
-public class User {  
-  
-    private String name;  
-    private int age;  
-  
-    public String getName() {  
-        return name;  
-    }  
-  
-    public void setName(String name) {  
-        this.name = name;  
-    }  
-  
-    public int getAge() {  
-        return age;  
-    }  
-  
-    public void setAge(int age) {  
-        this.age = age;  
-    }  
-  
-}
-~~~
-
 ### PO
 
 Persistent Object 持久化对象，将物理数据的一种对象表示的承载，可以简化对象数据与物理数据之间的转换，不受任何业务的干涉
@@ -55,21 +30,13 @@ Data Transfer Object 数据传输对象，可以泛指服务层与展示层之�
 
 ### VO
 
-Value Object 值对象，由业务逻辑使用，为数据提供一个承载，VO的属性根据当前业务的不同而不同，对应当前业务逻辑所需要的数据的名称
-
-业务逻辑层与数据持久层独立开，业务层则不会受到数据持久层的影响，业务层关心的则只是业务逻辑的处理
-
-如果没有数据持久层，则PO/VO可以是同一个对象
+View Object 视图对象，某个页面、视图组件数据的承载
 
 ### BO
 
-Business Object 业务对象, 主要作用是吧业务逻辑封装为一个对象，对象可以包括一个或多个其它对象
+Business Object 业务对象, 主要作用是把业务逻辑封装为一个对象，对象可以包括一个或多个其它对象
 
 如一个简历中有教育经历，工作经历，社会关系等
-
-### DO
-
-
 
 ## JavaBean
 
@@ -81,6 +48,41 @@ Business Object 业务对象, 主要作用是吧业务逻辑封装为一个对�
 4. 这个类应是可序列化的。实现serializable接口
 
 JavaBean中往往会封装一些简单逻辑，javabean中可以有其它的方法
+
+### DO
+
+Domain Object 领域对象, 从现实世界中抽象出来的有形或无形的业务实体
+
+特定领域的业务逻辑对象，可以拥有业务方法
+
+如人类，存在嘴巴、手脚，拥有吃饭、跑步行为
+
+
+
+![](/img/post/vo_dto_do_dao_po.png)
+
+
+
+> 引用 [PO BO VO DTO POJO DAO DO这些Java中的概念分别指一些什么？ - Knight王的回答](https://www.zhihu.com/question/39651928/answer/87536000)
+>
+> 当你业务足够简单时，一个POJO 也完全当做PO BO DTO VO 看
+> 比如有个用户类 只有 name 以及 phone 
+> 对于数据库层面也就两列，业务层面，传输，和前台展示时 都只有这两项
+>
+> 他们区别开来的例子：
+> 1 、还是用户类  name phone 加了个password。
+> 那么你后端的PO属性也是这3个，一般数据库里这个表有几个字段你的PO就有多少属性，但是传输到前台或者展现时，我们不应该把password 密码这种东西也一起传过去，所以他们的DTO VO 就还是 name + phone 
+> po : name phone password
+> dto : name phone
+> vo : name phone
+>
+> 2、现在又加了一个 枚举的状态位 status 表示用户的一些特殊状态，前台不会直接显示，可能会根据这个状态产生后续的操作
+> po : name phone password status
+> dto : name phone status
+> vo : name phone
+>
+> 3、BO ，一个用户下面 肯定会关联很多其他的表
+> 比如用户设置 用户信息等，那么这个BO 下 不但有用户本身的一些属性，还包含了用户设置 和用户信息这两个类
 
 
 
@@ -96,4 +98,5 @@ JavaBean中往往会封装一些简单逻辑，javabean中可以有其它的方�
 
 - [阿里巴巴Java开发手册&IDE规约插件](https://github.com/alibaba/p3c)
 - [JAVABEAN EJB POJO区别](http://www.cnblogs.com/yw-ah/p/5795751.html)
-- [浅析VO、DTO、DO、PO的概念、区别和用处](http://www.blogjava.net/johnnylzb/archive/2010/05/27/321968.html)
+- [领域驱动设计系列文章（1）——通过现实例子显示领域驱动设计的威力](http://www.blogjava.net/johnnylzb/archive/2010/05/15/321057.html)
+- [领域驱动设计系列文章（2）——浅析VO、DTO、DO、PO的概念、区别和用处](http://www.blogjava.net/johnnylzb/archive/2010/05/27/321968.html)
