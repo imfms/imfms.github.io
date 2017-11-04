@@ -1,0 +1,119 @@
+## 枚举类型
+
+enum关键字可以将一组具名的值的有限集合创建为一种新的类型，而这些具名的值可以作为常规的程序组件使用。
+
+###基本语法
+
+```java
+/* [xxx] 代表xxx可选 */
+[public] enum EnumName {
+  Type1, Type2, Type...
+}
+```
+
+### 基本enum特性
+
+创建enum时，编译器会生成一个相关的类，该类集成自 [java.lang.Enum](https://docs.oracle.com/javase/6/docs/api/java/lang/Enum.html)
+
+该类提供一些基本功能方法
+
+- values() 
+  返回enum实例的数组切实例在数组中的顺序严格按照声明时的顺序
+  该方法未在java.lang.Enum中声明，而是由编译器动态插入，可通过反射查看到该方法
+  通过enum的Class对象的getEnumConstants方法也可获取到enum类的所有实例组成的数组，如果为非enum类的Class对象调用该方法会返回null
+- ordinal()
+  返回该enum实例在声明时所处的次序，从0开始
+- equals(), hashCode()
+  自动生成提供equals, hashCode方法可以直接使用且enum实例间可以直接使用==进行相等判断
+- compareTo()
+  实例实现了Comparable接口并重写了compareTo方法，可以对比enum实例声明次序在另一个enum实例前/中(自己)/后
+- getDeclaringClass()
+  获取enum实例所属的enum类
+- name(), toString()
+  获取enum实例的名字
+- valueOf()
+  Enum的静态方法, 根据给定enum字符串名字返回enum实例，如果不能存在给定名字的实例则会抛出IllegalArgumentException异常
+
+### 向enum添加新方法
+
+除了不能呢继承自一个enum之外，基本可以将enum看做一个常规的类，当然也可以向enum中添加新方法
+
+#### 构造方法
+
+一般我们希望枚举实例能能够返回对自身的描述而不仅仅是默认的name实现，并且有时会有除名称外的延展属性，这时我们就希望扩展每个enum所能代表的属性，可以使用自定义构造方法来达到此目的
+
+~~~java
+public enum Size {
+  BIG("我是大号", 100),
+  MIDDLE("我是中号", 50),
+  SMALL("我是小号", 20); // enum实例声明必须在自定义方法前面，且必须在声明的enum最后一个实例添加分号表示声明结束
+  
+  private String description;
+  private int height;
+  
+  private Size(String description, int height) {
+    this.description = description;
+    this.height = height;
+  }
+  
+  private String getDescription() { return description; }
+  private int getHeight() { return height; }
+  
+}
+~~~
+
+#### 重写方法
+
+有时也会需要需要重写方法的情况
+
+~~~java
+public enum Size {
+  BIG,
+  MIDDLE,
+  SMALL;
+  
+  public String toString() {
+    return name().toLowerCase();
+  }
+}
+~~~
+
+### 枚举可用于switch语句
+
+~~~java
+public enum Size { BIG, MIDDLE, SMALL }
+
+Size size;
+
+switch (size) {
+  case Size.BIG:
+    // do something
+    break;
+  case Size.MIDDLE:
+    // do something
+    break;
+  case Size.SMALL:
+    // do something
+    break;
+}
+~~~
+
+### 实现接口
+
+enum类可以实现单个或多个接口，因为所有enum继承自java.lang.Enum, 又由于java不支持多重继承，所以enum类不能再继承其他类
+
+~~~java
+enum Size implements Iterable<Size> {
+
+  BIG, MIDDLE, SMALL;
+
+  public Iterator<Size> iterator() {
+    // demo, do nothing
+    return null;
+  }
+}
+~~~
+
+#### 使用接口组织枚举
+
+// todo, 笔记和习题 19.7, 597-600
