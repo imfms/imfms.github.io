@@ -9,7 +9,7 @@ tags:
 
 ## Java - enum枚举类型
 
-enum关键字可以将一组具名的值的有限集合创建为一种新的类型，而这些具名的值可以作为常规的程序组件使用。
+enum关键字可以将一组'具名'的值的'有限集合'创建为一种新的类型，而这些具名的值可以作为常规的程序组件使用
 
 ###基本语法
 
@@ -22,12 +22,12 @@ enum关键字可以将一组具名的值的有限集合创建为一种新的类�
 
 ### 基本enum特性
 
-创建enum时，编译器会生成一个相关的类，该类集成自 [java.lang.Enum](https://docs.oracle.com/javase/6/docs/api/java/lang/Enum.html)
+创建enum时，编译器会生成一个相关的类，该类继承自 [java.lang.Enum](https://docs.oracle.com/javase/6/docs/api/java/lang/Enum.html)
 
 该类提供一些基本功能方法
 
 - values() 
-  返回enum实例的数组切实例在数组中的顺序严格按照声明时的顺序
+  返回enum实例的数组 且实例在数组中的顺序严格按照其声明时的顺序
   该方法未在java.lang.Enum中声明，而是由编译器动态插入，可通过反射查看到该方法
   通过enum的Class对象的getEnumConstants方法也可获取到enum类的所有实例组成的数组，如果为非enum类的Class对象调用该方法会返回null
 - ordinal()
@@ -35,17 +35,17 @@ enum关键字可以将一组具名的值的有限集合创建为一种新的类�
 - equals(), hashCode()
   自动生成提供equals, hashCode方法可以直接使用且enum实例间可以直接使用==进行相等判断
 - compareTo()
-  实例实现了Comparable接口并重写了compareTo方法，可以对比enum实例声明次序在另一个enum实例前/中(自己)/后
+  实例实现了Comparable接口并重写了compareTo方法，可以对比enum实例声明顺序在另一个enum实例前/中(自己)/后0
 - getDeclaringClass()
   获取enum实例所属的enum类
 - name(), toString()
   获取enum实例的名字
 - valueOf()
-  Enum的静态方法, 根据给定enum字符串名字返回enum实例，如果不能存在给定名字的实例则会抛出IllegalArgumentException异常
+  Enum的静态方法, 根据给定enum字符串名字返回enum实例，如果不存在给定名字的实例则会抛出IllegalArgumentException异常
 
 ### 向enum添加新方法
 
-除了不能呢继承自一个enum之外，基本可以将enum看做一个常规的类，当然也可以向enum中添加新方法
+除了不能被继承以外，基本可以将enum看做一个常规的类，当然也可以向enum中添加新方法
 
 #### 构造方法
 
@@ -123,8 +123,6 @@ public static void main(String[] args) {
 	}
 }
 ~~~
-
-
 
 ### 枚举可用于switch语句
 
