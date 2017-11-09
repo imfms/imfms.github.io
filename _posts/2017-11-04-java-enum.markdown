@@ -1,4 +1,13 @@
-## Java - 枚举类型
+---
+layout: post
+title:  "喋喋，不休"
+date:   2017-11-04 20:32:30 +0800
+categories: program
+tags: 
+- java
+---
+
+## Java - enum枚举类型
 
 enum关键字可以将一组具名的值的有限集合创建为一种新的类型，而这些具名的值可以作为常规的程序组件使用。
 
@@ -78,6 +87,45 @@ public enum Size {
 }
 ~~~
 
+#### 抽象方法
+
+相同规范不同行为的情况下需要使用抽象方法，枚举也支持抽象方法
+
+~~~java
+public enum AbstractMethodEnum {
+	ENUM1() {
+		@Override
+		public String myName() {
+			return "enum1";
+		}
+	},
+	ENUM2() {
+		@Override
+		public String myName() {
+			return "enum2";
+		}
+	},
+	ENUM3() {
+		@Override
+		public String myName() {
+			return "enum3";
+		}
+	};
+	
+	public abstract String myName();
+}
+
+public static void main(String[] args) {
+	
+	for (AbstractMethodEnum method : AbstractMethodEnum.values()) {
+		
+		System.out.println(method.myName());
+	}
+}
+~~~
+
+
+
 ### 枚举可用于switch语句
 
 ~~~java
@@ -116,4 +164,92 @@ enum Size implements Iterable<Size> {
 
 #### 使用接口组织枚举
 
-// todo, 笔记和习题 19.7, 597-600
+有时会有给元素进行分组等需求，因为不能使用继承，所以实现接口是使枚举子类化的唯一办法
+
+~~~java
+interface Food {
+  enum Appetizer implements Food {
+    SALAD, SOUP, SPRING_ROLLS
+  }
+
+  enum MainCourse implements Food {
+    LASAGNE, BURRITO, PAD_THAI,
+    LENTILS, HUMMOUS, VINDALOO
+  }
+
+  enum Coffee implements Food {
+    BLACK_COFFEE, DECAF_COFFEE, ESPRESSO,
+    LATTE, CAPPUCCINO, TEA, HERB_TEA
+  }
+}
+
+Food food = Food.Appetizer.SALAD;
+food = Food.Coffee.LATTE;
+~~~
+
+使用枚举来管理枚举，枚举的枚举，Food接口的作用是将各个枚举组合成一个公共类型
+
+~~~java
+public enum FoodEnum {
+
+	APPETIZER(Food.Appetizer.class),
+	MAIN_COURSE(Food.MainCourse.class),
+	COFFEE(Food.Coffee.class);
+	
+	private final Food[] values;
+	
+	FoodEnum(Class<? extends Food> clazz) {
+		values = clazz.getEnumConstants();
+	}
+	
+	public Food[] getValues() { return values; }
+	
+	interface Food {
+		
+		enum Appetizer implements Food {
+			SALAD, SOUP, SPRING_ROLLS
+		}
+		
+		enum MainCourse implements Food {
+			LASAGNE, BURRITO, PAD_THAI,
+			LENTILS, HUMMOUS, VINDALOO
+		}
+		
+		enum Coffee implements Food {
+			BLACK_COFFEE, DECAF_COFFEE, ESPRESSO,
+			LATTE, CAPPUCCINO, TEA, HERB_TEA
+		}
+	}
+	
+}
+~~~
+
+### JDK提供相关enum辅助类
+
+#### EnumSet
+
+二进制标记位原理的Set集合, 以enum示例的生命顺序为元素顺序，可与二进制标记位拥有相同使用场景且几乎相等的高效，相比二进制标记位易懂易用
+
+~~~java
+// 创建指定enum类型的空EnumSet
+<E extends Enum<E>> EnumSet<E> EnumSet.noneOf(Class<E> elementType)
+
+// 创建包含指定enum示例的EnumSet
+<E extends Enum<E>> EnumSet<E> of(E first, E... rest)
+
+// 创建包含指定enum类型所有实例的EnumSet
+<E extends Enum<E>> EnumSet<E> allOf(Class<E> elementType)
+
+// 创建包含按照enum实例在enum中声明的顺序的指定开始实例到指定结束实例之间所有实例的EnumSet
+<E extends Enum<E>> EnumSet<E> range(E from, E to)
+
+// Set接口各方法
+~~~
+
+#### EnumMap
+
+以enum元素为键的map键值对类型集合，使用方式与Map相同，无其余特殊之处
+
+## 参考文档
+
+- 《Java编程思想 - 第四版》 第十九章 枚举类型
