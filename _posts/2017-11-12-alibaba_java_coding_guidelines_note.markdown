@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "阿里巴巴java开发手册学习手记"
+subtitle: "一个优秀的工程师和一个普通的工程师的区别，不是满天飞的架构图，他的功底体现在写的每一行代码上 ——毕玄"
 date:   2017-11-12 17:00:30 +0800
 categories: program
 tags: 
