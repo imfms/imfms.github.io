@@ -14,8 +14,7 @@ enum关键字可以将一组'具名'的值的'有限集合'创建为一种新的
 ### 基本语法
 
 ```java
-/* [xxx] 代表xxx可选 */
-[public] enum EnumName {
+enum EnumName {
   Type1, Type2, Type...
 }
 ```
