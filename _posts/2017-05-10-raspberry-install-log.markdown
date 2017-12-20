@@ -23,7 +23,7 @@ tags:
       - 外置USB存储盘 (U盘, 启动硬盘)
     - 系统镜像
       - [https://www.raspberrypi.org/downloads/](https://www.raspberrypi.org/downloads/)
-      - USB-ZIP.zip (DOS系统文件? 原因不明, 应该是引导相关内容)
+      - [USB-ZIP.zip (DOS系统文件? 原因不明, 应该是引导相关内容)](https://pan.baidu.com/s/1i45JdpN)
     - 软件
       - Windows操作系统
       - 镜像烧写工具 [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/)
