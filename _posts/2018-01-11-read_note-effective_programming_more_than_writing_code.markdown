@@ -2,7 +2,7 @@
 layout: post
 title:  "《高效能程序员的修炼》阅读手记"
 subtitle: "软件开发远不只是写代码那么简单？"
-date:   2017-12-56 19:56:30 +0800
+date:   2018-01-11 21:33:30 +0800
 categories: program
 catalog:    true
 tags: 
