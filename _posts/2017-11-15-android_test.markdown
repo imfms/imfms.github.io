@@ -86,6 +86,10 @@ Mockito是一款Java平台模拟类行为的框架，以Java动态代理机制�
 
 在Android测试中Mockito配合调用任何方法都会throw exception的android.jar对Android这个“外部环境”进行模拟再合适不过咯 :)
 
+6. ​
+
+N. 阅读及学习http://chriszou.com/2016/06/07/android-unit-testing-everything-you-need-to-know.html测试系列文章
+
 
 
 
