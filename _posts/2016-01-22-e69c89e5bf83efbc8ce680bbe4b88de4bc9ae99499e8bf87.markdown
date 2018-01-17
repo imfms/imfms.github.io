@@ -12,7 +12,7 @@ categories:
 post_format:
 - 状态
 tags:
-- 心情
+- Mood
 ---
 
 忘记倒是不可能，总会有下一个一时想起，有心，总不会错过

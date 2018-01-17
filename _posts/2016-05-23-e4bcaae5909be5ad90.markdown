@@ -11,7 +11,7 @@ categories:
 - life-mood
 - picture-mouse
 tags:
-- 心情
+- Mood
 - 鼠标画
 ---
 

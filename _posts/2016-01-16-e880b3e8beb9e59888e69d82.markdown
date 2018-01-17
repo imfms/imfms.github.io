@@ -12,7 +12,7 @@ categories:
 post_format:
 - 状态
 tags:
-- 心情
+- Mood
 ---
 
 长篇的看着新闻、网友各国评论，好像脱离现实，又听到耳边嘈杂

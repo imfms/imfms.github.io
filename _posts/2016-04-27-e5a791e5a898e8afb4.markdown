@@ -12,7 +12,7 @@ categories:
 post_format:
 - 状态
 tags:
-- 心情
+- Mood
 ---
 
 那年姑娘对我说，有一首老歌你一定没有听过，"明天你是否依然爱我"

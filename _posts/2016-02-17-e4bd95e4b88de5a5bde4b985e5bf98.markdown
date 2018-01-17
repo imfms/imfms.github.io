@@ -12,7 +12,7 @@ categories:
 post_format:
 - 状态
 tags:
-- 心情
+- Mood
 ---
 
 <blockquote>记旧情，怎能不久记；忘旧情，何不好久忘</blockquote>
