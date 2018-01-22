@@ -86,9 +86,15 @@ Mockito是一款Java平台模拟类行为的框架，以Java动态代理机制�
 
 在Android测试中Mockito配合调用任何方法都会throw exception的android.jar对Android这个“外部环境”进行模拟再合适不过咯 :)
 
-6. ​
+#### 6. Robolectric 在JVM下执行依赖android环境代码的测试
 
-N. 阅读及学习http://chriszou.com/2016/06/07/android-unit-testing-everything-you-need-to-know.html测试系列文章
+[Robolectric](http://robolectric.org/)
+代码在android环境下的执行速度回严重影响到开发者对测试的积极性，Robolectric是一套单元测试框架，允许开发者在JVM环境下执行依赖android环境的代码
+android下撰写测试代码首选JVM, 其次考虑使用Robolectric, 实在不行再考虑Instrumented
+
+#### 7. 阅读及学习[小创作撰写的测试系列文章](http://chriszou.com/2016/06/07/android-unit-testing-everything-you-need-to-know.html)
+
+[以及demo中readme中的相关文章链接](https://github.com/ChrisZou/android-unit-testing-tutorial)
 
 
 
