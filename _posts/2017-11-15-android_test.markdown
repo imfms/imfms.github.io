@@ -99,24 +99,54 @@ android下撰写测试代码首选JVM, 其次考虑使用Robolectric, 实在不�
 #### 8. 项目中小试牛刀
 
 1. 想给项目首页写个测试
+
 2. 先从首页P(Presenter)开始
+
 3. 这个P用M(Model)异步获取了个数据并调用V(View)填充了数据
-4. 发现自己没办法mock M, 因为自己的M是直接在P里面实例化的
+
+4. 发现自己没办法mock M, 因为自己的M是直接在P里面直接new的方式实例化的
+
 5. 将所有的M的引用修改为从构造注入，谁调用谁负责
+
 6. 啥都不管，先跑一下试试， Boom! "NullPointException"
    发现代码中引用了Application中一个全局字段，但是Application是安卓环境才会创建的，遂将所有对该字段对Application的依赖移除
+
 7. 撰写P一个方法的测试，内容是请求数据后填充V
    Boom! "Method getMainLooper in android.os.Looper not mocked."
-8. 也是，主线程调度器也是依赖于安卓环境，看来P层不能直接做这个
+
+8. 主线程调度器也是依赖于安卓环境，所以P层不能直接做这个
    修改代码让V提供一个Ui可渲染线程调度器，mockV的时候提供的线程调度器不对线程作任何变更
+
 9. 代码有时测过有时测不过 - -，发现是因为请求数据是异步操作
    本想像主线程调度器一样修改，将控制权交给调用者，但是想了想异步请求数据的行为好像跟安卓环境并没有什么关系，虽然为了测试可以修改不可测的代码，但总觉得还是不很优雅；遂暂时在测试中等待异步数据完成后再稍作等待后进行操作
-10. 好，P层完了，再拿V层练练手吧
-11. (- -|||), 这... Activity里面对M与P的持有我该怎么Mock ... ...
-    P层对M的依赖优雅解决了，甩给了V, 到了V层还是得处理，V也不能甩出去了，V的调用者是系统了 :(
-12. 慎重考虑一番，觉得各种方案都不很优雅，决定学习Dagger
 
-#### 8. Dagger
+10. 阅读含有测试的Android Mvp架构开源项目[MovieGuide](https://github.com/esoxjem/MovieGuide)，发现RxJava/RxAndroid提供各常用调度器的替换方式
+   https://github.com/esoxjem/MovieGuide
+   这下测试时而通过时而不通过的问题也优雅的解决了，也不用让View提供Ui可渲染线程调度器
+   只是P层依然依赖了RxAndroid，看起来有点膈应，不过项目只在android平台上运行的话目测影响不大
+
+11. 好，P层完了，再拿V层练练手吧
+
+12. (- -|||), 这... Activity里面对M与P的持有我该怎么Mock ... ...
+    P层对M的依赖优雅解决了，甩给了V, 到了V层还是得处理，V也不能甩出去了，V的调用者是系统了 :(
+
+13. V层对P层的引用可mock方案制定
+    第一想法是引入dagger也确实去着手学习并使用了，但后来理解了概念后想了想，这个问题并不是dagger可以直接解决的，不管用什么注入库最终都是要从View内部从外部获取依赖，故最终选择手写
+
+    1. 新建一个创建所有Presenter实例的辅助类。称为PresenterProvider
+
+    2. 创建一个提供PresenterProvider的工具，提供set方法与get方法。称为PresenterProviderHolder
+
+    3. 所有View实例化Presenter时全部通过PresenterProviderHolder.get().getXxxPresenter(arg0, arg1, ...)方式获取
+
+    4. 非单元测试环境
+
+       在app入口application调用PresenterProviderHolder.set方法，设置非单元测试环境PresenterProvider
+
+    5. 单元测试环境
+       在测试View之前通过PresenterProviderHolder.set(mockedPresenterProvider)设置mock后的PresenterProvider
+
+    ​
 
 
 
