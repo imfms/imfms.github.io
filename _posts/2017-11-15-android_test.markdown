@@ -1,18 +1,16 @@
 ## Android测试学习手记
 
-每次发版前，内心总会控制不住的开始焦虑，虽然测试代码的验证通过不能证明代码没有问题，但至少它能证明这庞大的历史代码还是相对安全的。
+### 一，前言
 
-眼前代码的修改会不会导致其他问题的出现，我不知道，我可能需要细细查阅，细细摩挲，才能怯懦的告诉你：“应该不会吧”。
+- 每次发版前，内心总会控制不住的开始焦虑，虽然测试代码的验证通过不能证明代码没有问题，但至少它能证明这庞大的历史代码还是相对安全的。
+- 眼前代码的修改会不会导致其他问题的出现，我不知道，我可能需要细细查阅，细细摩挲，才能怯懦的告诉你：“应该不会吧”。
+- 欲来欲能发觉人脑能同时顾及的东西太少太少，而真实情况下要顾及的东西又太多太多。
+- 我只想关心当下我的业务逻辑与我的每一行代码实现，请让我忘记历史带给我的包袱与压力，让我享受当下。
+- TDD，我来了。
 
-欲来欲能发觉人脑能同时顾及的东西太少太少，而真实情况下要顾及的东西又太多太多。
+### 二，学习历程
 
-我只想关心当下我的业务逻辑与我的每一行代码实现，请让我忘记历史带给我的包袱与压力，让我享受当下。
-
-TDD，我来了。
-
-### 学习路程
-
-#### 1. JUnit4学习, 相关文档阅读
+#### 1. JUnit4学习
 
 在保证学习的易懂又不失系统情况下，选择了一些中文博文文章配合官方文档进行学习
 
@@ -23,7 +21,7 @@ TDD，我来了。
 - [探索 JUnit 4.4 新特性](https://www.ibm.com/developerworks/cn/java/j-lo-junit44/)
   配合Junit4 Offical Document辅助学习
 
-在测试框架出现之前，开发者们撰写测试用例会很痛苦，有很多问题需要面对，测试用例的，执行时机，测试规范，测试覆盖量无法衡量，历史测试维护，测试用例复用... 。想说爱你不容易
+在测试框架出现之前，开发者们撰写测试用例会很痛苦，有很多问题需要面对，测试代码难以整理与维护，测试用例的执行时机，测试统一的规范性，测试覆盖量的衡量，测试用例复用...  想说爱你不容易
 
 JUnit4是一个java单元测试框架，框架提供易懂易用且不失灵活性和扩展性的辅助测试功能，封装了大多在测试代码中所需要的功能：结果断言测试，异常测试，方法执行超时测试，测试前/后 预备/收尾工作，批量测试，分类测试，假设测试，理论测试... ... 并且有各大java ide及插件的良好支持(eclipse, IntelliJ).
 
@@ -35,7 +33,7 @@ JUnit4是一个java单元测试框架，框架提供易懂易用且不失灵活�
 
 #### 3. Android测试学习, 相关文档阅读 
 
-宏观了解在Android开发中通常使用测试手段
+宏观了解在Android开发中通常使用的测试手段
 
 - [Testing Apps on Android](https://developer.android.google.cn/training/testing/index.html)
 - [Test Apps on Anroid Studio](https://developer.android.google.cn/studio/test/index.html)
@@ -90,9 +88,9 @@ Mockito是一款Java平台模拟类行为的框架，以Java动态代理机制�
 
 [Robolectric](http://robolectric.org/)
 代码在android环境下的执行速度会严重影响到开发者对测试的积极性，Robolectric是一套单元测试框架，允许开发者在JVM环境下执行依赖android环境的代码
-android下撰写测试代码首选JVM, 其次考虑使用Robolectric, 实在不行再考虑Instrumented
+android下撰写测试代码首选JVM, 其次考虑使用Robolectric, 之后是Instrumented, 最终是手动测试
 
-#### 7. 阅读及学习[小创作撰写的测试系列文章](http://chriszou.com/2016/06/07/android-unit-testing-everything-you-need-to-know.html)
+#### 7. 阅读及学习[小创作撰写的测试系列文章](http://chriszou.com/2016/06/07/android-unit-testing-everything-you-need-to-know.html)，补充知识链
 
 [以及demo中readme中的相关文章链接](https://github.com/ChrisZou/android-unit-testing-tutorial)
 
@@ -104,9 +102,9 @@ android下撰写测试代码首选JVM, 其次考虑使用Robolectric, 实在不�
 
 3. 这个P用M(Model)异步获取了个数据并调用V(View)填充了数据
 
-4. 发现自己没办法mock M, 因为自己的M是直接在P里面直接new的方式实例化的
+4. 发现自己没办法mock M, 因为自己的M是在P中直接引用了一个全局static字段位置
 
-5. 将所有的M的引用修改为从构造注入，谁调用谁负责
+5. 将P中所有对M的引用修改为从构造注入，谁调用谁负责
 
 6. 啥都不管，先跑一下试试， Boom! "NullPointException"
    发现代码中引用了Application中一个全局字段，但是Application是安卓环境才会创建的，遂将所有对该字段对Application的依赖移除
@@ -114,16 +112,16 @@ android下撰写测试代码首选JVM, 其次考虑使用Robolectric, 实在不�
 7. 撰写P一个方法的测试，内容是请求数据后填充V
    Boom! "Method getMainLooper in android.os.Looper not mocked."
 
-8. 主线程调度器也是依赖于安卓环境，所以P层不能直接做这个
+8. 获取数据后的主线程调度器也是依赖于安卓环境，所以P层不能直接做这个操作
    修改代码让V提供一个Ui可渲染线程调度器，mockV的时候提供的线程调度器不对线程作任何变更
 
 9. 代码有时测过有时测不过 - -，发现是因为请求数据是异步操作
-   本想像主线程调度器一样修改，将控制权交给调用者，但是想了想异步请求数据的行为好像跟安卓环境并没有什么关系，虽然为了测试可以修改不可测的代码，但总觉得还是不很优雅；遂暂时在测试中等待异步数据完成后再稍作等待后进行操作
+   本想像主线程调度器一样修改，将控制权交给调用者，但是想了想异步请求数据的行为好像跟安卓环境并没有什么关系，虽然为了测试可以修改不可测的代码，但总执拗的觉得还是不很优雅；遂暂时在测试中等待异步数据完成后再稍作等待后进行操作(依然不优雅:)
 
 10. 阅读含有测试的Android Mvp架构开源项目[MovieGuide](https://github.com/esoxjem/MovieGuide)，发现RxJava/RxAndroid提供各常用调度器的替换方式
-   https://github.com/esoxjem/MovieGuide
-   这下测试时而通过时而不通过的问题也优雅的解决了，也不用让View提供Ui可渲染线程调度器
-   只是P层依然依赖了RxAndroid，看起来有点膈应，不过项目只在android平台上运行的话目测影响不大
+  [RxSchedulerRule](https://github.com/esoxjem/MovieGuide/blob/e3689c5c867abea8b01f1f862b1e8b4fd6a9a52d/app/src/test/java/com/esoxjem/movieguide/RxSchedulerRule.java)
+  这下测试时而通过时而不通过的问题也优雅的解决了，也不用让View提供Ui可渲染线程调度器
+  只是P层依然依赖了RxAndroid，看起来有点膈应，不过项目只在android平台上运行的话目测影响不大
 
 11. 好，P层完了，再拿V层练练手吧
 
@@ -131,7 +129,7 @@ android下撰写测试代码首选JVM, 其次考虑使用Robolectric, 实在不�
     P层对M的依赖优雅解决了，甩给了V, 到了V层还是得处理，V也不能甩出去了，V的调用者是系统了 :(
 
 13. V层对P层的引用可mock方案制定
-    第一想法是引入dagger也确实去着手学习并使用了，但后来理解了概念后想了想，这个问题并不是dagger可以直接解决的，不管用什么注入库最终都是要从View内部从外部获取依赖，故最终选择手写
+    第一想法是引入dagger也确实去着手学习并使用了，但后来理解了概念后想了想，这个问题并不是dagger可以直接解决的，不管用什么注入库最终都是要View内部从外部获取到Presenter依赖，故暂选择手写
 
     1. 新建一个创建所有Presenter实例的辅助类。称为PresenterProvider
 
@@ -146,10 +144,6 @@ android下撰写测试代码首选JVM, 其次考虑使用Robolectric, 实在不�
     5. 单元测试环境
        在测试View之前通过PresenterProviderHolder.set(mockedPresenterProvider)设置mock后的PresenterProvider
 
-    ​
+### 三，暂告段落
 
-
-
-
-
-
+凭空横插一个代码级别管理方案，且该方案由于与正常业务开发的纬度不同(相当于对正常流程撰写的代码一一拆开横插一脚)，自然会对已有思考/编写方式和已有代码有一定的侵入性。改变是不容易的，但改变是值得的
