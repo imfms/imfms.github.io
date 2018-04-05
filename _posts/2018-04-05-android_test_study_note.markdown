@@ -1,4 +1,17 @@
-## Android测试学习手记
+---
+layout: post
+title:  "Android单元测试学习手记"
+subtitle: "我只想关心当下我的业务逻辑与我的每一行代码实现，请让我忘记历史带给我的包袱与压力"
+date:   2018-04-05 17:25:30 +0800
+categories: program
+tags: 
+- java
+- android
+- test
+- unit-test
+---
+
+## Android单元测试学习手记
 
 ### 一，前言
 
