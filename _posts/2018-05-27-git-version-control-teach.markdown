@@ -415,7 +415,7 @@ Git分支工作流了解更多
 
     *你可以为仓库添加星标以表示你喜欢或感兴趣*
 
--   [About stars](https://help.github.com/articles/about-stars/)
+    -   [About stars](https://help.github.com/articles/about-stars/)
 
 -   Follow
 
