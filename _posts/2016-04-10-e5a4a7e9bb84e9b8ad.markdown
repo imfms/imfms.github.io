@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-10 15:00:10+00:00
 layout: post
-link: http://f-ms.cn/?p=795
+link: https://imf.ms/?p=795
 slug: '%e5%a4%a7%e9%bb%84%e9%b8%ad'
 title: 大黄鸭
 wordpress_id: 795

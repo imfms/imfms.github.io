@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-31 12:59:37+00:00
 layout: post
-link: http://f-ms.cn/?p=718
+link: https://imf.ms/?p=718
 slug: '%e6%92%b0%e5%86%99%e6%9c%ba%e6%88%bf%e6%95%99%e5%ad%a6%e8%be%85%e5%8a%a9%e5%b7%a5%e5%85%b7%e7%9a%84%e6%80%aa%e8%9c%80%e9%bb%8d'
 title: 撰写机房教学辅助工具的怪蜀黍
 wordpress_id: 718

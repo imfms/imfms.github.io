@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-28 16:47:32+00:00
 layout: post
-link: http://f-ms.cn/?p=884
+link: https://imf.ms/?p=884
 slug: '%e9%82%a3%e6%97%b6%e6%88%91%e4%bb%ac%e6%b2%a1%e6%97%a5%e6%b2%a1%e5%a4%9c%e7%9a%84%e5%94%b1%ef%bc%8c%e9%82%a3%e6%97%b6%e6%88%91%e4%bb%ac%e9%86%89%e5%80%92%e5%9c%a8%e7%9f%b3%e6%a1%a5%e6%97%81'
 title: 那时我们没日没夜的唱，那时我们醉倒在石桥旁
 wordpress_id: 884

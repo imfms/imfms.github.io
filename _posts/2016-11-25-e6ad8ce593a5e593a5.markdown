@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-11-25 03:36:46+00:00
 layout: post
-link: http://f-ms.cn/?p=1359
+link: https://imf.ms/?p=1359
 slug: '%e6%ad%8c%e5%93%a5%e5%93%a5'
 title: 歌哥哥
 wordpress_id: 1359

@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-17 15:05:40+00:00
 layout: post
-link: http://f-ms.cn/?p=988
+link: https://imf.ms/?p=988
 slug: '%e6%9c%80%e6%b7%b1%e5%a4%84%e7%9a%84%e7%a7%98%e5%af%86'
 title: 最深处的秘密
 wordpress_id: 988

@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 10:09:35+00:00
 layout: post
-link: http://f-ms.cn/?p=64
+link: https://imf.ms/?p=64
 slug: '%e5%bb%ba%e7%ad%91%e5%b7%a5%e4%ba%ba'
 title: 建筑工人
 wordpress_id: 64

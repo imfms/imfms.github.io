@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-01-21 14:29:40+00:00
 layout: post
-link: http://f-ms.cn/?p=421
+link: https://imf.ms/?p=421
 slug: '%e6%b2%a1%e7%90%86%e7%94%b1%e7%95%99%e4%bd%8f%ef%bc%8c%e8%87%aa%e7%84%b6%ef%bc%8c%e6%b2%a1%e6%9c%ba%e4%bc%9a%ef%bc%8c%e6%8b%a6%e4%bd%8f'
 title: 没理由留住，自然，没机会，拦住
 wordpress_id: 421

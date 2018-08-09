@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-14 16:55:57+00:00
 layout: post
-link: http://f-ms.cn/?p=833
+link: https://imf.ms/?p=833
 slug: gh
 title: Gh
 wordpress_id: 833

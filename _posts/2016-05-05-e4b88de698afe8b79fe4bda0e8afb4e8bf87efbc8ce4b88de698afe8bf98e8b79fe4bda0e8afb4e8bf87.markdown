@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-05 16:03:34+00:00
 layout: post
-link: http://f-ms.cn/?p=922
+link: https://imf.ms/?p=922
 slug: '%e4%b8%8d%e6%98%af%e8%b7%9f%e4%bd%a0%e8%af%b4%e8%bf%87%ef%bc%8c%e4%b8%8d%e6%98%af%e8%bf%98%e8%b7%9f%e4%bd%a0%e8%af%b4%e8%bf%87'
 title: 不是跟你说过，不是还跟你说过
 wordpress_id: 922

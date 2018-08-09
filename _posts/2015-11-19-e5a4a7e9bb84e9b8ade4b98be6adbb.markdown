@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 11:05:39+00:00
 layout: post
-link: http://f-ms.cn/?p=104
+link: https://imf.ms/?p=104
 slug: '%e5%a4%a7%e9%bb%84%e9%b8%ad%e4%b9%8b%e6%ad%bb'
 title: 大黄鸭之死
 wordpress_id: 104

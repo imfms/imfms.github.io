@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-24 16:11:03+00:00
 layout: post
-link: http://f-ms.cn/?p=593
+link: https://imf.ms/?p=593
 slug: '%e4%b8%ad%e8%8a%b1'
 title: 中花，学
 wordpress_id: 593

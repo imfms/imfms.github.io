@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-02-16 15:58:46+00:00
 layout: post
-link: http://f-ms.cn/?p=454
+link: https://imf.ms/?p=454
 slug: '%e5%83%8f%e6%ad%bb%e4%ba%86%e4%b8%80%e6%a0%b7'
 title: 像死了一样
 wordpress_id: 454

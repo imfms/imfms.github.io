@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-24 16:28:55+00:00
 layout: post
-link: http://f-ms.cn/?p=606
+link: https://imf.ms/?p=606
 slug: '%e8%a3%b8%e5%8d%8a'
 title: 半
 wordpress_id: 606

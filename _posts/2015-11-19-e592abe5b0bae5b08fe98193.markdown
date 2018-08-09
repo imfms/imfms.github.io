@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 10:48:04+00:00
 layout: post
-link: http://f-ms.cn/?p=92
+link: https://imf.ms/?p=92
 slug: '%e5%92%ab%e5%b0%ba%e5%b0%8f%e9%81%93'
 title: 咫尺小道
 wordpress_id: 92

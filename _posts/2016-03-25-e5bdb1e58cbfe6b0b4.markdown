@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 09:57:22+00:00
 layout: post
-link: http://f-ms.cn/?p=636
+link: https://imf.ms/?p=636
 slug: '%e5%bd%b1%e5%8c%bf%e6%b0%b4'
 title: 影匿
 wordpress_id: 636

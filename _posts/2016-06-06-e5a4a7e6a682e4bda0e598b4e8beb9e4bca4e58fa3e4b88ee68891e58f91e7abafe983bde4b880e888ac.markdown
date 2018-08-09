@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-06-06 15:57:10+00:00
 layout: post
-link: http://f-ms.cn/?p=1111
+link: https://imf.ms/?p=1111
 slug: '%e5%a4%a7%e6%a6%82%e4%bd%a0%e5%98%b4%e8%be%b9%e4%bc%a4%e5%8f%a3%e4%b8%8e%e6%88%91%e5%8f%91%e7%ab%af%e9%83%bd%e4%b8%80%e8%88%ac'
 title: 大概你嘴边伤口与我发端都一般
 wordpress_id: 1111

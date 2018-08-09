@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-07-30 10:22:52+00:00
 layout: post
-link: http://f-ms.cn/?p=1286
+link: https://imf.ms/?p=1286
 slug: '%e8%9b%8a'
 title: 蛊
 wordpress_id: 1286

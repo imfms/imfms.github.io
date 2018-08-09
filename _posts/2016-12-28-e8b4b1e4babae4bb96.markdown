@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-12-28 13:31:53+00:00
 layout: post
-link: http://f-ms.cn/?p=1402
+link: https://imf.ms/?p=1402
 slug: '%e8%b4%b1%e4%ba%ba%e4%bb%96'
 title: 贱人他
 wordpress_id: 1402

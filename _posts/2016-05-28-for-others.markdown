@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-28 17:37:15+00:00
 layout: post
-link: http://f-ms.cn/?p=1074
+link: https://imf.ms/?p=1074
 slug: for-others
 title: For.Others
 wordpress_id: 1074

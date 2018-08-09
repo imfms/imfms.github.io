@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-07-01 22:30:48+00:00
 layout: post
-link: http://f-ms.cn/?p=1203
+link: https://imf.ms/?p=1203
 slug: '%e7%bb%99%e4%bd%a0%e5%a5%89%e4%b8%8a%ef%bc%8c%e5%ae%be%e5%85%8b%e6%96%af%e7%9a%84%e7%be%8e%e9%85%92'
 title: 给你奉上，宾克斯的美酒
 wordpress_id: 1203

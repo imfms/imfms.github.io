@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-12-02 16:51:49+00:00
 layout: post
-link: http://f-ms.cn/?p=194
+link: https://imf.ms/?p=194
 slug: '%e6%89%b9%e5%a4%84%e7%90%86%e6%96%87%e6%9c%ac%e6%95%b0%e6%8d%ae%e5%ba%93%e5%b7%a5%e5%85%b7%e7%ae%b1-databasetools'
 title: 批处理文本数据库工具箱 BatDatabaseTools
 wordpress_id: 194

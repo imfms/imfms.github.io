@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 10:08:28+00:00
 layout: post
-link: http://f-ms.cn/?p=62
+link: https://imf.ms/?p=62
 slug: implicit%e6%97%adh_x
 title: Implicit\旭\H_X.
 wordpress_id: 62

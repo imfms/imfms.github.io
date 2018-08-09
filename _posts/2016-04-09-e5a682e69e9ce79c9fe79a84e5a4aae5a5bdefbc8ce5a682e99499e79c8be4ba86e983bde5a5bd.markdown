@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-09 15:34:53+00:00
 layout: post
-link: http://f-ms.cn/?p=792
+link: https://imf.ms/?p=792
 slug: '%e5%a6%82%e6%9e%9c%e7%9c%9f%e7%9a%84%e5%a4%aa%e5%a5%bd%ef%bc%8c%e5%a6%82%e9%94%99%e7%9c%8b%e4%ba%86%e9%83%bd%e5%a5%bd'
 title: 如果真的太好，如错看了都好
 wordpress_id: 792

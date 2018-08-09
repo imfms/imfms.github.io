@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-18 16:59:39+00:00
 layout: post
-link: http://f-ms.cn/?p=492
+link: https://imf.ms/?p=492
 slug: '%e6%88%91%e6%83%b3%e9%9d%99%e9%9d%99'
 title: 我想静静
 wordpress_id: 492

@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 10:17:50+00:00
 layout: post
-link: http://f-ms.cn/?p=74
+link: https://imf.ms/?p=74
 slug: '%e9%9b%b7%e9%9b%a8%e5%a4%a9'
 title: 雷雨天
 wordpress_id: 74

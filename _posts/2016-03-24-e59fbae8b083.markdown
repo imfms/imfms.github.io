@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-24 03:08:23+00:00
 layout: post
-link: http://f-ms.cn/?p=577
+link: https://imf.ms/?p=577
 slug: '%e5%9f%ba%e8%b0%83'
 title: 基调
 wordpress_id: 577

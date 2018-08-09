@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 10:24:03+00:00
 layout: post
-link: http://f-ms.cn/?p=661
+link: https://imf.ms/?p=661
 slug: '%e4%b8%8d%e7%9f%a5%e5%b7%b1%e4%b8%91%e6%96%b9%e6%8b%8d%e5%b7%b1'
 title: 不知己丑方拍己
 wordpress_id: 661

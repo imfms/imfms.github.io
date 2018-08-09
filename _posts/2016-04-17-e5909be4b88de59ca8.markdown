@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-17 15:24:45+00:00
 layout: post
-link: http://f-ms.cn/?p=840
+link: https://imf.ms/?p=840
 slug: '%e5%90%9b%e4%b8%8d%e5%9c%a8'
 title: 君不在
 wordpress_id: 840

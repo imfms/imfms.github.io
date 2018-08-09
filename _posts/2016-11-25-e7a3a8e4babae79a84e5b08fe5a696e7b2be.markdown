@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-11-25 03:39:17+00:00
 layout: post
-link: http://f-ms.cn/?p=1360
+link: https://imf.ms/?p=1360
 slug: '%e7%a3%a8%e4%ba%ba%e7%9a%84%e5%b0%8f%e5%a6%96%e7%b2%be'
 title: 磨人的小妖精
 wordpress_id: 1360

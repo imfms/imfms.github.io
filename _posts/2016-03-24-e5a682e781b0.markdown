@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-24 16:06:59+00:00
 layout: post
-link: http://f-ms.cn/?p=589
+link: https://imf.ms/?p=589
 slug: '%e5%a6%82%e7%81%b0'
 title: 如灰？如火
 wordpress_id: 589

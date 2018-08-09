@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2017-04-30 01:36:53+00:00
 layout: post
-link: http://f-ms.cn/?p=1445
+link: https://imf.ms/?p=1445
 slug: '%e6%88%91%e4%bd%95%e5%be%b7%e4%bd%95%e8%83%bd'
 title: 我何德何能
 wordpress_id: 1445

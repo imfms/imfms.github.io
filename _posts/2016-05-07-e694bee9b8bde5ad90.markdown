@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-07 15:44:37+00:00
 layout: post
-link: http://f-ms.cn/?p=943
+link: https://imf.ms/?p=943
 slug: '%e6%94%be%e9%b8%bd%e5%ad%90'
 title: 放鸽子
 wordpress_id: 943

@@ -288,11 +288,11 @@ tags:
 
 
 
-# [Seafile安装/配置/升级](http://f-ms.cn/server/2017/07/06/seafile-install-config-use-log/)
+# [Seafile安装/配置/升级](https://imf.ms/server/2017/07/06/seafile-install-config-use-log/)
 
 
 
-# [ngrok server-client](http://f-ms.cn/server/2017/06/04/ngrok_server_client_usage/)
+# [ngrok server-client](https://imf.ms/server/2017/06/04/ngrok_server_client_usage/)
 
 
 

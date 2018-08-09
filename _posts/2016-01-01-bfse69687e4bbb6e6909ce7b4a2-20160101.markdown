@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-01-01 01:44:12+00:00
 layout: post
-link: http://f-ms.cn/?p=338
+link: https://imf.ms/?p=338
 slug: bfs%e6%96%87%e4%bb%b6%e6%90%9c%e7%b4%a2-20160101
 title: BFS文件搜索 20160102
 wordpress_id: 338

@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 09:09:49+00:00
 layout: post
-link: http://f-ms.cn/?p=44
+link: https://imf.ms/?p=44
 slug: '%e6%89%b9%e5%a4%84%e7%90%86%e6%96%87%e6%9c%ac%e8%a7%a3%e6%9e%90%e5%b7%a5%e5%85%b7%e5%ba%93'
 title: 批处理文本解析工具库
 wordpress_id: 44

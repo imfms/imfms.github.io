@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 09:46:27+00:00
 layout: post
-link: http://f-ms.cn/?p=51
+link: https://imf.ms/?p=51
 slug: '51'
 title: 温馨提醒
 wordpress_id: 51

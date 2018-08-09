@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-24 16:18:34+00:00
 layout: post
-link: http://f-ms.cn/?p=599
+link: https://imf.ms/?p=599
 slug: breakmemory
 title: BreakMemory
 wordpress_id: 599

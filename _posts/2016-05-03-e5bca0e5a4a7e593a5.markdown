@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-03 14:50:52+00:00
 layout: post
-link: http://f-ms.cn/?p=914
+link: https://imf.ms/?p=914
 slug: '%e5%bc%a0%e5%a4%a7%e5%93%a5'
 title: 张大哥
 wordpress_id: 914

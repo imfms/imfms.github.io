@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-12 16:06:43+00:00
 layout: post
-link: http://f-ms.cn/?p=803
+link: https://imf.ms/?p=803
 slug: '%e7%8b%9e'
 title: 狞
 wordpress_id: 803

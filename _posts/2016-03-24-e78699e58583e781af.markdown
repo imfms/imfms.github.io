@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-24 16:29:34+00:00
 layout: post
-link: http://f-ms.cn/?p=603
+link: https://imf.ms/?p=603
 slug: '%e7%86%99%e5%85%83%e7%81%af'
 title: 熙
 wordpress_id: 603

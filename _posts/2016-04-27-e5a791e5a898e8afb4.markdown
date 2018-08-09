@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-27 17:05:05+00:00
 layout: post
-link: http://f-ms.cn/?p=876
+link: https://imf.ms/?p=876
 slug: '%e5%a7%91%e5%a8%98%e8%af%b4'
 title: 姑娘说
 wordpress_id: 876

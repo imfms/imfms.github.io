@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-14 16:50:59+00:00
 layout: post
-link: http://f-ms.cn/?p=823
+link: https://imf.ms/?p=823
 slug: '%e9%9a%8f%e5%bf%83'
 title: 随心
 wordpress_id: 823

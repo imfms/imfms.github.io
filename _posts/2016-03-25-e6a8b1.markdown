@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 10:07:39+00:00
 layout: post
-link: http://f-ms.cn/?p=646
+link: https://imf.ms/?p=646
 slug: '%e6%a8%b1'
 title: 樱
 wordpress_id: 646

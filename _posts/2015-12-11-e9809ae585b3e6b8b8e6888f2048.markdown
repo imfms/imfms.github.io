@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-12-11 13:27:17+00:00
 layout: post
-link: http://f-ms.cn/?p=247
+link: https://imf.ms/?p=247
 slug: '%e9%80%9a%e5%85%b3%e6%b8%b8%e6%88%8f2048'
 title: 通关游戏2048
 wordpress_id: 247

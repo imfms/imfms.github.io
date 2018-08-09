@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-01-28 05:41:18+00:00
 layout: post
-link: http://f-ms.cn/?p=430
+link: https://imf.ms/?p=430
 slug: '%e9%82%a3%e4%b8%aa%e5%b0%8f%e5%ad%a9'
 title: 那个小孩
 wordpress_id: 430

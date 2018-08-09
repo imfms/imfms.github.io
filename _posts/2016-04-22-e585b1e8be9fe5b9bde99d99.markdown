@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-22 08:52:29+00:00
 layout: post
-link: http://f-ms.cn/?p=856
+link: https://imf.ms/?p=856
 slug: '%e5%85%b1%e8%be%9f%e5%b9%bd%e9%9d%99'
 title: 共辟幽静
 wordpress_id: 856

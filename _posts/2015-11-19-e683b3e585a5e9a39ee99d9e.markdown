@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 10:15:31+00:00
 layout: post
-link: http://f-ms.cn/?p=70
+link: https://imf.ms/?p=70
 slug: '%e6%83%b3%e5%85%a5%e9%a3%9e%e9%9d%9e'
 title: 想入飞非
 wordpress_id: 70

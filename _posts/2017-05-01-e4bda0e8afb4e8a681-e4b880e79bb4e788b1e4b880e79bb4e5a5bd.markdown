@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2017-05-01 01:14:07+00:00
 layout: post
-link: http://f-ms.cn/?p=1448
+link: https://imf.ms/?p=1448
 slug: '%e4%bd%a0%e8%af%b4%e8%a6%81-%e4%b8%80%e7%9b%b4%e7%88%b1%e4%b8%80%e7%9b%b4%e5%a5%bd'
 title: 你说要 一直爱一直好
 wordpress_id: 1448

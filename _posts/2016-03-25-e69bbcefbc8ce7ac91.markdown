@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 10:04:21+00:00
 layout: post
-link: http://f-ms.cn/?p=642
+link: https://imf.ms/?p=642
 slug: '%e6%9b%bc%ef%bc%8c%e7%ac%91'
 title: 曼
 wordpress_id: 642

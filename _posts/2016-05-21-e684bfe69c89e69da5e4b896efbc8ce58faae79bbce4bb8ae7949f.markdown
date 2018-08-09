@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-21 15:39:44+00:00
 layout: post
-link: http://f-ms.cn/?p=1028
+link: https://imf.ms/?p=1028
 slug: '%e6%84%bf%e6%9c%89%e6%9d%a5%e4%b8%96%ef%bc%8c%e5%8f%aa%e7%9b%bc%e4%bb%8a%e7%94%9f'
 title: 愿有来世，只盼今生
 wordpress_id: 1028

@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 10:25:06+00:00
 layout: post
-link: http://f-ms.cn/?p=663
+link: https://imf.ms/?p=663
 slug: '%e8%84%8a'
 title: 脊
 wordpress_id: 663

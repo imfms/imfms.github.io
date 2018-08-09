@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-24 16:09:09+00:00
 layout: post
-link: http://f-ms.cn/?p=591
+link: https://imf.ms/?p=591
 slug: '%e6%b7%b3%ef%bc%8cd_kk'
 title: 淳
 wordpress_id: 591

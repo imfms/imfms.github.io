@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-29 16:01:57+00:00
 layout: post
-link: http://f-ms.cn/?p=1089
+link: https://imf.ms/?p=1089
 slug: '%e6%8a%b9%e6%b6%82%e6%af%81%e4%b8%80%e7%94%9f%e4%b8%91'
 title: 抹涂毁一生丑
 wordpress_id: 1089

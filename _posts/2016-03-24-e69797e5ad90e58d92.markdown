@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-24 16:03:22+00:00
 layout: post
-link: http://f-ms.cn/?p=586
+link: https://imf.ms/?p=586
 slug: '%e6%97%97%e5%ad%90%e5%8d%92'
 title: 旗卒
 wordpress_id: 586

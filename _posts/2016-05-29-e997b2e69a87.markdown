@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-29 16:01:50+00:00
 layout: post
-link: http://f-ms.cn/?p=1092
+link: https://imf.ms/?p=1092
 slug: '%e9%97%b2%e6%9a%87'
 title: 闲暇
 wordpress_id: 1092

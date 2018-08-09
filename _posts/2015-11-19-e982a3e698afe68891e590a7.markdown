@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 10:12:51+00:00
 layout: post
-link: http://f-ms.cn/?p=68
+link: https://imf.ms/?p=68
 slug: '%e9%82%a3%e6%98%af%e6%88%91%e5%90%a7'
 title: 那是我吧
 wordpress_id: 68

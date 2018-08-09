@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-07-17 23:42:55+00:00
 layout: post
-link: http://f-ms.cn/?p=1240
+link: https://imf.ms/?p=1240
 slug: '%e6%97%a5%e5%ad%90%e6%98%af%e5%ae%89%e9%9d%99%e7%9a%84'
 title: 日子是安静的
 wordpress_id: 1240

@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-17 15:11:15+00:00
 layout: post
-link: http://f-ms.cn/?p=1007
+link: https://imf.ms/?p=1007
 slug: '%e4%bd%a0%e6%89%8d%e9%9f%a9%e5%a4%a7%e5%8a%9b'
 title: 你才韩大力
 wordpress_id: 1007

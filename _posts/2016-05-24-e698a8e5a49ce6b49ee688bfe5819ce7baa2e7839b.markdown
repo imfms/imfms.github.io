@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-24 16:43:03+00:00
 layout: post
-link: http://f-ms.cn/?p=1055
+link: https://imf.ms/?p=1055
 slug: '%e6%98%a8%e5%a4%9c%e6%b4%9e%e6%88%bf%e5%81%9c%e7%ba%a2%e7%83%9b'
 title: 昨夜洞房停红烛
 wordpress_id: 1055

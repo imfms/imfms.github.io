@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-04 07:18:19+00:00
 layout: post
-link: http://f-ms.cn/?p=473
+link: https://imf.ms/?p=473
 slug: '%e5%be%92%e6%ad%a5%e5%8e%bb%e7%9c%8b%e4%bd%a0'
 title: 徒步去看你
 wordpress_id: 473

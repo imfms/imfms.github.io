@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-07 15:39:19+00:00
 layout: post
-link: http://f-ms.cn/?p=941
+link: https://imf.ms/?p=941
 slug: '%e6%83%8a%e5%be%97%e4%b8%8d%e7%9f%a5%e6%89%80%e6%8e%aa'
 title: 惊得不知所措
 wordpress_id: 941

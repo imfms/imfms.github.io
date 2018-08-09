@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 10:21:41+00:00
 layout: post
-link: http://f-ms.cn/?p=659
+link: https://imf.ms/?p=659
 slug: '%e5%a2%9f%e6%8b%86'
 title: 墟拆
 wordpress_id: 659

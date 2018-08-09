@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-09-01 16:26:06+00:00
 layout: post
-link: http://f-ms.cn/?p=1311
+link: https://imf.ms/?p=1311
 slug: '%e7%86%8a%c2%b7%e5%90%9b'
 title: 熊·君
 wordpress_id: 1311

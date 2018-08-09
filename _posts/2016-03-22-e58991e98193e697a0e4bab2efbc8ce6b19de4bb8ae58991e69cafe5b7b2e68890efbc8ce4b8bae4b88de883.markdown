@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-22 14:54:56+00:00
 layout: post
-link: http://f-ms.cn/?p=513
+link: https://imf.ms/?p=513
 slug: '%e5%89%91%e9%81%93%e6%97%a0%e4%ba%b2%ef%bc%8c%e6%b1%9d%e4%bb%8a%e5%89%91%e6%9c%af%e5%b7%b2%e6%88%90%ef%bc%8c%e4%b8%ba%e4%b8%8d%e8%83%bd%e6%96%a9%e6%96%ad%e4%ba%ba%e4%bc%a6%e4%b9%8b%e6%83%85'
 title: 剑道无亲，汝今剑术已成，为不能斩断人伦之情
 wordpress_id: 513

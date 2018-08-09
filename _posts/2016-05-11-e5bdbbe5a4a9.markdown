@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-11 15:24:55+00:00
 layout: post
-link: http://f-ms.cn/?p=972
+link: https://imf.ms/?p=972
 slug: '%e5%bd%bb%e5%a4%a9'
 title: 彻天
 wordpress_id: 972

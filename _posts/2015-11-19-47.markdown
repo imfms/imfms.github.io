@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 09:12:38+00:00
 layout: post
-link: http://f-ms.cn/?p=47
+link: https://imf.ms/?p=47
 slug: '47'
 title: 无题
 wordpress_id: 47

@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-19 00:37:47+00:00
 layout: post
-link: http://f-ms.cn/?p=498
+link: https://imf.ms/?p=498
 slug: '%e6%89%8b%e6%9c%baqq%e8%af%ad%e9%9f%b3-slkpcm-%e8%bd%ac%e6%8d%a2-wav-%e8%bd%ac%e6%8d%a2%e5%99%a8-qq_slk2wav'
 title: 手机QQ语音 slk/pcm 转换 wav 转换器 QQ_SLK2WAV
 wordpress_id: 498

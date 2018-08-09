@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-22 15:34:37+00:00
 layout: post
-link: http://f-ms.cn/?p=1048
+link: https://imf.ms/?p=1048
 slug: '%e8%ae%b0%e5%be%97%e6%88%91%e7%9a%84%e5%95%a4%e9%85%92'
 title: 记得我的啤酒
 wordpress_id: 1048

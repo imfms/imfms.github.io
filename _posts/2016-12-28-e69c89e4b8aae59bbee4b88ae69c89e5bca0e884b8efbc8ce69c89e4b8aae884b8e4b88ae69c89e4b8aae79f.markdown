@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-12-28 13:26:58+00:00
 layout: post
-link: http://f-ms.cn/?p=1401
+link: https://imf.ms/?p=1401
 slug: '%e6%9c%89%e4%b8%aa%e5%9b%be%e4%b8%8a%e6%9c%89%e5%bc%a0%e8%84%b8%ef%bc%8c%e6%9c%89%e4%b8%aa%e8%84%b8%e4%b8%8a%e6%9c%89%e4%b8%aa%e7%9f%b3%e6%9f%b1'
 title: 有个图上有张脸，有个脸上有个石柱
 wordpress_id: 1401

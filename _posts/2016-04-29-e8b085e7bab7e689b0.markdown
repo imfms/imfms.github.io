@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-29 15:35:40+00:00
 layout: post
-link: http://f-ms.cn/?p=887
+link: https://imf.ms/?p=887
 slug: '%e8%b0%85%e7%ba%b7%e6%89%b0'
 title: 谅纷扰
 wordpress_id: 887

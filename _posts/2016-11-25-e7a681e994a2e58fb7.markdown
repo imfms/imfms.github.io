@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-11-25 03:32:58+00:00
 layout: post
-link: http://f-ms.cn/?p=1355
+link: https://imf.ms/?p=1355
 slug: '%e7%a6%81%e9%94%a2%e5%8f%b7'
 title: 禁锢号
 wordpress_id: 1355

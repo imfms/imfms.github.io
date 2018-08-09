@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-02-13 02:26:46+00:00
 layout: post
-link: http://f-ms.cn/?p=452
+link: https://imf.ms/?p=452
 slug: '%e5%8d%83%e6%97%a5%e6%83%85'
 title: 千日情
 wordpress_id: 452

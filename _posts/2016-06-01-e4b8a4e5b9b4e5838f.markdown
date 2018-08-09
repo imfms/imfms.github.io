@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-06-01 15:53:14+00:00
 layout: post
-link: http://f-ms.cn/?p=1101
+link: https://imf.ms/?p=1101
 slug: '%e4%b8%a4%e5%b9%b4%e5%83%8f'
 title: 两年像
 wordpress_id: 1101

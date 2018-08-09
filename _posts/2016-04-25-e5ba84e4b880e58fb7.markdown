@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-25 19:20:03+00:00
 layout: post
-link: http://f-ms.cn/?p=868
+link: https://imf.ms/?p=868
 slug: '%e5%ba%84%e4%b8%80%e5%8f%b7'
 title: 庄一号
 wordpress_id: 868

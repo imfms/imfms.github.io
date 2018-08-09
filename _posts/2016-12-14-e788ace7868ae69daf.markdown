@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-12-14 07:51:51+00:00
 layout: post
-link: http://f-ms.cn/?p=1387
+link: https://imf.ms/?p=1387
 slug: '%e7%88%ac%e7%86%8a%e6%9d%af'
 title: 熊杯管
 wordpress_id: 1387

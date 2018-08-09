@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-02-20 23:08:53+00:00
 layout: post
-link: http://f-ms.cn/?p=462
+link: https://imf.ms/?p=462
 slug: '%e4%b8%87%e7%b1%b3%e7%9c%b7%e6%81%8b'
 title: 万米眷恋
 wordpress_id: 462

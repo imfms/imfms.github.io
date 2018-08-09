@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 09:55:45+00:00
 layout: post
-link: http://f-ms.cn/?p=634
+link: https://imf.ms/?p=634
 slug: '%e6%b0%b4%e5%8c%bf%e5%bd%b1'
 title: 水匿
 wordpress_id: 634

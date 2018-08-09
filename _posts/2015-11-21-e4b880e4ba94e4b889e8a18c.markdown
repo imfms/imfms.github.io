@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-21 05:08:03+00:00
 layout: post
-link: http://f-ms.cn/?p=130
+link: https://imf.ms/?p=130
 slug: '%e4%b8%80%e4%ba%94%e4%b8%89%e8%a1%8c'
 title: 一五三行
 wordpress_id: 130

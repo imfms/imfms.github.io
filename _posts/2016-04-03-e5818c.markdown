@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-03 11:02:22+00:00
 layout: post
-link: http://f-ms.cn/?p=779
+link: https://imf.ms/?p=779
 slug: '%e5%81%8c'
 title: 偌
 wordpress_id: 779

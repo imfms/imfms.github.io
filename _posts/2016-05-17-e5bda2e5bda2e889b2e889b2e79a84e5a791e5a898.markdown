@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-17 15:07:01+00:00
 layout: post
-link: http://f-ms.cn/?p=1001
+link: https://imf.ms/?p=1001
 slug: '%e5%bd%a2%e5%bd%a2%e8%89%b2%e8%89%b2%e7%9a%84%e5%a7%91%e5%a8%98'
 title: 形形色色的姑娘
 wordpress_id: 1001

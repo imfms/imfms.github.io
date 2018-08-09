@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 10:16:44+00:00
 layout: post
-link: http://f-ms.cn/?p=72
+link: https://imf.ms/?p=72
 slug: '%e6%a3%ae%e6%9e%97%e8%b7%af'
 title: 森林路
 wordpress_id: 72

@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 10:10:24+00:00
 layout: post
-link: http://f-ms.cn/?p=648
+link: https://imf.ms/?p=648
 slug: '%e8%93%9d%e7%a9%ba%e7%a9%ba'
 title: 蓝空空
 wordpress_id: 648

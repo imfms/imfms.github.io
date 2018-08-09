@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 10:05:20+00:00
 layout: post
-link: http://f-ms.cn/?p=644
+link: https://imf.ms/?p=644
 slug: '%e9%9a%90'
 title: 隐
 wordpress_id: 644

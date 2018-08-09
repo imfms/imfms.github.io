@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-23 15:52:30+00:00
 layout: post
-link: http://f-ms.cn/?p=1051
+link: https://imf.ms/?p=1051
 slug: '%e4%bc%aa%e5%90%9b%e5%ad%90'
 title: 伪君子
 wordpress_id: 1051

@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-10 15:13:27+00:00
 layout: post
-link: http://f-ms.cn/?p=958
+link: https://imf.ms/?p=958
 slug: '%e5%bd%92%e6%9c%9f'
 title: 归期
 wordpress_id: 958

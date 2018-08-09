@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-06-01 15:53:38+00:00
 layout: post
-link: http://f-ms.cn/?p=1100
+link: https://imf.ms/?p=1100
 slug: '%e6%b6%9b'
 title: 涛
 wordpress_id: 1100

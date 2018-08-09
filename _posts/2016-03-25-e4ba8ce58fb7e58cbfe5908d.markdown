@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 10:15:33+00:00
 layout: post
-link: http://f-ms.cn/?p=654
+link: https://imf.ms/?p=654
 slug: '%e4%ba%8c%e5%8f%b7%e5%8c%bf%e5%90%8d'
 title: 二号匿名
 wordpress_id: 654

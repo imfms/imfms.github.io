@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-24 16:20:26+00:00
 layout: post
-link: http://f-ms.cn/?p=601
+link: https://imf.ms/?p=601
 slug: '%e7%a2%8e%e7%8e%bb%e7%92%83%e8%a3%85'
 title: 璃装
 wordpress_id: 601

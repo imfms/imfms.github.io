@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-06-23 16:24:11+00:00
 layout: post
-link: http://f-ms.cn/?p=1174
+link: https://imf.ms/?p=1174
 slug: '%e5%98%bf%ef%bc%8c%e5%a7%91%e5%a8%98'
 title: 嘿，姑娘
 wordpress_id: 1174

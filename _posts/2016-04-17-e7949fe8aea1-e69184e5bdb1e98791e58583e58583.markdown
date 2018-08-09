@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-17 15:27:10+00:00
 layout: post
-link: http://f-ms.cn/?p=845
+link: https://imf.ms/?p=845
 slug: '%e7%94%9f%e8%ae%a1-%e6%91%84%e5%bd%b1%e9%87%91%e5%85%83%e5%85%83'
 title: 生计 [摄影:金元元]
 wordpress_id: 845

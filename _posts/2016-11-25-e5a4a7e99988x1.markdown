@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-11-25 03:35:15+00:00
 layout: post
-link: http://f-ms.cn/?p=1357
+link: https://imf.ms/?p=1357
 slug: '%e5%a4%a7%e9%99%88x1'
 title: 大陈X1
 wordpress_id: 1357

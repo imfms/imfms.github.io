@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-01-13 05:13:31+00:00
 layout: post
-link: http://f-ms.cn/?p=375
+link: https://imf.ms/?p=375
 slug: vnc%e9%80%9a%e8%ae%af%e5%bd%95%e8%bf%9e%e6%8e%a5%e5%b7%a5%e5%85%b7-%e6%94%af%e6%8c%81%e5%b1%8f%e5%b9%95%e5%a2%99-%e6%89%b9%e5%a4%84%e7%90%86
 title: VNC通讯录连接工具 支持屏幕墙  – 批处理
 wordpress_id: 375

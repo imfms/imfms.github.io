@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-28 17:39:48+00:00
 layout: post
-link: http://f-ms.cn/?p=1078
+link: https://imf.ms/?p=1078
 slug: '%e7%9c%9f%e5%a5%bd'
 title: 真好
 wordpress_id: 1078

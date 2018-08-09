@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-11-25 03:24:41+00:00
 layout: post
-link: http://f-ms.cn/?p=1347
+link: https://imf.ms/?p=1347
 slug: '%e7%86%8a%e8%8a%b1%e7%86%8a%e6%91%84'
 title: 熊花[熊摄]
 wordpress_id: 1347

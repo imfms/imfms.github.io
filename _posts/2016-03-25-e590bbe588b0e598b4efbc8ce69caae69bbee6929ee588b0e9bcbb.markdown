@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 09:59:43+00:00
 layout: post
-link: http://f-ms.cn/?p=638
+link: https://imf.ms/?p=638
 slug: '%e5%90%bb%e5%88%b0%e5%98%b4%ef%bc%8c%e6%9c%aa%e6%9b%be%e6%92%9e%e5%88%b0%e9%bc%bb'
 title: 吻到，未撞到
 wordpress_id: 638

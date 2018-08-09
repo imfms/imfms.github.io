@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-07-07 23:04:23+00:00
 layout: post
-link: http://f-ms.cn/?p=1223
+link: https://imf.ms/?p=1223
 slug: '%e9%98%94%e4%bb%a5%e4%b8%8d'
 title: 阔以不~
 wordpress_id: 1223

@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 04:34:14+00:00
 layout: post
-link: http://f-ms.cn/?p=619
+link: https://imf.ms/?p=619
 slug: '%e8%95%89%e7%8c%ab%ef%bc%8c%e4%bd%a0%e4%b8%80%e6%88%91%e4%b8%80%ef%bc%8c%e4%b8%80%e8%97%8f%e4%b8%80%e5%82%8d'
 title: 蕉猫，我一你一，一藏，一傍
 wordpress_id: 619

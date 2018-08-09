@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-01-30 14:28:42+00:00
 layout: post
-link: http://f-ms.cn/?p=434
+link: https://imf.ms/?p=434
 slug: '%e8%b5%a0c_sy'
 title: 赠C_Sy
 wordpress_id: 434

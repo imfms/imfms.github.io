@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-12-14 07:46:13+00:00
 layout: post
-link: http://f-ms.cn/?p=1379
+link: https://imf.ms/?p=1379
 slug: '%e9%80%a2%e8%80%83%e5%bf%85%e8%bf%873'
 title: 逢考必过3
 wordpress_id: 1379

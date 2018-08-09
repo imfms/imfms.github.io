@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-14 16:58:22+00:00
 layout: post
-link: http://f-ms.cn/?p=836
+link: https://imf.ms/?p=836
 slug: '%e9%ad%94%e6%b3%95%e7%90%83'
 title: 魔法球
 wordpress_id: 836

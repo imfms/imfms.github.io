@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 09:44:01+00:00
 layout: post
-link: http://f-ms.cn/?p=49
+link: https://imf.ms/?p=49
 slug: '49'
 title: 五分余生遗言
 wordpress_id: 49

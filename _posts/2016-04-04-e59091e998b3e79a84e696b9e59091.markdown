@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-04 07:40:50+00:00
 layout: post
-link: http://f-ms.cn/?p=784
+link: https://imf.ms/?p=784
 slug: '%e5%90%91%e9%98%b3%e7%9a%84%e6%96%b9%e5%90%91'
 title: 向阳的方向
 wordpress_id: 784

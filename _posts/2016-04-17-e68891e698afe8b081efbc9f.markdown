@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-04-17 15:29:12+00:00
 layout: post
-link: http://f-ms.cn/?p=846
+link: https://imf.ms/?p=846
 slug: '%e6%88%91%e6%98%af%e8%b0%81%ef%bc%9f'
 title: 我是谁？
 wordpress_id: 846

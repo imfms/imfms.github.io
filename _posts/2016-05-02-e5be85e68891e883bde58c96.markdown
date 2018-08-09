@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-02 14:56:36+00:00
 layout: post
-link: http://f-ms.cn/?p=911
+link: https://imf.ms/?p=911
 slug: '%e5%be%85%e6%88%91%e8%83%bd%e5%8c%96'
 title: 待我能化
 wordpress_id: 911

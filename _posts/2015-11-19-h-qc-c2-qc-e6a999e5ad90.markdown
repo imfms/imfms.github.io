@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2015-11-19 10:11:46+00:00
 layout: post
-link: http://f-ms.cn/?p=66
+link: https://imf.ms/?p=66
 slug: h-qc-c2-qc-%e6%a9%99%e5%ad%90
 title: H-Qc./C2./Qc./橙子
 wordpress_id: 66

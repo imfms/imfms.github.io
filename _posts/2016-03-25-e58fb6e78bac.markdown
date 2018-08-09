@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-03-25 10:11:56+00:00
 layout: post
-link: http://f-ms.cn/?p=650
+link: https://imf.ms/?p=650
 slug: '%e5%8f%b6%e7%8b%ac'
 title: 叶独
 wordpress_id: 650

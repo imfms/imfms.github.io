@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2017-03-01 14:50:21+00:00
 layout: post
-link: http://f-ms.cn/?p=1420
+link: https://imf.ms/?p=1420
 slug: '%e7%a7%9f%e4%bd%8f'
 title: 租住
 wordpress_id: 1420

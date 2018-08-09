@@ -3,7 +3,7 @@ author: F_Ms
 comments: true
 date: 2016-05-21 16:17:19+00:00
 layout: post
-link: http://f-ms.cn/?p=1037
+link: https://imf.ms/?p=1037
 slug: '%e4%b8%8d%e8%a6%81%e4%ba%86'
 title: 不要了
 wordpress_id: 1037
