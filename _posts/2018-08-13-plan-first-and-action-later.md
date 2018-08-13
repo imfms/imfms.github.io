@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "捡起地图和罗盘，扬起风帆，后起锚"
+title:  "捡起地图和罗盘，后起锚，扬起风帆，请持续前进"
 subtitle: "请持续前进"
 date:   2018-08-13 16:24:30 +0800
 categories: share
