@@ -1,9 +1,9 @@
 # Site settings
 title: f_ms
-SEOTitle: f_ms | 插画人
+SEOTitle: f_ms | painter
 # header-img: img/home-bg.jpg
 email: imf_ms@yeah.net
-description: "插画人"
+description: "painter"
 keyword: "Android"
 url: "https://imf.ms"              # your host, for absolute URL
 # baseurl: "/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
