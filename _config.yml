@@ -9,7 +9,6 @@ url: "https://imf.ms"              # your host, for absolute URL
 # baseurl: "/blog"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
-
 # SNS settings
 RSS: true
 weibo_username:     imfms
