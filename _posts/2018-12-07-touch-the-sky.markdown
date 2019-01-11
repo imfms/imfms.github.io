@@ -13,7 +13,7 @@ tags:
 
 
 
-![](/img/post/touch-the-sky/touch-the-sky.png)
+![](/img/post/touch-the-sky/touch_the_sky.png)
 
 
 
