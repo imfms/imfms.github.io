@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "图画《接近星辰》"
-subtitle: "touch the sky"
+subtitle: "you can touch the sky"
 date:   2018-12-07 00:00:00 +0800
 categories: draw
 tags: 
