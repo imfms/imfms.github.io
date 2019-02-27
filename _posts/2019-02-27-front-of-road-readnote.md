@@ -10,7 +10,7 @@ tags:
 - think
 ---
 
-*doc.imf.ms/timeflow/2018-13*
+> *doc.imf.ms/timeflow/2018-13*
   
 > 《前方的路》作者提供有两种版本：在线版本和销售版本。在[作者的个人网站](http://www.ruanyifeng.com/road/index.html)中可以在线观看全文，我最初是买了一份kindle版本，不想每次都麻烦的翻到网站，后来发现在线版本文章居然比销售版本多一些，应该是是有一些版权相关的取舍或是后期的新编。
 
