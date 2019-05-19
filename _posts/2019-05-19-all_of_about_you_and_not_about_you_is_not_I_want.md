@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "像素画 - 所有与你有关的和与你无关的都不是我想要的"
+subtitle: "之外的才是"
 date:   2019-05-19 22:10:00 +1200
 categories: android
 tags: 
