@@ -19,7 +19,7 @@ tags:
     - [TypeScript](#typescript)
 - [基础框架学习阶段](#%E5%9F%BA%E7%A1%80%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0%E9%98%B6%E6%AE%B5)
     - [React](#react)
-    - [Ionic]https://ionicframework.com/ / [Capacitor](#ionichttpsionicframeworkcom--capacitor)
+    - Ionic / Capacitor
     - [工具库](#%E5%B7%A5%E5%85%B7%E5%BA%93)
 - [项目各基础设施封装](#%E9%A1%B9%E7%9B%AE%E5%90%84%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E5%B0%81%E8%A3%85)
     - [数据验证器](#%E6%95%B0%E6%8D%AE%E9%AA%8C%E8%AF%81%E5%99%A8)
