@@ -2,7 +2,7 @@
 layout: post
 title:  "我零基础独立开发一个 Web/Hybird 项目的经历"
 subtitle: ""
-date:   2022-07-05 21:45:00 +1200
+date: 2022-07-05 21:45:00 +1200
 categories: web
 tags: 
 - web
@@ -10,8 +10,41 @@ tags:
 - hybird
 ---
 
+<!-- TOC -->
 
-[TOC]
+- [背景](#%E8%83%8C%E6%99%AF)
+- [前置知识学习阶段](#%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0%E9%98%B6%E6%AE%B5)
+    - [HTML](#html)
+    - [JavaScript](#javascript)
+    - [TypeScript](#typescript)
+- [基础框架学习阶段](#%E5%9F%BA%E7%A1%80%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0%E9%98%B6%E6%AE%B5)
+    - [React](#react)
+    - [Ionic]https://ionicframework.com/ / [Capacitor](#ionichttpsionicframeworkcom--capacitor)
+    - [工具库](#%E5%B7%A5%E5%85%B7%E5%BA%93)
+- [项目各基础设施封装](#%E9%A1%B9%E7%9B%AE%E5%90%84%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD%E5%B0%81%E8%A3%85)
+    - [数据验证器](#%E6%95%B0%E6%8D%AE%E9%AA%8C%E8%AF%81%E5%99%A8)
+        - [yup](#yup)
+        - [Zod](#zod)
+    - [页面路由](#%E9%A1%B5%E9%9D%A2%E8%B7%AF%E7%94%B1)
+    - [表单](#%E8%A1%A8%E5%8D%95)
+    - [各种“积木”工具组件的封装](#%E5%90%84%E7%A7%8D%E7%A7%AF%E6%9C%A8%E5%B7%A5%E5%85%B7%E7%BB%84%E4%BB%B6%E7%9A%84%E5%B0%81%E8%A3%85)
+- [项目实际业务功能开发](#%E9%A1%B9%E7%9B%AE%E5%AE%9E%E9%99%85%E4%B8%9A%E5%8A%A1%E5%8A%9F%E8%83%BD%E5%BC%80%E5%8F%91)
+- [移动端本地能力适配](#%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%9C%AC%E5%9C%B0%E8%83%BD%E5%8A%9B%E9%80%82%E9%85%8D)
+- [UI 美化](#ui-%E7%BE%8E%E5%8C%96)
+- [热更新能力集成](#%E7%83%AD%E6%9B%B4%E6%96%B0%E8%83%BD%E5%8A%9B%E9%9B%86%E6%88%90)
+- [持续集成、自动交付](#%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E8%87%AA%E5%8A%A8%E4%BA%A4%E4%BB%98)
+- [旧版本浏览器、设备适配](#%E6%97%A7%E7%89%88%E6%9C%AC%E6%B5%8F%E8%A7%88%E5%99%A8%E8%AE%BE%E5%A4%87%E9%80%82%E9%85%8D)
+    - [浏览器端适配](#%E6%B5%8F%E8%A7%88%E5%99%A8%E7%AB%AF%E9%80%82%E9%85%8D)
+        - [JavaScript 语法兼容](#javascript-%E8%AF%AD%E6%B3%95%E5%85%BC%E5%AE%B9)
+        - [JavaScript API 兼容](#javascript-api-%E5%85%BC%E5%AE%B9)
+        - [跨域 CORS 配置](#%E8%B7%A8%E5%9F%9F-cors-%E9%85%8D%E7%BD%AE)
+    - [设备端适配: 内置 Webview 内核](#%E8%AE%BE%E5%A4%87%E7%AB%AF%E9%80%82%E9%85%8D-%E5%86%85%E7%BD%AE-webview-%E5%86%85%E6%A0%B8)
+        - [集成 TBS 的在线版本到项目中](#%E9%9B%86%E6%88%90-tbs-%E7%9A%84%E5%9C%A8%E7%BA%BF%E7%89%88%E6%9C%AC%E5%88%B0%E9%A1%B9%E7%9B%AE%E4%B8%AD)
+        - [将 TBS 魔改为离线集成](#%E5%B0%86-tbs-%E9%AD%94%E6%94%B9%E4%B8%BA%E7%A6%BB%E7%BA%BF%E9%9B%86%E6%88%90)
+- [性能优化](#%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96)
+- [一些想法](#%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95)
+
+<!-- /TOC -->
 
 
 ## 背景
