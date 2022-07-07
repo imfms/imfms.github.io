@@ -424,9 +424,9 @@ Ionic 官方提供了商业服务 [Appflow](https://ionic.io/appflow)，包含�
 
 还发现了一些开源项目，但大多都是只支持 Cordova，我又没那么多时间精力去定制。
 
-后来我偶然发现一篇教程 [Implementing Code Push in Capacitor(3.x) Applications.](https://tolutronics.medium.com/implementing-code-push-in-capacitor-3-x-applications-22bd6a204a04) ，原来微软的 AppCenter 有热更新的支持叫 CodePush，巨硬威武，虽然官方只支持 Cordova 但社区有提供 Capacitor 版本的插件。我喜极而不泣，开心的按照教程注册用户，新建应用，我已经在幻想着热更新带来的红利。然鹅，新建应用时的应用类型并没有 Cordova，我来来回回看了很多遍，心想一定是我的姿势不对，可最终还是发现了 [CodePush 对 Cordova 的支持已经停止的通知](https://devblogs.microsoft.com/appcenter/announcing-apache-cordova-retirement/)，而停止时间，刚好在我还在学习基础知识的那一个月。我悲上心头起，心想果然，红利都不是那么容易吃的。
+后来我偶然发现一篇教程 [Implementing Code Push in Capacitor(3.x) Applications.](https://tolutronics.medium.com/implementing-code-push-in-capacitor-3-x-applications-22bd6a204a04) ，原来微软的 AppCenter 有热更新的支持叫 CodePush，巨硬威武，虽然官方只支持 Cordova 但社区有提供 Capacitor 版本的插件。我喜极而不泣，开心的按照教程注册用户，新建应用，我已经在幻想着热更新带来的红利。然鹅，新建应用时的应用类型并没有 Cordova，我来来回回看了很多遍，心想一定是我的姿势不对，可最终还是发现了 [CodePush 对 Cordova 的支持已经停止的通知](https://devblogs.microsoft.com/appcenter/announcing-apache-cordova-retirement/)，而停止时间刚好在我还在学习基础知识的那一个月。我悲上心头起，心想果然，红利都不是那么容易吃的。
 
-我不是悲上心头起的唯一一个，在停止服务的通知的[评论](https://devblogs.microsoft.com/appcenter/announcing-apache-cordova-retirement/#comment-232)下找到了组织 [ReplaceAppCenter](https://github.com/IllusionVK/ReplaceAppCenter) , 大家在一起讨论寻找或制作一个替代性服务，因为 CodePush 的客户端相关功能都是开源的，所以方向是如果可以弄出个服务端就可以解决了。幸运的是，通过 [byronigoe](https://github.com/byronigoe) 的 [ISSUE: Solved!](https://github.com/IllusionVK/ReplaceAppCenter/issues/3) 发现原来之前就已经项目做过这件事了：[lisong/code-push-server](https://github.com/lisong/code-push-server), 并且看项目信息很明显还是国人项目，还另外添加了很多本土化支持，威武！但该版本已经蛮久不维护了，目前更活跃的是 [shm-open/code-push-server](https://github.com/shm-open/code-push-server) 的 Fork ，看起来还是国人维护，看到一堆歪果仁的救命稻草项目是一个国人项目，民族自豪感不禁油然而生。但 byronigoe 只在 Cordova 下测试过，所以我还是需要趟趟水看看能不能过 Capacitor 的河。
+我不是悲上心头起的唯一一个，在停止服务的通知的[评论](https://devblogs.microsoft.com/appcenter/announcing-apache-cordova-retirement/#comment-232)下找到了组织 [ReplaceAppCenter](https://github.com/IllusionVK/ReplaceAppCenter) , 大家在一起讨论寻找或制作一个替代性服务，因为 CodePush 的客户端相关功能都是开源的，所以方向是如果可以弄出个服务端就可以解决了。幸运的是，通过 [byronigoe](https://github.com/byronigoe) 的 [ISSUE: Solved!](https://github.com/IllusionVK/ReplaceAppCenter/issues/3) 发现原来之前就已经有项目做过这件事了：[lisong/code-push-server](https://github.com/lisong/code-push-server), 并且看项目信息很明显还是国人项目，还另外添加了一些本土化支持，但该版本已经蛮久不维护了，目前更活跃的是 [shm-open/code-push-server](https://github.com/shm-open/code-push-server) 的 Fork ，看起来还是国人维护，看到一堆歪果仁的救命稻草项目是一个国人项目，民族自豪感不禁油然而生。但 byronigoe 只在 Cordova 下测试过，所以我还是需要趟趟水看看能不能过 Capacitor 的河。
 
 不负所望，最终被成功集成到项目中，以下是各组件详情：
 
@@ -542,7 +542,7 @@ http {
 
 再次翻起腾讯一如既往不清晰的文档，果然还是不支持。
 
-但在网上发现了一些其他人的[魔改离线集成方案](https://blog.csdn.net/xiangyuecn/article/details/107855550)，真复杂…… 但居然看到了说最新版本 TBS 已经支持本地集成了，开放出来了一个API: QbSdk.installLocalTbsCore() ，并且已经[有人已经有过成功集成的经历](https://blog.csdn.net/qq_34205629/article/details/122375262)。
+但在网上发现了一些其他人的[魔改离线集成方案](https://blog.csdn.net/xiangyuecn/article/details/107855550)，真复杂…… 不过居然看到了说最新版本 TBS 已经支持本地集成了，开放出来了一个API: QbSdk.installLocalTbsCore() ，也[有人已经有过成功集成的经历](https://blog.csdn.net/qq_34205629/article/details/122375262)。
 
 既然有希望了，那就开始吧，实际集成的时候我分为了两步走：
 
@@ -588,12 +588,12 @@ http {
 
 项目终于结束，磕磕绊绊也到了相对稳定的阶段，这个项目真的让我学到了也经历了太多东西了：
 
-- TypeScript 真的而是开了眼界，之前一直被 JAVA 先入为主，没想到类型系统还可以是这样的，TS 使得更多的内容可以被“类型安全”。
+- TypeScript 真的是让我开了眼界，之前一直被 JAVA 先入为主，没想到类型系统还可以是这样的，TS 使得更多的内容可以被“类型安全”。
   我现在再使用 JAVA 有时会很沮丧，回想着要是 JAVA 有 TS 的 xxx 就好了…… 所以我觉得 Kotlin 确实可以安排上了~
   但好像还是有一些前端开发者排斥 TS, 觉得有点束手束脚而始终没有迈出第一步，就像我刚接触到 TS 的那些类型特性时也感觉不到有个啥用，但都放心大胆地用吧，用起来之后就是大型真香现场，保证之后就不想回到 JS 了。
 - 空指针安全真的应该是每个编程语言的必要特性，对于类型提供者和使用者都降低了太多的心力负担，快让这个价值10亿美元的错误消失吧。
 - 前端再也不是以前那个随便学着玩玩的技术领域了，前端的热度引来了语言上、模板上、工程化上的各种各样的技术工具，且还在不断的推陈出新，很多社区上大家提出问题很快就会陈旧。我在准备阶段学习的一些内容有些已经有了更新的替代品，很多主要库也都发布了全新大版本，我的依赖库的版本号都不能随便更新，要不就构建不起来了……
-- 前端有的技术很有意思，但也是有蛮多技术方案感觉设计不周，实际使用中要开发者手动多操心蛮多东西，可能是前端相关技术发展太快了的原因，野蛮生长。
+- 前端有的技术很有意思，但感觉也有蛮多技术方案设计不周，实际使用中要开发者手动多操心蛮多东西，可能是前端相关技术发展太快了的原因，野蛮生长。
   开发这个项目的过程中处理了太多太多奇怪问题，回想起来真的是有些心力憔悴。
 - 混合开发性能问题确实是一个大问题，[Flutter](https://flutter.dev/) 等类似的技术还是非常有意义的，既能跨平台，又能兼顾性能。
 - 感觉自己还是运气很好的，虽然是小白入门，但在选型上没有遇到特别大的坑，遇到的问题也最终解决了，初期的预想也绝大多数都予以实现，很开心能有这次的项目经历。
@@ -602,4 +602,4 @@ http {
 
 但其实身在其中开发的时候倒还好，能很快的将状态调整回来，因为编码本身、解决问题的过程还是我所享受的。
 
-在此，向项目中所有阅读/参考/使用的技术/文档/教程的作者致以最诚挚的敬意；向期间陪伴着我的爱人给予最热烈的感情。
+在此，向项目中所有 阅读/参考/使用 的 技术/文档/教程 的作者致以最诚挚的敬意；向期间陪伴着我的爱人给予最热烈的感情。
